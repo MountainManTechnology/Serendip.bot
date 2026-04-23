@@ -23,7 +23,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_PREFIX: ghcr.io/MountainManTechnology/serendip.bot
+  IMAGE_PREFIX: ghcr.io/mountainmantechnology/serendip.bot
 
 jobs:
   # Gate: wait for CI to pass first
