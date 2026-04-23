@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../link-engine"
+		},
+		{
+			"name": "Serendip.bot",
+			"path": "../../../../../Serendip.bot"
+		}
+	],
+	"settings": {
+		"sqltools.connections": [
+			{
+				"ssh": "Disabled",
+				"previewLimit": 50,
+				"server": "20.106.75.110",
+				"port": 5432,
+				"driver": "PostgreSQL",
+				"name": "Serendip",
+				"database": "stumble_ai",
+				"username": "stumble"
+			}
+		]
+	}
+}

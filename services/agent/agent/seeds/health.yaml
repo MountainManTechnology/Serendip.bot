@@ -1,0 +1,19 @@
+topic: health
+description: Medical research, health news, and neuroscience
+
+urls:
+  - https://www.statnews.com/feed
+  - https://www.medicalnewstoday.com/feed
+  - https://www.sciencedaily.com/rss/all.xml
+  - https://www.thelancet.com/feed
+  - https://www.bmj.com/feed
+  - https://www.psychologytoday.com/rss
+  - https://www.nih.gov/news-events/news-releases.xml
+  - https://www.brainscience.net/feed
+  - https://neurosciencenews.com/feed
+  - https://theconversation.com/health/feed.xml
+  - https://wellcomecollection.org/feed/stories
+  - https://www.nimh.nih.gov/news/feed
+  - https://www.health.harvard.edu/blog/feed
+  - https://feeds.arstechnica.com/arstechnica/index
+  - https://feeds.nature.com/nature/rss/current

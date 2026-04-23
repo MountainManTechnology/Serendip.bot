@@ -1,0 +1,24 @@
+{
+  "name": "@serendip-bot/types",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@serendip-bot/config": "*",
+    "@eslint/js": "^9.0.0",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^8.0.0"
+  }
+}

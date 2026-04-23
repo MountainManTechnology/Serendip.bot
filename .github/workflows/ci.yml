@@ -1,0 +1,282 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_call:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+  TURBO_TEAM: ${{ vars.TURBO_TEAM }}
+
+jobs:
+  # ─── TypeScript: lint + typecheck ──────────────────────────────────────────
+  lint:
+    name: Lint (ESLint + Prettier)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Format check
+        run: npx prettier --check "**/*.{ts,tsx,js,jsx,json}" --ignore-path .gitignore
+
+  typecheck:
+    name: Typecheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+  test:
+    name: Unit Tests (Vitest)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Test
+        run: npx turbo test
+
+  # ─── Python: lint + test ───────────────────────────────────────────────────
+  py-lint:
+    name: Python Lint (ruff)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install Python deps
+        working-directory: services/agent
+        run: uv pip install --system ".[dev]"
+
+      - name: ruff check
+        working-directory: services/agent
+        run: ruff check .
+
+      - name: ruff format check
+        working-directory: services/agent
+        run: ruff format --check .
+
+  py-typecheck:
+    name: Python Typecheck (mypy)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install Python deps
+        working-directory: services/agent
+        run: uv pip install --system ".[dev]"
+
+      - name: mypy
+        working-directory: services/agent
+        run: mypy agent/ worker.py
+
+  py-test:
+    name: Python Tests (pytest)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install Python deps
+        working-directory: services/agent
+        run: uv pip install --system ".[dev]"
+
+      - name: pytest
+        working-directory: services/agent
+        run: pytest
+
+      - name: Azure image mirror smoke test
+        if: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING && secrets.AZURE_STORAGE_CONTAINER }}
+        working-directory: services/agent
+        run: |
+          echo "Running Azure image mirror smoke test"
+          python -m pytest tests/test_image_mirroring_integration.py -q
+
+      - name: Azure OCR smoke test
+        if: ${{ secrets.AZURE_COMPUTER_VISION_ENDPOINT && secrets.AZURE_COMPUTER_VISION_KEY }}
+        working-directory: services/agent
+        env:
+          AZURE_COMPUTER_VISION_ENDPOINT: ${{ secrets.AZURE_COMPUTER_VISION_ENDPOINT }}
+          AZURE_COMPUTER_VISION_KEY: ${{ secrets.AZURE_COMPUTER_VISION_KEY }}
+        run: |
+          echo "Running Azure Computer Vision OCR smoke test"
+          python -m pytest tests/test_image_ocr_smoke.py -q
+
+  # ─── Docker build validation ──────────────────────────────────────────────
+  docker:
+    name: Docker Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build web image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: apps/web/Dockerfile
+          push: false
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Build api image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: apps/api/Dockerfile
+          push: false
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Build agent image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: services/agent/Dockerfile
+          push: false
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  # ─── Security audit ───────────────────────────────────────────────────────
+  audit:
+    name: Security Audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: npm audit
+        run: npm audit --audit-level=high
+
+  # ─── Version hash check (PRs only) ────────────────────────────────────────
+  version-check:
+    name: Version Hash Check
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check for unbumped packages
+        run: npm run version:check
+
+  # ─── Wiki staleness check (main only) ─────────────────────────────────────
+  wiki-freshness:
+    name: Wiki Freshness Check
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for stale wiki pages
+        run: |
+          set -euo pipefail
+          DOC_MAP="docs/wiki/.doc-map.json"
+          if [[ ! -f "$DOC_MAP" ]]; then
+            echo "No doc-map found, skipping freshness check."
+            exit 0
+          fi
+
+          STALE=()
+          # Read each mapping: source glob → wiki page
+          for wiki_page in $(jq -r 'to_entries[] | .value' "$DOC_MAP" | sort -u); do
+            wiki_file="docs/wiki/${wiki_page}"
+            if [[ ! -f "$wiki_file" ]]; then
+              continue
+            fi
+            wiki_date=$(git log -1 --format="%ct" -- "$wiki_file" 2>/dev/null || echo "0")
+
+            # Check all source globs that map to this wiki page
+            for src_glob in $(jq -r "to_entries[] | select(.value == \"${wiki_page}\") | .key" "$DOC_MAP"); do
+              # Find files matching the glob that changed more recently
+              for src_file in $(git ls-files -- "$src_glob" 2>/dev/null); do
+                src_date=$(git log -1 --format="%ct" -- "$src_file" 2>/dev/null || echo "0")
+                if [[ "$src_date" -gt "$wiki_date" ]]; then
+                  STALE+=("⚠️  ${wiki_page} may be stale — ${src_file} was updated more recently")
+                  break 2
+                fi
+              done
+            done
+          done
+
+          if [[ ${#STALE[@]} -gt 0 ]]; then
+            echo "::warning::Wiki pages may need updating:"
+            for msg in "${STALE[@]}"; do
+              echo "::warning::${msg}"
+            done
+          else
+            echo "✅ All wiki pages appear up to date."
+          fi

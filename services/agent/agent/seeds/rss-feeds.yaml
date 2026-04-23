@@ -1,0 +1,5 @@
+# SerendipBot RSS feed registry
+# Populated by the serendip-rss-feed-curator daily task.
+# Additions are reviewed and merged manually from
+# Stumble Upon/rss-curator/daily-reports/<date>-additions.yaml
+feeds: []

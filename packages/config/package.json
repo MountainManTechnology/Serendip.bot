@@ -1,0 +1,10 @@
+{
+  "name": "@serendip-bot/config",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "files": [
+    "eslint.config.js",
+    "tsconfig.base.json"
+  ]
+}

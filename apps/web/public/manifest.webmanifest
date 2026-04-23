@@ -1,0 +1,13 @@
+{
+  "name": "Serendip Bot",
+  "short_name": "Serendip",
+  "description": "Discover the internet you didn't know existed — AI-curated web discovery.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f3ff",
+  "theme_color": "#7c3aed",
+  "icons": [
+    { "src": "/assets/favicon.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/assets/logo.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

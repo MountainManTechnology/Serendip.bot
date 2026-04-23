@@ -1,0 +1,695 @@
+date: '2026-04-21'
+run_type: demo_discovery
+candidates_evaluated: 156
+candidates_accepted: 67
+candidates_review_kept: 10
+candidates_rejected: 79
+candidates_broken: 49
+notes: []
+additions:
+- url: https://www.quantamagazine.org/feed/
+  editorial_score: 0.94
+  justification: Exceptional original science journalism with distinctive voice, high
+    surprise, strong wonder/explore mood, zero corporate speak
+- url: https://nautil.us/feed/
+  editorial_score: 0.89
+  justification: Strong editorial voice, excellent surprise and mood fit, very low
+    PR, consistent high-quality essays
+- url: https://undark.org/feed/
+  editorial_score: 0.85
+  justification: Deeply reported original science narratives, strong distinctive perspective,
+    excellent anti-PR
+- url: https://www.sciencenews.org/feed
+  editorial_score: 0.81
+  justification: Reliable original science reporting with good surprise and consistent
+    publishing cadence
+- url: https://www.anthropocenemagazine.org/feed/
+  editorial_score: 0.78
+  justification: Fresh, discovery-oriented environmental/science stories with exploratory
+    mood
+- url: https://arstechnica.com/rss
+  editorial_score: 0.74
+  justification: Good science and tech depth with distinctive skeptical voice, low
+    PR
+- url: https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
+  editorial_score: 0.71
+  justification: Solid journalistic standards, regular cadence, decent surprise
+- url: https://www.theguardian.com/science/rss
+  editorial_score: 0.68
+  justification: Good science coverage with occasional strong perspective pieces
+- url: https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
+  editorial_score: 0.65
+  justification: High editorial standards but sometimes conventional
+- url: https://hyperallergic.com/feed/
+  editorial_score: 0.92
+  justification: Strong editorial voice, original arts/culture criticism, high surprise
+    and wonder, anti-PR, regular cadence
+- url: https://hyperallergic.com/rss
+  editorial_score: 0.9
+  justification: Same high-quality independent arts publication as above, excellent
+    discovery fit
+- url: https://hyperallergic.com/latest/feed
+  editorial_score: 0.88
+  justification: Core Hyperallergic feed with consistent original cultural reporting
+- url: https://artforum.com/articles/feed
+  editorial_score: 0.81
+  justification: Strong editorial intent and distinctive critical voice in contemporary
+    art, good surprise
+- url: https://artforum.com/feed/
+  editorial_score: 0.78
+  justification: Main Artforum feed offers quality arts writing and perspective, slightly
+    more institutional tone
+- url: https://artforum.com/latest/feed
+  editorial_score: 0.76
+  justification: Recent Artforum content, maintains critical edge but lower than Hyperallergic
+    on surprise
+- url: https://www.schneier.com/feed/
+  editorial_score: 0.92
+  justification: Strong original analysis, distinctive voice, high surprise, excellent
+    anti-PR and wonder fit
+- url: https://lwn.net/headlines/rss
+  editorial_score: 0.88
+  justification: Deep technical curation with original commentary, very high editorial
+    quality and surprise
+- url: https://hackaday.com/blog/feed/
+  editorial_score: 0.85
+  justification: Excellent maker/exploration mood, strong surprise and distinctive
+    curation
+- url: https://blog.codinghorror.com/feed/
+  editorial_score: 0.83
+  justification: Jeff Atwood's strong personal voice, original writing, great learn/create
+    mood
+- url: https://stratechery.com/feed/
+  editorial_score: 0.81
+  justification: High-quality original analysis with clear distinctive perspective
+- url: https://boingboing.net/feed
+  editorial_score: 0.78
+  justification: Classic serendipitous weird-tech curation, strong surprise and wonder
+- url: https://arstechnica.com/rss
+  editorial_score: 0.76
+  justification: Good original reporting, strong technology depth with decent voice
+- url: https://krebsonsecurity.com/feed/
+  editorial_score: 0.75
+  justification: Excellent original investigative work, very strong anti-PR
+- url: https://martinfowler.com/feed.atom
+  editorial_score: 0.74
+  justification: Thoughtful original software architecture essays, high editorial
+    intent
+- url: https://highscalability.com/feed/
+  editorial_score: 0.72
+  justification: Focused deep technical curation on scalability, good surprise
+- url: https://thenewstack.io/feed/
+  editorial_score: 0.68
+  justification: Solid open-source/cloud editorial coverage with decent originality
+- url: https://spectrum.ieee.org/rss
+  editorial_score: 0.67
+  justification: High-quality science/tech journalism with good wonder factor
+- url: https://semiengineering.com/feed/
+  editorial_score: 0.65
+  justification: Strong semiconductor/hardware technical focus, good depth
+- url: https://logodesignlove.com/feed/
+  editorial_score: 0.82
+  justification: Strong original editorial voice on identity design, thoughtful curation,
+    low PR, frequent surprises, fits wonder/learn mood, regular cadence.
+- url: https://www.core77.com/feed
+  editorial_score: 0.78
+  justification: Distinctive industrial/product design perspective with strong original
+    writing, anti-corporate tone, high surprise factor, excellent mood fit.
+- url: https://www.printmag.com/feed/
+  editorial_score: 0.71
+  justification: Good editorial depth on graphic design culture, distinctive voice,
+    avoids most PR patterns, solid surprise and mood alignment.
+- url: https://design-milk.com/feed/
+  editorial_score: 0.65
+  justification: Curated modern design with decent originality and surprise, but leans
+    slightly commercial in tone.
+- url: https://statnews.com/feed/
+  editorial_score: 0.88
+  justification: High-quality original health/science journalism. Strong editorial
+    voice, frequent surprises, anti-PR, excellent wonder/learn mood.
+- url: https://nutritionfacts.org/feed
+  editorial_score: 0.79
+  justification: Evidence-based, original analysis of nutrition research. Distinctive
+    Dr. Greger perspective, high discovery value, very regular.
+- url: https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/section/health/rss.xml
+  editorial_score: 0.71
+  justification: Strong original reporting from NYT Health desk. Good voice and cadence,
+    though occasionally more conventional.
+- url: https://smittenkitchen.com/feed/
+  editorial_score: 0.92
+  justification: Strong original voice, personal storytelling, genuine recipes, high
+    surprise and wonder
+- url: https://www.theguardian.com/food/rss
+  editorial_score: 0.85
+  justification: Excellent editorial journalism, distinctive voices, discovery-driven
+    topics, very low PR
+- url: https://pinchofyum.com/feed/
+  editorial_score: 0.78
+  justification: Authentic, warm voice with good storytelling and photography; mostly
+    original content
+- url: https://www.howsweeteats.com/feed/
+  editorial_score: 0.71
+  justification: Distinctive playful personality and writing style, good surprise
+    factor
+- url: https://ep00.epimg.net/rss/elpais/portada.xml
+  editorial_score: 0.68
+  justification: High editorial standards, consistent original journalism, good cadence,
+    but mainstream tone limits surprise
+- url: https://www.eldiario.es/rss
+  editorial_score: 0.65
+  justification: Independent investigative voice with distinctive perspective, strong
+    anti-PR stance, decent surprise
+- url: https://clickhole.com/feed/
+  editorial_score: 0.92
+  justification: High-quality original satire with strong humorous voice, excellent
+    surprise and wonder; very active
+- url: https://reductress.com/feed/
+  editorial_score: 0.88
+  justification: Sharp feminist satire, distinctive witty voice, strong surprise and
+    anti-corporate tone; regular publishing
+- url: https://theonion.com/feed
+  editorial_score: 0.85
+  justification: Classic satirical news with consistent output and strong editorial
+    voice, though slightly more formulaic than ClickHole
+- url: https://clickhole.com/?feed=rss
+  editorial_score: 0.91
+  justification: Duplicate of main ClickHole feed; retains very high humor discovery
+    value
+- url: https://reductress.com/feed
+  editorial_score: 0.87
+  justification: Core Reductress feed; excellent original humor and voice
+- url: https://theonion.com/rss
+  editorial_score: 0.82
+  justification: Valid Onion feed with good cadence and satire, minor formatting differences
+- url: https://clickhole.com/rss
+  editorial_score: 0.9
+  justification: Valid ClickHole feed; strong across all rubric categories
+- url: https://theonion.com/?feed=rss2
+  editorial_score: 0.81
+  justification: Valid Onion feed but slightly lower due to generic news-style structure
+- url: https://theonion.com/news/feed
+  editorial_score: 0.65
+  justification: Category-specific feed; still satirical but narrower scope reduces
+    surprise and variety
+- url: https://www.motherjones.com/feed
+  editorial_score: 0.88
+  justification: Strong original investigative journalism with distinctive progressive
+    voice, high surprise factor, avoids corporate speak
+- url: https://www.propublica.org/feed
+  editorial_score: 0.85
+  justification: Excellent long-form investigative work, strong editorial intent,
+    wonder/explore mood, minimal PR influence
+- url: https://news.harvard.edu/gazette/feed
+  editorial_score: 0.79
+  justification: High-quality original academic and scientific storytelling, distinctive
+    perspective, good surprise and learning mood
+- url: https://www.wired.com/feed/rss
+  editorial_score: 0.72
+  justification: Distinctive tech-culture voice with occasional surprise, though some
+    marketing-adjacent pieces lower the score
+- url: https://www.cam.ac.uk/rss
+  editorial_score: 0.68
+  justification: Strong original university research content, good wonder/learn mood,
+    but somewhat dry academic tone
+- url: https://home.cern/rss.xml
+  editorial_score: 0.65
+  justification: Genuine frontier science content with high wonder factor, limited
+    publishing cadence
+- url: https://aeon.co/feed
+  editorial_score: 0.92
+  justification: Strong original essays with distinctive voice, high surprise, excellent
+    wonder/explore mood, anti-PR, regular cadence
+- url: https://philosophynow.org/rss
+  editorial_score: 0.85
+  justification: Original magazine writing, distinctive accessible style, good surprise
+    and mood fit, consistent publishing
+- url: https://plato.stanford.edu/rss/sep.xml
+  editorial_score: 0.78
+  justification: High editorial quality and depth, excellent for learning/exploration,
+    but lower on surprise and distinctive voice
+- url: https://dailynous.com/feed/
+  editorial_score: 0.71
+  justification: Distinctive blog voice with strong community perspective, good surprise,
+    but mixed editorial vs meta/academic gossip
+- url: https://publicdomainreview.org/rss.xml
+  editorial_score: 0.92
+  justification: Exceptional editorial curation of obscure historical/public domain
+    material with strong wonder/learn/explore mood, distinctive voice, zero corporate
+    tone, high surprise factor, regular publishing cadence
+- url: https://publicdomainreview.org/feed
+  editorial_score: 0.91
+  justification: Identical high-quality content to rss.xml variant; excellent discovery
+    fit across all rubric categories
+- url: https://publicdomainreview.org/feed/
+  editorial_score: 0.9
+  justification: Same outstanding feed as the others; minor URL formatting difference
+    does not affect quality or cadence
+- url: https://rockpapershotgun.com/feed
+  editorial_score: 0.82
+  justification: Strong editorial voice, deep dives, criticism, and unexpected angles.
+    Minimal PR tone, high surprise and wonder.
+- url: https://rockpapershotgun.com/feed/
+  editorial_score: 0.8
+  justification: Same high-quality RPS feed. Excellent curation, distinctive perspective,
+    regular cadence.
+- url: https://polygon.com/feed
+  editorial_score: 0.68
+  justification: Good editorial intent and writing quality with occasional strong
+    surprise pieces. Some corporate polish but still discovery-friendly.
+- url: https://polygon.com/feed/
+  editorial_score: 0.67
+  justification: Duplicate of Polygon main feed. Solid but slightly less distinctive
+    than RPS.
+review_kept_pending_signoff:
+- url: https://feeds.feedburner.com/DiscoverMagazine
+  editorial_score: 0.63
+  justification: Decent wonder-oriented science but mixed with more commercial tone
+- url: https://spectrum.ieee.org/rss
+  editorial_score: 0.6
+  justification: Strong on engineering/science depth but occasionally dry
+- url: https://www.theregister.com/headlines.atom
+  editorial_score: 0.63
+  justification: Distinctive irreverent voice, good anti-PR but some PR bleed
+- url: https://restofworld.org/feed/
+  editorial_score: 0.62
+  justification: Unique global tech perspective, strong discovery value
+- url: https://blog.adafruit.com/feed/
+  editorial_score: 0.6
+  justification: Strong maker/exploration mood, good surprise
+- url: https://psychologytoday.com/news/feed
+  editorial_score: 0.62
+  justification: Mix of original and curated psychology content. Some discovery but
+    leans toward lighter/popular topics.
+- url: https://cookieandkate.com/feed/
+  editorial_score: 0.62
+  justification: Wholesome original recipes with decent voice, but more straightforward
+    than surprising
+- url: https://reductress.com/articles/feed
+  editorial_score: 0.62
+  justification: Reductress category feed; good voice but lower breadth of discovery
+- url: https://www.caltech.edu/about/news/rss
+  editorial_score: 0.62
+  justification: Solid original science reporting, good mood fit, slightly institutional
+    voice
+- url: https://iep.utm.edu/feed/
+  editorial_score: 0.62
+  justification: Solid reference-style articles, good learning mood but lower on surprise,
+    voice, and discovery feel
+removals: []
+watch:
+- url: https://feeds.feedburner.com/DiscoverMagazine
+  concern: 'Score: 0.63'
+- url: https://spectrum.ieee.org/rss
+  concern: 'Score: 0.60'
+- url: https://www.theregister.com/headlines.atom
+  concern: 'Score: 0.63'
+- url: https://restofworld.org/feed/
+  concern: 'Score: 0.62'
+- url: https://blog.adafruit.com/feed/
+  concern: 'Score: 0.60'
+- url: https://psychologytoday.com/news/feed
+  concern: 'Score: 0.62'
+- url: https://cookieandkate.com/feed/
+  concern: 'Score: 0.62'
+- url: https://reductress.com/articles/feed
+  concern: 'Score: 0.62'
+- url: https://www.caltech.edu/about/news/rss
+  concern: 'Score: 0.62'
+- url: https://iep.utm.edu/feed/
+  concern: 'Score: 0.62'
+rejected:
+- url: https://sciencefriday.com/feed
+  score: 0.58
+  justification: Curated with some personality but includes more broadcast-style content
+- url: https://www.realclimate.org/index.php/feed/
+  score: 0.55
+  justification: High expertise but narrow focus and low cadence
+- url: https://astralcodexten.substack.com/feed
+  score: 0.52
+  justification: Strong distinctive voice but heavily opinion-driven and inconsistent
+    with rubric
+- url: https://www.popsci.com/feed/
+  score: 0.45
+  justification: Too much consumer/tech gadget content and PR-influenced tone
+- url: https://www.livescience.com/feeds/all
+  score: 0.38
+  justification: High volume but frequently clickbaity and shallow
+- url: https://www.sciencedaily.com/rss/
+  score: 0.32
+  justification: Mostly repackaged press releases, low originality
+- url: https://www.businessinsider.com/rss
+  score: 0.25
+  justification: Heavy marketing and corporate slant
+- url: https://techcrunch.com/feed/
+  score: 0.22
+  justification: Startup PR and product-focused, poor fit
+- url: https://www.who.int/rss-feeds/news-english.xml
+  score: 0.2
+  justification: Institutional voice and press-release style
+- url: https://theguardian.com/rss
+  score: 0.55
+  justification: High volume and some good cultural pieces but mixed with heavy news/PR,
+    lower surprise and voice consistency
+- url: https://theguardian.com/news/rss
+  score: 0.48
+  justification: General news-focused feed, not culture-discovery oriented
+- url: https://variety.com/feed/
+  score: 0.32
+  justification: Heavy industry marketing/PR tone, entertainment news style, low editorial
+    independence
+- url: https://deadline.com/feed/
+  score: 0.28
+  justification: Classic Hollywood trade publication, very PR-heavy, low surprise
+    and wonder
+- url: https://www.techdirt.com/feed/
+  score: 0.58
+  justification: Strong anti-corporate voice and perspective, though sometimes repetitive
+- url: https://chipsandcheese.com/feed/
+  score: 0.57
+  justification: Very deep original hardware analysis, niche but high quality
+- url: https://www.benedelman.org/feed/
+  score: 0.55
+  justification: Original investigative work on tech policy and dark patterns
+- url: https://opensource.com/feed
+  score: 0.52
+  justification: Decent open source curation but some corporate influence
+- url: https://www.economist.com/technology-quarterly/rss.xml
+  score: 0.5
+  justification: High quality but infrequent and somewhat traditional
+- url: https://feeds.howtogeek.com/howtogeek
+  score: 0.38
+  justification: Mostly consumer how-to content, low surprise
+- url: https://gizmodo.com/feed
+  score: 0.35
+  justification: Heavy PR/marketing influence and click-driven editorial
+- url: https://techcrunch.com/feed/
+  score: 0.32
+  justification: Strong startup PR and funding announcement patterns
+- url: https://www.wired.com/feed/rss
+  score: 0.3
+  justification: Significant corporate/tech PR bleed and formulaic writing
+- url: https://interiorzine.com/feed/
+  score: 0.58
+  justification: Some original curation in interiors, but heavily press-release-like
+    and promotional in style.
+- url: https://www.creativebloq.com/feed
+  score: 0.52
+  justification: Mostly aggregated news and marketing-adjacent content, lacks strong
+    editorial voice or surprise.
+- url: https://www.designboom.com/feed/
+  score: 0.48
+  justification: Very high volume but heavily PR-influenced and corporate in tone,
+    low originality score.
+- url: https://www.dezeen.com/feed/
+  score: 0.45
+  justification: Large volume of press-release style architecture/design news, corporate
+    tone dominates.
+- url: https://www.archdaily.com/feed/
+  score: 0.41
+  justification: Primarily project announcements and PR-heavy content, low editorial
+    originality.
+- url: https://architizer.com/blog/feed/
+  score: 0.39
+  justification: Mostly promotional architecture content with press-release patterns.
+- url: https://www.adweek.com/feed/
+  score: 0.28
+  justification: "Marketing/advertising industry news \u2014 heavily corporate speak\
+    \ and PR-driven."
+- url: https://www.self.com/feed/rss
+  score: 0.38
+  justification: Mostly lifestyle/wellness with heavy commercial influence. Corporate
+    tone and PR patterns common.
+- url: https://menshealth.com/feed
+  score: 0.29
+  justification: Heavily commercial men's lifestyle content. Strong marketing/PR flavor,
+    low surprise or wonder.
+- url: https://www.eatthis.com/feed
+  score: 0.22
+  justification: Clickbait-heavy nutrition/lifestyle site. Marketing-driven, low originality
+    and editorial depth.
+- url: https://minimalistbaker.com/feed/
+  score: 0.55
+  justification: Clean and useful but formulaic and brand-heavy; lower on surprise
+    and voice
+- url: https://natashaskitchen.com/feed/
+  score: 0.38
+  justification: Heavy recipe SEO/blogging style, corporate-toned, low originality
+    and surprise
+- url: https://damndelicious.net/feed/
+  score: 0.35
+  justification: Very formulaic SEO recipe site, press-release-like tone, low editorial
+    value
+- url: https://www.gimmesomeoven.com/feed/
+  score: 0.32
+  justification: Highly optimized recipe blog, minimal distinctive voice or discovery
+- url: https://www.recipetineats.com/feed/
+  score: 0.3
+  justification: Strong on recipes but very commercial/bloggy tone, low surprise
+- url: https://cafedelites.com/feed/
+  score: 0.28
+  justification: Typical ad-heavy recipe blog with generic voice and PR-like presentation
+- url: https://www.ara.cat/rss
+  score: 0.58
+  justification: Catalan independent journalism with clear voice and editorial intent,
+    moderate surprise and wonder
+- url: https://www.rfi.fr/es/rss
+  score: 0.52
+  justification: International public broadcaster with decent editorial quality and
+    global scope, but somewhat institutional tone
+- url: https://www.france24.com/fr/rss
+  score: 0.48
+  justification: Professional international news, good cadence, but corporate/public
+    broadcaster voice reduces distinctiveness
+- url: https://www.20minutos.es/rss
+  score: 0.35
+  justification: Tabloid-style commercial news, frequent marketing/soft content, low
+    surprise and wonder
+- url: https://okdiario.com/feed
+  score: 0.32
+  justification: Highly partisan and sensationalist, frequent clickbait and ideological
+    framing
+- url: https://www.diariodemallorca.es/rss
+  score: 0.28
+  justification: Regional Spanish newspaper, mostly local news with limited wonder
+    or discovery value
+- url: https://www.diariocordoba.com/rss
+  score: 0.25
+  justification: Local/regional focus, low editorial distinctiveness and surprise
+- url: https://www.diariodeibiza.es/rss
+  score: 0.22
+  justification: Very local tourism-heavy content, minimal discovery or wonder value
+- url: https://www.foxnews.com/rss
+  score: 0.18
+  justification: Strong partisan framing, frequent corporate and ideological patterns
+- url: https://www.nbcnews.com/rss
+  score: 0.35
+  justification: Mainstream corporate news with polished press-release-like tone in
+    many stories
+- url: https://theonion.com/category/feed
+  score: 0.48
+  justification: Generic category endpoint; lacks clear editorial focus and consistent
+    content
+- url: https://reductress.com/category/feed
+  score: 0.45
+  justification: Generic category feed; not a strong discovery source
+- url: https://reductress.com/blog/feed
+  score: 0.4
+  justification: Low activity and unclear editorial direction compared to main feed
+- url: https://reductress.com/posts/feed
+  score: 0.38
+  justification: Likely duplicate or low-value endpoint; minimal unique content
+- url: https://reductress.com/latest/feed
+  score: 0.35
+  justification: Thin feed with inconsistent publishing cadence
+- url: https://theonion.com/latest/feed
+  score: 0.32
+  justification: Low-value endpoint; poor editorial intent for discovery
+- url: https://theonion.com/news/rss
+  score: 0.3
+  justification: Very narrow and low-quality feed variant
+- url: https://theonion.com/?feed=atom
+  score: 0.25
+  justification: Atom format of main feed but not optimal for SerendipBot discovery
+- url: https://clickhole.com/?feed=atom
+  score: 0.22
+  justification: Atom version; lower compatibility and no added value
+- url: https://wanderlust.com/feed
+  score: 0.35
+  justification: Professional travel magazine with high production value but strong
+    marketing/editorial blend, frequent PR-influenced content, low surprise factor
+- url: https://wanderlust.com/?feed=rss2
+  score: 0.32
+  justification: Same underlying feed as above. Commercial travel site, not independent
+    discovery voice. Heavy destination marketing tone
+- url: https://wanderlust.com/rss
+  score: 0.3
+  justification: Duplicate of main Wanderlust feed. Lacks strong editorial independence
+    and surprise required for SerendipBot
+- url: https://wanderlust.com/?feed=atom
+  score: 0.28
+  justification: Atom version of commercial travel magazine feed. Fails on Anti-PR,
+    Surprise, and distinctive voice
+- url: https://wanderlust.com/?feed=rss
+  score: 0.28
+  justification: Duplicate commercial feed. Predictable magazine content, not serendipitous
+    or wonder-driven
+- url: https://wanderlust.com/feed/
+  score: 0.25
+  justification: 'Lowest performing duplicate. Same issues: corporate travel media
+    voice, low originality and surprise'
+- url: https://www.theverge.com/rss/index.xml
+  score: 0.51
+  justification: Some original tech culture pieces but heavy gadget marketing/PR influence
+    and corporate tone
+- url: https://fortune.com/feed/
+  score: 0.38
+  justification: Business press release patterns and corporate voice dominate
+- url: https://techcrunch.com/feed/
+  score: 0.35
+  justification: Heavy startup PR and funding announcement content
+- url: https://www.engadget.com/rss.xml
+  score: 0.32
+  justification: Primarily product reviews and tech marketing-adjacent content
+- url: https://mashable.com/feed/
+  score: 0.28
+  justification: Light, viral-focused content with heavy marketing influence
+- url: https://nypost.com/feed/
+  score: 0.25
+  justification: Sensationalist tabloid style, low editorial depth and surprise value
+- url: https://www.seattletimes.com/feed/
+  score: 0.45
+  justification: Standard regional news with occasional good reporting but mostly
+    conventional
+- url: https://www.pbs.org/newshour/feeds/rss/headlines
+  score: 0.48
+  justification: Solid public broadcasting journalism but fairly conventional in tone
+- url: https://www.france24.com/en/rss
+  score: 0.42
+  justification: Standard international news wire style with limited distinctive voice
+- url: https://www.newphilosopher.com/feed/
+  score: 0.48
+  justification: Some original pieces but heavy magazine marketing tone and PR-adjacent
+    language lowers scores
+- url: https://philosophy.stackexchange.com/feeds
+  score: 0.22
+  justification: Pure Q&A format, not original editorial writing, lacks narrative
+    voice and magazine-style discovery
+- url: https://destructoid.com/feed
+  score: 0.51
+  justification: Mixed. Some original editorials but heavy news aggregation and PR-influenced
+    tone. Moderate surprise.
+- url: https://destructoid.com/?feed=atom
+  score: 0.49
+  justification: Same Destructoid content. Middling editorial voice and higher marketing
+    bleed.
+- url: https://destructoid.com/rss
+  score: 0.48
+  justification: Same feed. Scores limited by inconsistent originality and corporate
+    gaming press patterns.
+- url: https://vg247.com/feed
+  score: 0.39
+  justification: Mostly news aggregation and press-release style. Low surprise and
+    weak distinctive voice.
+- url: https://kotaku.com/feed
+  score: 0.35
+  justification: Heavy gossip, listicles, and corporate gaming media patterns. Low
+    on wonder and originality.
+broken_feeds:
+- url: https://www.nature.com/nature.rss
+  reason: failed validation
+- url: https://www.sciencemag.org/rss/news_current.xml
+  reason: failed validation
+- url: https://news.mit.edu/rss
+  reason: failed validation
+- url: https://www.nature.com/nature.rss
+  reason: failed validation
+- url: https://www.science.org/rss/news_current.xml
+  reason: failed validation
+- url: https://broadinstitute.org/?feed=rss2
+  reason: failed validation
+- url: https://scottaaronson.blog/feed
+  reason: failed validation
+- url: https://nature.com/?feed=rss2
+  reason: failed validation
+- url: https://broadinstitute.org/rss
+  reason: failed validation
+- url: https://scottaaronson.blog/feeds.xml
+  reason: failed validation
+- url: https://pnas.org/feed
+  reason: failed validation
+- url: https://broadinstitute.org/feed.xml
+  reason: failed validation
+- url: https://theartdesk.com/feeds/atom
+  reason: failed validation
+- url: https://theartdesk.com/rss
+  reason: failed validation
+- url: https://theartdesk.com/rss.xml
+  reason: failed validation
+- url: https://theartdesk.com/atom.xml
+  reason: failed validation
+- url: https://theartdesk.com/news/rss
+  reason: failed validation
+- url: https://theartdesk.com/?feed=rss2
+  reason: failed validation
+- url: https://theartdesk.com/feeds/rss
+  reason: failed validation
+- url: https://theartdesk.com/blog/atom.xml
+  reason: failed validation
+- url: https://theartdesk.com/blog/rss
+  reason: failed validation
+- url: https://theartdesk.com/?feed=atom
+  reason: failed validation
+- url: https://community.element14.com/rss
+  reason: failed validation
+- url: https://slashdot.org/slashdot.rss
+  reason: failed validation
+- url: https://itsfoss.com/feed/
+  reason: failed validation
+- url: https://news.mit.edu/rss
+  reason: failed validation
+- url: https://www.siliconrepublic.com/feed
+  reason: failed validation
+- url: https://www.computerweekly.com/rss
+  reason: failed validation
+- url: https://www.nature.com/nature.rss
+  reason: failed validation
+- url: https://distrowatch.com/news/dw.xml
+  reason: failed validation
+- url: https://www.frameweb.com/rss.xml
+  reason: failed validation
+- url: https://www.contemporist.com/feed/
+  reason: failed validation
+- url: https://www.bmj.com/rss
+  reason: failed validation
+- url: https://www.elconfidencial.com/rss
+  reason: failed validation
+- url: https://www.cbsnews.com/rss
+  reason: failed validation
+- url: https://rss.dw.com/rdf/rss-en-all
+  reason: failed validation
+- url: https://www.rt.com/rss
+  reason: failed validation
+- url: https://www.nature.com/nature.rss
+  reason: failed validation
+- url: https://www.sciencemag.org/rss/news_current.xml
+  reason: failed validation
+- url: https://news.mit.edu/rss
+  reason: failed validation
+- url: https://philosophybites.com/feed/
+  reason: failed validation
+- url: https://historyweb.com/?feed=atom
+  reason: failed validation
+- url: https://cabinetmagazine.org/rss
+  reason: failed validation
+- url: https://historyweb.com/?feed=rss
+  reason: failed validation
+- url: https://historyweb.com/?feed=rss2
+  reason: failed validation
+- url: https://vg247.com/feeds/
+  reason: failed validation
+- url: https://rockpapershotgun.com/feeds
+  reason: failed validation
+- url: https://rockpapershotgun.com/feeds/
+  reason: failed validation
+- url: https://vg247.com/feeds
+  reason: failed validation

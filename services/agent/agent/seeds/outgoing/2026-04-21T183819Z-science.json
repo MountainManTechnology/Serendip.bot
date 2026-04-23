@@ -1,0 +1,268 @@
+{
+  "generated_at": "2026-04-21T183819Z",
+  "source": "prototype_sitemap_bfs",
+  "category": "science",
+  "links": [
+    {
+      "url": "https://www.sciencemag.org/rss/news_current.xml",
+      "url_hash": "08fba17d524a624d5024cab36751e9b7cedc79d67c0e22c7895e32f72ccdbf73",
+      "seed_domain": "www.sciencemag.org",
+      "domain": "www.sciencemag.org",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/post-sitemap.xml",
+      "url_hash": "2af80f1fe8a191645f3612077376a2934f8043461b54da6eea45f1ce1aa6f127",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/nutd/sitemap/2026/4/articles.xml",
+      "url_hash": "190cd3f4677d5cb4617a4a7a2b4922b75e38c92f5be4d42629575c88806d9aa8",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/post-sitemap2.xml",
+      "url_hash": "6f690ae0826c8b15fc14ec6ff6ec2c46e7408ba253cd4a3aa4578d8f3d64e307",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/nutd/sitemap/2026/3/articles.xml",
+      "url_hash": "7ee0f083dc95cf62c2749f06484a68aecf5b7a73573b9158e3d237ab926ee82f",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/post-sitemap3.xml",
+      "url_hash": "b08d26c9e10fa2a5fd6c879962e222892d3d41caae5f49ae890e8c682be9426f",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/scitech/article/2001-12/hunt-god-particle/",
+      "url_hash": "e7b51218ac11ab5a9ede4dc2f6f7a5266530cca1f67cea9ce989d521585a325c",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/XLJEX5GHLMUST3RZRHSPZV2ETI.jpg?quality=85",
+      "url_hash": "4dcac2057691521885c70184e1e9a53ed9a71003f0eca1bc3fdd4893a4addea8",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/WFVROS3YI53JIFDUWTZO4CAPAM.jpg?quality=85",
+      "url_hash": "d12c3fee6f2409c0269cd414f7d7a628a7a3fcfbaf87d97239eb3ab3abeab52f",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/7PL5BWH2JYYE2V3VSNPPXDL73U.jpg?quality=85",
+      "url_hash": "fa08dc244084c5e8693ddad43ef009a2ec01e929458d159580160c13da4f6411",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/technology/article/2011-02/new-device-uses-electromagnetic-pulses-detonate-ieds-safe-distance/",
+      "url_hash": "a39020bc1e919c30154cb0418fe43ca4f54c5bb376342421496c3a7f41dacb75",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/TGPM5OCH357NC3CM4X24VRDMHQ.jpg?quality=85",
+      "url_hash": "6436f737b085c78267f3f2d0b1853333aec73ceb480b31476fe5ad626556aef4",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/science/article/2011-02/stress-research-may-have-accidentally-set-scientists-path-toward-baldness-cure/",
+      "url_hash": "2d5f59fe5965327e0950da5702e18b51e24688b5bdc37a9d0d8fb6498f24649f",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/DXAYKDDOGRH5W6L7AXJ6TW2OCM.jpeg?quality=85",
+      "url_hash": "1649b923d93478fd9e096e8d68fece896042d77839e382fe4618acbc0ae934d7",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/technology/article/2011-02/whats-name-darpa-acronyms-are-more-just-shorthand/",
+      "url_hash": "38290da530dda9393c6d13eb93043343065a4ca55f82edfcc84416b27f1015b9",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/science/article/2012-08/i-went-times-square-watch-curiositys-mars-landing-53-foot-screen/",
+      "url_hash": "b16f404cacef828a901cd5a86f929aee6851a25d493a40635f21ab9922cf24d2",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/2WLDYELDMLETFFKZ5YNUY77FFE.jpg?quality=85",
+      "url_hash": "5abd48f8a5082223db8c5de3fab0bac3e9725bac404e41012e6aa07b6027a79d",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/OHDXDF54KKAXSDMWOK5OE7SUIA.jpg?quality=85",
+      "url_hash": "c5a2b782209eef3dc67e2ba462024c4047fc1d62faee5994da004a448386e965",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/QWJ6744JPIFRJCXTLJI6BLOV4I.jpg?quality=85",
+      "url_hash": "90254bee282639802b878f561c29f10d830a512d45f9bba113de19c9a9257ab3",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/technology/article/2012-07/how-nfc-radios-will-help-visually-impaired/",
+      "url_hash": "611096e104e70186f4eb78895331dadca465f4b106a6fdf724bf266962323fe2",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/nutd/sitemap/2026/2/articles.xml",
+      "url_hash": "c618cccbe922c2b7d5634ab0bccccee1129a3f7c52b21affb2df42029ae580c3",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00415-z",
+      "url_hash": "99abc43ec504da7c9c33a139702012cd45c24ab0272babed2e8eab0fb4e4974f",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00418-w",
+      "url_hash": "0f4779ffc5739d0916268558929fb98b5c1ca515d9bf790dec498ee79ce0acdf",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00419-9",
+      "url_hash": "7dc685f06002091991e978daec7cabd087056c106cda49b436ec0435c21470c0",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00413-1",
+      "url_hash": "cc405c8e30df7cb270e518948ac1630d8ac341a6a29970ff128777cd1a47871f",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00411-3",
+      "url_hash": "2f616e7e91b74400d2439928a3150f8563bcfcb2323e8a647f4a7237df7c1b29",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00416-y",
+      "url_hash": "547b2a9aa366a4a1a065ddacf977deb666f491f9f548aa409b779a00ce2e9432",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00414-0",
+      "url_hash": "3f3c19c36abf3e72836500b555812f6f69971616715de2e288eadba121856312",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00412-2",
+      "url_hash": "4b4a0eb8249dd4f68dda3cf7432590edaa2bdb74fcac3f1194913679d7e5685b",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T18:38:19.839415+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    }
+  ]
+}

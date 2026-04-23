@@ -1,0 +1,41 @@
+{
+  "name": "serendip-bot",
+  "version": "2026.04.22.1",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "test": "npm run -w apps/api test",
+    "typecheck": "turbo typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "clean": "turbo clean && rm -rf node_modules",
+    "db:migrate": "dotenv -- npm run -w packages/db db:migrate",
+    "db:generate": "dotenv -- npm run -w packages/db db:generate",
+    "db:seed": "dotenv -- npm run -w packages/db db:seed",
+    "db:studio": "dotenv -- npm run -w packages/db db:studio",
+    "version:bump": "tsx scripts/version-bump.ts"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^11.0.0",
+    "prettier": "^3.2.5",
+    "tsx": "^4.21.0",
+    "turbo": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "packageManager": "npm@11.11.0",
+  "overrides": {
+    "esbuild": "^0.27.0",
+    "@esbuild-kit/core-utils": {
+      "esbuild": "^0.27.0"
+    }
+  }
+}

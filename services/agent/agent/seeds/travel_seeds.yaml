@@ -1,0 +1,15 @@
+category: travel
+count: 6
+feeds:
+- url: https://wanderlust.com/?feed=atom
+  status: found_via_probe
+- url: https://wanderlust.com/?feed=rss
+  status: found_via_probe
+- url: https://wanderlust.com/?feed=rss2
+  status: found_via_probe
+- url: https://wanderlust.com/rss
+  status: found_via_probe
+- url: https://wanderlust.com/feed
+  status: found_via_probe
+- url: https://wanderlust.com/feed/
+  status: found_via_probe

@@ -1,0 +1,47 @@
+# Celery worker image.
+# Build context: ./services/agent
+# Scale: docker compose up --scale agent-worker=N
+
+FROM python:3.12-slim AS builder
+WORKDIR /build
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc libxml2-dev libxslt-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY pyproject.toml ./
+RUN pip install --user --no-cache-dir .
+
+FROM python:3.12-slim
+
+ARG VERSION=dev
+LABEL org.opencontainers.image.source="https://github.com/MountainManTechnology/Serendip.bot"
+LABEL org.opencontainers.image.version="${VERSION}"
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends curl \
+ && rm -rf /var/lib/apt/lists/* \
+ && useradd --create-home --uid 1000 celery
+USER celery
+WORKDIR /app
+
+COPY --from=builder /root/.local /home/celery/.local
+COPY --chown=celery:celery . .
+
+ENV PATH=/home/celery/.local/bin:$PATH \
+    PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    C_FORCE_ROOT=0
+
+# Override QUEUES/CONCURRENCY/POOL per deployment via docker-compose env.
+ENV QUEUES=discovery,finalize \
+    CONCURRENCY=4 \
+    POOL=prefork
+
+CMD ["sh", "-c", "celery -A agent.celery_app worker \
+     -Q ${QUEUES} \
+     --loglevel=info \
+     --pool=${POOL} \
+     --concurrency=${CONCURRENCY} \
+     --max-tasks-per-child=200 \
+     --without-gossip --without-mingle"]

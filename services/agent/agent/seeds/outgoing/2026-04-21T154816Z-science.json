@@ -1,0 +1,907 @@
+{
+  "generated_at": "2026-04-21T154816Z",
+  "source": "prototype_sitemap_bfs",
+  "category": "science",
+  "links": [
+    {
+      "url": "https://www.nature.com/nutd/sitemap/2026/4/articles.xml",
+      "url_hash": "190cd3f4677d5cb4617a4a7a2b4922b75e38c92f5be4d42629575c88806d9aa8",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://cdn.mos.cms.futurecdn.net/RRhm5qLPWdqTGorj3rLTP4.jpg",
+      "url_hash": "6a870c0b1a67d7107a172fe382a6820bd954b454a8e82ce6a6f7ea1a547cbf15",
+      "seed_domain": "www.livescience.com",
+      "domain": "cdn.mos.cms.futurecdn.net",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.8
+    },
+    {
+      "url": "https://www.sciencemag.org/rss/news_current.xml",
+      "url_hash": "08fba17d524a624d5024cab36751e9b7cedc79d67c0e22c7895e32f72ccdbf73",
+      "seed_domain": "www.sciencemag.org",
+      "domain": "www.sciencemag.org",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/sitemap-news.xml",
+      "url_hash": "498cc0f10fc43671e32c98b3d672b019f9223fe4a965deb3094acb837a27e358",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/post-sitemap.xml",
+      "url_hash": "2af80f1fe8a191645f3612077376a2934f8043461b54da6eea45f1ce1aa6f127",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.space.com/sitemap-news.xml",
+      "url_hash": "3b5aeaa0c7d44e7af3889e9ae2b4d6924275fdc79689ed152c9f73b657f55477",
+      "seed_domain": "www.space.com",
+      "domain": "www.space.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/nutd/sitemap/2026/3/articles.xml",
+      "url_hash": "7ee0f083dc95cf62c2749f06484a68aecf5b7a73573b9158e3d237ab926ee82f",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://cdn.mos.cms.futurecdn.net/MSLPa44tfqqDwhiMYN85yR.png",
+      "url_hash": "1ad5b923b37d65586c75490767b8890fc30384582680f71cd88ba648fc7c7d8b",
+      "seed_domain": "www.livescience.com",
+      "domain": "cdn.mos.cms.futurecdn.net",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.8
+    },
+    {
+      "url": "https://www.livescience.com/sitemap-authors.xml",
+      "url_hash": "4880a60c28ddf4f03c723c17f965ee68a30804c76ff286e3e7bdb09066100294",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/post-sitemap2.xml",
+      "url_hash": "6f690ae0826c8b15fc14ec6ff6ec2c46e7408ba253cd4a3aa4578d8f3d64e307",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.space.com/sitemap-authors.xml",
+      "url_hash": "fbaf20c72721d0e59d66671620fbc89f4ee603cd80d0710db230799ba42f076b",
+      "seed_domain": "www.space.com",
+      "domain": "www.space.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/nutd/sitemap/2026/2/articles.xml",
+      "url_hash": "c618cccbe922c2b7d5634ab0bccccee1129a3f7c52b21affb2df42029ae580c3",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/nutd/sitemap/2026/1/articles.xml",
+      "url_hash": "667e7949d909fe4c54f4284cc76b60ad71de57a6970a01bade254e50c8dd69b0",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/nutd/sitemap/2025/12/articles.xml",
+      "url_hash": "4e62408d9acc4ed052d13065da4b160ed9b2e92796de5924fb3f97ccc27aac0d",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00415-z",
+      "url_hash": "99abc43ec504da7c9c33a139702012cd45c24ab0272babed2e8eab0fb4e4974f",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00418-w",
+      "url_hash": "0f4779ffc5739d0916268558929fb98b5c1ca515d9bf790dec498ee79ce0acdf",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00419-9",
+      "url_hash": "7dc685f06002091991e978daec7cabd087056c106cda49b436ec0435c21470c0",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00413-1",
+      "url_hash": "cc405c8e30df7cb270e518948ac1630d8ac341a6a29970ff128777cd1a47871f",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00411-3",
+      "url_hash": "2f616e7e91b74400d2439928a3150f8563bcfcb2323e8a647f4a7237df7c1b29",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00416-y",
+      "url_hash": "547b2a9aa366a4a1a065ddacf977deb666f491f9f548aa409b779a00ce2e9432",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00414-0",
+      "url_hash": "3f3c19c36abf3e72836500b555812f6f69971616715de2e288eadba121856312",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00412-2",
+      "url_hash": "4b4a0eb8249dd4f68dda3cf7432590edaa2bdb74fcac3f1194913679d7e5685b",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-026-00410-4",
+      "url_hash": "8735e6630ae928fe21a26c169ff3b46da4e4d9619237ef753a2273dda01dc0b2",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-025-00409-3",
+      "url_hash": "70d8b64d77fd56019ec8ea45857b4b7092f14e1cdf3c43deece3dd52094fc8aa",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.nature.com/articles/s41387-025-00408-4",
+      "url_hash": "528f46d4a412dfb4c5c1f8300077cfc34651446f83768247fa8e338b90b373e3",
+      "seed_domain": "www.nature.com",
+      "domain": "www.nature.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://cdn.mos.cms.futurecdn.net/mhmyo2aVVXYBZzv9uNgsfH.jpg",
+      "url_hash": "92c3cbc652c58c0ea5b2494a1cc024ad77a395fc875d19ceb982e4c11320844d",
+      "seed_domain": "www.livescience.com",
+      "domain": "cdn.mos.cms.futurecdn.net",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.8
+    },
+    {
+      "url": "https://cdn.mos.cms.futurecdn.net/UC8DRafT5WorTr5aHpc7gQ.jpg",
+      "url_hash": "4d1e1512f2aa148bc6ccd6e623d8a73a7745c895ee3671a9d2c2e63bf6d6a5a4",
+      "seed_domain": "www.livescience.com",
+      "domain": "cdn.mos.cms.futurecdn.net",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.8
+    },
+    {
+      "url": "https://cdn.mos.cms.futurecdn.net/JzzCNgNDazBDUSoV4e4fAL.jpg",
+      "url_hash": "2aad9c2fc44ed571715e84f6a613ef23d34ba979273daf9d3d73f32b2a2aab18",
+      "seed_domain": "www.livescience.com",
+      "domain": "cdn.mos.cms.futurecdn.net",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.8
+    },
+    {
+      "url": "https://cdn.mos.cms.futurecdn.net/ynpF5DsNWbBuyuEai2V8Je.jpg",
+      "url_hash": "84adb63ea77096fe9c45b853bd4031a34514316c2b48629d98d2bac60584115f",
+      "seed_domain": "www.space.com",
+      "domain": "cdn.mos.cms.futurecdn.net",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.8
+    },
+    {
+      "url": "https://cdn.mos.cms.futurecdn.net/WLxkrdeCMJGAZthhVStvMd.jpg",
+      "url_hash": "096fa1805091bb0b444e3602a75a76f3bf0eb53ab0c0094d47f99005ab298444",
+      "seed_domain": "www.space.com",
+      "domain": "cdn.mos.cms.futurecdn.net",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.8
+    },
+    {
+      "url": "https://cdn.mos.cms.futurecdn.net/ziu2wrUcA74BrYYY9rVBvF.jpg",
+      "url_hash": "6d8142e319c2d130f0a92279184365408aa4153df1e7434810b67a496f9faede",
+      "seed_domain": "www.space.com",
+      "domain": "cdn.mos.cms.futurecdn.net",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.8
+    },
+    {
+      "url": "https://cdn.mos.cms.futurecdn.net/LregU54qote9w7n5HT4DwW.jpg",
+      "url_hash": "99156c1826485ec809bd6a3b2b00a0f322b133dd71657c90076661aebbef9ca8",
+      "seed_domain": "www.space.com",
+      "domain": "cdn.mos.cms.futurecdn.net",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.8
+    },
+    {
+      "url": "https://cdn.mos.cms.futurecdn.net/N4uYzBckS7mg5MNbfYbbh5.jpg",
+      "url_hash": "a62a7dc30bacc6672330f87484242218bdb1c33333a4e58b38d3db5752e77d6c",
+      "seed_domain": "www.space.com",
+      "domain": "cdn.mos.cms.futurecdn.net",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.8
+    },
+    {
+      "url": "https://www.livescience.com/sitemap-basic.xml",
+      "url_hash": "8aeab1b6adb9c62d6f140647a82e1235c10cea0bef95cb3303830ba9f1c6dda4",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/sitemap-categories.xml",
+      "url_hash": "1bb24a76adff5a897f18dccdbf6031fb6c1ebbc369530220033e89c5c9e2713e",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/sitemap-article-types.xml",
+      "url_hash": "959fc57ee42efc1592f7bb15935399d7b97b409502ba4ee865e230f88dee599b",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/planet-earth/weather/florida-is-facing-its-most-intense-drought-in-15-years-heres-how-it-got-so-bad-and-how-long-it-will-last",
+      "url_hash": "8a50b86fe37c40c9da5c55455b7633dcc861b1e080910e7ab611dc92fb6ae7b4",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/archaeology/neanderthals/neanderthal-toddlers-grew-faster-than-modern-humans-probably-because-of-the-harsh-environment-they-evolved-in",
+      "url_hash": "c149b843f5e215837049e6b16106447aab3c2de4830c1287594107d379e35520",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/planet-earth/climate-change/nations-need-to-prepare-now-key-atlantic-ocean-current-is-much-closer-to-collapse-than-scientists-thought",
+      "url_hash": "8a1b0aefe5fb064a4fb69e7b2649ba89649c51c7fd002e9fff16a92e7a970138",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/technology/artificial-intelligence/were-the-best-servants-anyone-could-dream-of-ai-superintelligence-has-no-need-to-enslave-humans-because-were-already-bowing-to-it",
+      "url_hash": "acb7e24b06dc1c28ce123bb2b62a34e0dc6120546a3ec120920e318a2b7118c0",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/health/medicine-drugs/new-blood-test-aims-to-spot-liver-scarring-before-it-paves-the-way-to-cancer",
+      "url_hash": "1895f9facbcb339baedc38efa7fde1c327383fbb55b4c9bb773fd4ee4c7fedc4",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/author/livescience-com",
+      "url_hash": "b89b29d58cc149f36e4cbb93c1ebbe33265fd49de6c09dcc6d39571411ffc51d",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/author/livescience-com/page/2",
+      "url_hash": "e118cc098cf4f56c1ba5f519ae4672687b43751d86c6578d1612fe54fc73d51d",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/author/livescience-com/page/3",
+      "url_hash": "5cea3b1cff2ddb6e6417a3fbc33748e12de6e218328d5fde5a04b85597c81d4d",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/author/livescience-com/page/4",
+      "url_hash": "e2e4cf8dcf1e6db3a2749424316b630b60ef8f78f69ea66f57b80b97531be1fa",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/author/livescience-com/page/5",
+      "url_hash": "14ed0727e44af9dec40938e3d8e461d5914e69886733532dd10654a3ffc03418",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/author/kenna-hughes-castleberry",
+      "url_hash": "134866f72b1f6aff6ce7b92f33c76e7045c2de0398a0afd9b4a7b0720b1ee502",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/author/kenna-hughes-castleberry/page/2",
+      "url_hash": "0943cf67eefa3c53e18449e1cd6e092ed637d219ce78d0dc5c57e3e59a040afb",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/author/kristina-killgrove",
+      "url_hash": "12e635034aad61d02543ea5f115ef6327ba84b95f6b78b350affdcc3de5318b6",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/author/kristina-killgrove/page/2",
+      "url_hash": "8b4c4696922dfa439afe378cfc6fb2e39baeaf8bb221e08f46b57a92a82f4241",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/author/kristina-killgrove/page/3",
+      "url_hash": "687d1c57ecc15cce6cbf4155bd3f49c748afbb2636d89bce995c8b189d724add",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/",
+      "url_hash": "e96e0ffe7beacc73fe14f0ee00e22081e5ffc884f431a2d426f181b06dcf4484",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/archive",
+      "url_hash": "4c5f4546342c818e2c2f039ad2c424d0b80d56b88bdaa51b1eb91a2c97c34289",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/archives",
+      "url_hash": "f254284ccb142395af45a58a51a9518890e7334e93703194fbee59fa5db23e61",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/space/astronomy/planets/exoplanets",
+      "url_hash": "8069899d3d610ccc145853ce4a9b0f243520cadb0f6f3762af7a39f120f811a6",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/space/astronomy/planets/exoplanets/page/2",
+      "url_hash": "113917f27426f329c92eb7e337fc0d2e406170a327aa3ce642e9ff70b356e3db",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/space/astronomy/planets/exoplanets/page/3",
+      "url_hash": "8747928e52e6c555898939c7dd3bd43983c6b15c088f9092e5398d7f30cf52b5",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/space/astronomy/planets/exoplanets/page/4",
+      "url_hash": "3bdb0362ede0d1fcd14f9fc33d46a35be50be293ac1c0f3d01c47a8c06c1b418",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/space/astronomy/asteroids",
+      "url_hash": "b9cf49bf7de4dea00f88b13cbb01a5789584f2279f355975dfafe9f62b2a9f43",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/space/astronomy/asteroids/page/2",
+      "url_hash": "717756b2b7a9a6744053608aa91b8d5c1aec08c8e196068d0d3676e7809fd75d",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/space/astronomy/asteroids/page/3",
+      "url_hash": "e4195f59f5f82ed319b31970026af3cf9c8c6e5e313d78cd8add183671fe8dda",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/space/astronomy/asteroids/page/4",
+      "url_hash": "fc572109a10a7e10af370b28b541eb8bc3f6ffce41fe4ae4ac04c88560d3c5aa",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/space/astronomy/asteroids/page/5",
+      "url_hash": "721fde26a82f5b3ae38949d5af331ba492bbc6b868ea4d9d8551790ec5903a86",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/space/astronomy/asteroids/page/6",
+      "url_hash": "6585f95c85641141a14313ef7321833b2fd486a09c65ffb22483f952e60f31fa",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/news",
+      "url_hash": "f76d058f97f5ce92e37d7b6b91d14e5580b3c21aeb4fc9ccf05d0de8e7e9dadb",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/news/page/2",
+      "url_hash": "3872263d2bec99a170094b126ef20e73075b6fd5394d1d243a76f4311017be7f",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/news/page/3",
+      "url_hash": "ff0cf7b37c41090109a1fd14ea6318030f33bd4a7f0103bb92e66f8f54812dff",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/news/page/4",
+      "url_hash": "e4cccbb7ca45680e93d0077c63eea4d328949597fa613773e98a9076c67618b1",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/news/page/5",
+      "url_hash": "4fc17c96aa1719e846bd4351c3550e485d2744218b1c44ad2e4788025f04996c",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/news/page/6",
+      "url_hash": "ed57c9ed84eba12fdfceca933b459197952650fd12237920fb5ed5fd623a63d8",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/news/page/7",
+      "url_hash": "ae8136f91652a0d1063060d412616e70a50841b72ff97d5f534410a4d7d39bf2",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/news/page/8",
+      "url_hash": "719bd4b74816716764e07cb361e6cfe4e10ae2be5be304ab0bc67db59525e382",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/news/page/9",
+      "url_hash": "9ec8775d36d01d6b60e985a863be54fd76ade4b96c0c897db75e70890f2248c4",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.livescience.com/reviews",
+      "url_hash": "3a72af453382ca6ac1b7ca0de5b133978e1d722970711e03f1b0e95dd4018833",
+      "seed_domain": "www.livescience.com",
+      "domain": "www.livescience.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/post-sitemap3.xml",
+      "url_hash": "b08d26c9e10fa2a5fd6c879962e222892d3d41caae5f49ae890e8c682be9426f",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/post-sitemap4.xml",
+      "url_hash": "1c784280abaa6e34b55a2ff4fb073cf8c8be56c1ce74b57d00efa9a5a68534ce",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/post-sitemap5.xml",
+      "url_hash": "46fd2520589898227ae439bac137d839de478cdf514b04dc531964b750484110",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "sitemap",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/scitech/article/2001-12/hunt-god-particle/",
+      "url_hash": "e7b51218ac11ab5a9ede4dc2f6f7a5266530cca1f67cea9ce989d521585a325c",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/XLJEX5GHLMUST3RZRHSPZV2ETI.jpg?quality=85",
+      "url_hash": "4dcac2057691521885c70184e1e9a53ed9a71003f0eca1bc3fdd4893a4addea8",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/WFVROS3YI53JIFDUWTZO4CAPAM.jpg?quality=85",
+      "url_hash": "d12c3fee6f2409c0269cd414f7d7a628a7a3fcfbaf87d97239eb3ab3abeab52f",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/7PL5BWH2JYYE2V3VSNPPXDL73U.jpg?quality=85",
+      "url_hash": "fa08dc244084c5e8693ddad43ef009a2ec01e929458d159580160c13da4f6411",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/QZ6IU7ALOCXR3Y2CAEEPG4DMH4.jpg?quality=85",
+      "url_hash": "88730c0a76de4fa96aa9a786f49b419221be0703f645581128373d25bdd3d69e",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/EPKQPK5L2DDLZ6S25MEQQVFBOQ.jpg?quality=85",
+      "url_hash": "53efc46a1f76d17e4db7f72be7d53abeb6131f2eca53980093f713ac67bc4f63",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/R5VODZM5IVZ4SUPJ6OF77WYMSM.jpg?quality=85",
+      "url_hash": "95b3fa5e22ae01c8d4a65e97deab352eb0b06eea2a13a52bd4acfaa5c1e45e83",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/PXUPGNIFISIGICMB2X5OT5NTXU.jpg?quality=85",
+      "url_hash": "aea6635f0dc0e4fcea7fee7dda4558c34d02458abaed9e5a0be1affe5dbe4ba7",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/YBYBRRLZ5HDIS3SQ2W325TBT7Q.jpg?quality=85",
+      "url_hash": "abadbbc2186173193b24801feeb368c3d799bad6818a7f799ec2618385ba5a9f",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/technology/article/2011-02/new-device-uses-electromagnetic-pulses-detonate-ieds-safe-distance/",
+      "url_hash": "a39020bc1e919c30154cb0418fe43ca4f54c5bb376342421496c3a7f41dacb75",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/TGPM5OCH357NC3CM4X24VRDMHQ.jpg?quality=85",
+      "url_hash": "6436f737b085c78267f3f2d0b1853333aec73ceb480b31476fe5ad626556aef4",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/science/article/2011-02/stress-research-may-have-accidentally-set-scientists-path-toward-baldness-cure/",
+      "url_hash": "2d5f59fe5965327e0950da5702e18b51e24688b5bdc37a9d0d8fb6498f24649f",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/DXAYKDDOGRH5W6L7AXJ6TW2OCM.jpeg?quality=85",
+      "url_hash": "1649b923d93478fd9e096e8d68fece896042d77839e382fe4618acbc0ae934d7",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/technology/article/2011-02/whats-name-darpa-acronyms-are-more-just-shorthand/",
+      "url_hash": "38290da530dda9393c6d13eb93043343065a4ca55f82edfcc84416b27f1015b9",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/PJGP5RBJOSZSYYDJKTDPSXNZVE.png?quality=85",
+      "url_hash": "71661027fb4495f64c0e0df7c70b74136cb6333baf3fb4827e878ad006b74951",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/PGL75CYFQMUFEV7BAOIJUO3XJ4.jpg?quality=85",
+      "url_hash": "1254072a9653bc8f1274820c02efb0cee839e69f11db45fd8e3db509b53ee553",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/JOPZKVTXHOZ26VD7JBQJHTHHC4.jpeg?quality=85",
+      "url_hash": "81c2a4bad266c25bae1538952b207c772638f149020601f54cb391b93d00c9e6",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/5WMUKBFIUIPOOIPZ4TYOYBBWBQ.jpeg?quality=85",
+      "url_hash": "d5d8174a3f6fcbfcea6540751743b3077b48f2c30ab9486e5755b80b020237da",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/2OF3LWRATYGRVDCZO5MVFVLWJM.jpeg?quality=85",
+      "url_hash": "364d213e266f60ccb167edc5b7dcbc574cd6463053a7cefe8d1da3d20f038356",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/science/article/2012-08/i-went-times-square-watch-curiositys-mars-landing-53-foot-screen/",
+      "url_hash": "b16f404cacef828a901cd5a86f929aee6851a25d493a40635f21ab9922cf24d2",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/2WLDYELDMLETFFKZ5YNUY77FFE.jpg?quality=85",
+      "url_hash": "5abd48f8a5082223db8c5de3fab0bac3e9725bac404e41012e6aa07b6027a79d",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/OHDXDF54KKAXSDMWOK5OE7SUIA.jpg?quality=85",
+      "url_hash": "c5a2b782209eef3dc67e2ba462024c4047fc1d62faee5994da004a448386e965",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    },
+    {
+      "url": "https://www.popsci.com/wp-content/uploads/2019/03/18/QWJ6744JPIFRJCXTLJI6BLOV4I.jpg?quality=85",
+      "url_hash": "90254bee282639802b878f561c29f10d830a512d45f9bba113de19c9a9257ab3",
+      "seed_domain": "www.popsci.com",
+      "domain": "www.popsci.com",
+      "discovered_at": "2026-04-21T15:48:16.705741+00:00",
+      "source": "link_neighborhood",
+      "discovery_score": 0.5
+    }
+  ]
+}

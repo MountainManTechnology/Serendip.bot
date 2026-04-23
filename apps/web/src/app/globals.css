@@ -1,0 +1,122 @@
+@import 'tailwindcss';
+
+@theme {
+  /* ── Brand palette ────────────────────────────────── */
+  --color-midnight: #0f0d1a;
+  --color-deep-ink: #1c1730;
+  --color-ink: #2d2545;
+  --color-gold: #e8a020;
+  --color-gold-light: #f5c55a;
+  --color-gold-dark: #c07a10;
+  --color-teal: #2ec4b6;
+  --color-teal-light: #72dfd6;
+  --color-teal-dark: #1a9e92;
+  --color-violet-brand: #7b5ea7;
+  --color-violet-light: #a98fd4;
+  --color-violet-dark: #5a3f85;
+
+  /* ── Light neutrals ───────────────────────────────── */
+  --color-ivory: #faf8f2;
+  --color-paper: #f3f0e7;
+  --color-mist: #e6e2d8;
+  --color-smoke: #c8c3b5;
+
+  /* ── Accent pales ─────────────────────────────────── */
+  --color-gold-pale: #fdf3d9;
+  --color-teal-pale: #e0faf8;
+  --color-violet-pale: #f0eaf8;
+
+  /* ── Mood palette (brand-corrected) ──────────────── */
+  --color-mood-wonder: #7b5ea7;
+  --color-mood-learn: #3a7bd5;
+  --color-mood-create: #e07a5f;
+  --color-mood-laugh: #d4a017;
+  --color-mood-chill: #4a9b7a;
+
+  /* ── Mood tint backgrounds ────────────────────────── */
+  --color-mood-wonder-bg: #f0eaf8;
+  --color-mood-learn-bg: #e8f0fc;
+  --color-mood-create-bg: #fdeee9;
+  --color-mood-laugh-bg: #fef9e6;
+  --color-mood-chill-bg: #e5f5ef;
+
+  /* ── Typography ───────────────────────────────────── */
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-lora), ui-serif, Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  /* ── Easing ───────────────────────────────────────── */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+
+  /* ── Shadows ──────────────────────────────────────── */
+  --shadow-card: 0 2px 8px rgba(15, 13, 26, 0.08), 0 1px 3px rgba(15, 13, 26, 0.06);
+  --shadow-card-hover: 0 8px 24px rgba(15, 13, 26, 0.12), 0 2px 8px rgba(15, 13, 26, 0.08);
+  --shadow-gold: 0 4px 20px rgba(232, 160, 32, 0.35);
+}
+
+/* ── Base styles ──────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #2d2545;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  p, li, dd, dt {
+    font-family: var(--font-serif);
+  }
+
+  code, pre, kbd {
+    font-family: var(--font-mono);
+  }
+}
+
+/* ── Keyframes ────────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes jiggle {
+  0%, 100% { transform: rotate(0deg); }
+  20% { transform: rotate(-12deg); }
+  60% { transform: rotate(10deg); }
+  80% { transform: rotate(-6deg); }
+}
+
+/* ── Scroll-reveal animation ──────────────────────────── */
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+}

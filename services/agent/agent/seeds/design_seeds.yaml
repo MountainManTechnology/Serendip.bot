@@ -1,0 +1,35 @@
+category: design
+count: 16
+feeds:
+- url: https://www.designboom.com/feed/
+  status: valid
+- url: https://www.dezeen.com/feed/
+  status: valid
+- url: https://www.archdaily.com/feed/
+  status: valid
+- url: https://www.core77.com/feed
+  status: valid
+- url: https://www.adweek.com/feed/
+  status: valid
+- url: https://www.creativebloq.com/feed
+  status: valid
+- url: https://www.printmag.com/feed/
+  status: valid
+- url: https://design-milk.com/feed/
+  status: valid
+- url: https://www.frameweb.com/rss.xml
+  status: valid
+- url: https://www.archdaily.com/feed
+  status: valid
+- url: https://architizer.com/blog/feed/
+  status: valid
+- url: https://www.dezeen.com/feed/
+  status: valid
+- url: https://interiorzine.com/feed/
+  status: valid
+- url: https://www.contemporist.com/feed/
+  status: valid
+- url: https://design-milk.com/feed/
+  status: valid
+- url: https://logodesignlove.com/feed/
+  status: valid

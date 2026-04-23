@@ -1,0 +1,25 @@
+category: food
+count: 11
+feeds:
+- url: https://www.theguardian.com/food/rss
+  status: valid
+- url: https://smittenkitchen.com/feed/
+  status: valid
+- url: https://minimalistbaker.com/feed/
+  status: valid
+- url: https://cookieandkate.com/feed/
+  status: valid
+- url: https://www.howsweeteats.com/feed/
+  status: valid
+- url: https://natashaskitchen.com/feed/
+  status: valid
+- url: https://damndelicious.net/feed/
+  status: valid
+- url: https://www.gimmesomeoven.com/feed/
+  status: valid
+- url: https://www.recipetineats.com/feed/
+  status: valid
+- url: https://cafedelites.com/feed/
+  status: valid
+- url: https://pinchofyum.com/feed/
+  status: valid

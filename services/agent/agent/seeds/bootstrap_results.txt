@@ -1,0 +1,408 @@
+🚀 Running all 13 categories in parallel (500K tokens/min)
+
+======================================================================
+🔍 BOOTSTRAPPING: SCIENCE
+======================================================================
+
+  📡 major publications and established news sites...
+
+======================================================================
+🔍 BOOTSTRAPPING: CULTURE
+======================================================================
+
+  📡 major publications and established news sites...
+
+======================================================================
+🔍 BOOTSTRAPPING: TECHNOLOGY
+======================================================================
+
+  📡 major publications and established news sites...
+
+======================================================================
+🔍 BOOTSTRAPPING: DESIGN
+======================================================================
+
+  📡 major publications and established news sites...
+
+======================================================================
+🔍 BOOTSTRAPPING: HEALTH
+======================================================================
+
+  📡 major publications and established news sites...
+
+======================================================================
+🔍 BOOTSTRAPPING: FOOD
+======================================================================
+
+  📡 major publications and established news sites...
+
+======================================================================
+🔍 BOOTSTRAPPING: NATURE
+======================================================================
+
+  📡 major publications and established news sites...
+
+======================================================================
+🔍 BOOTSTRAPPING: HUMOR
+======================================================================
+
+  📡 major publications and established news sites...
+
+======================================================================
+🔍 BOOTSTRAPPING: TRAVEL
+======================================================================
+
+  📡 major publications and established news sites...
+
+======================================================================
+🔍 BOOTSTRAPPING: GENERAL
+======================================================================
+
+  📡 major publications and established news sites...
+
+======================================================================
+🔍 BOOTSTRAPPING: PHILOSOPHY
+======================================================================
+
+  📡 major publications and established news sites...
+
+======================================================================
+🔍 BOOTSTRAPPING: HISTORY
+======================================================================
+
+  📡 major publications and established news sites...
+
+======================================================================
+🔍 BOOTSTRAPPING: GAMING
+======================================================================
+
+  📡 major publications and established news sites...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 44, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:08.130331Z"}
+    ✓ Got 1 domains
+
+  📡 independent blogs and newsletters...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 51, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:08.178193Z"}
+    ✓ Got 1 domains
+
+  📡 independent blogs and newsletters...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 65, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:08.320838Z"}
+    ✓ Got 8 domains
+
+  📡 independent blogs and newsletters...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 81, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:08.500733Z"}
+    ✓ Got 2 domains
+
+  📡 independent blogs and newsletters...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 104, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:08.629522Z"}
+    ✓ Got 10 domains
+
+  📡 independent blogs and newsletters...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 68, "output_tokens": 122, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:08.818492Z"}
+    ✓ Got 2 domains
+
+  📡 independent blogs and newsletters...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 28, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:08.893349Z"}
+    ✓ Got 1 domains
+
+  📡 technical and academic feeds...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 68, "output_tokens": 125, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:08.898242Z"}
+    ✓ Got 8 domains
+
+  📡 independent blogs and newsletters...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 133, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:08.905013Z"}
+    ✓ Got 2 domains
+
+  📡 independent blogs and newsletters...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 87, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:09.418710Z"}
+    ✓ Got 6 domains
+
+  📡 technical and academic feeds...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 66, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:09.571290Z"}
+    ✓ Got 2 domains
+
+  📡 technical and academic feeds...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 86, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:09.602807Z"}
+    ✓ Got 5 domains
+
+  📡 technical and academic feeds...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 206, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:09.706607Z"}
+    ✓ Got 27 domains
+
+  📡 independent blogs and newsletters...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 66, "output_tokens": 58, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:09.846672Z"}
+    ✓ Got 1 domains
+
+  📡 technical and academic feeds...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 49, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:09.966914Z"}
+    ✓ Got 1 domains
+
+  📡 niche and specialized publications...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 88, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:09.968275Z"}
+    ✓ Got 1 domains
+
+  📡 technical and academic feeds...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 100, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:10.400331Z"}
+    ✓ Got 5 domains
+
+  📡 technical and academic feeds...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 66, "output_tokens": 110, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:10.567247Z"}
+    ✓ Got 4 domains
+
+  📡 technical and academic feeds...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 53, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:10.685239Z"}
+    ✓ Got 1 domains
+
+  📡 niche and specialized publications...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 81, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:10.696916Z"}
+    ✓ Got 4 domains
+
+  📡 niche and specialized publications...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 60, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:10.765134Z"}
+    ✓ Got 2 domains
+
+  📡 international and regional sources...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 78, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:10.877147Z"}
+    ✓ Got 1 domains
+
+  📡 niche and specialized publications...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 310, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:10.893081Z"}
+    ✓ Got 51 domains
+
+  📡 independent blogs and newsletters...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 328, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:10.937004Z"}
+    ✓ Got 55 domains
+
+  📡 independent blogs and newsletters...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 68, "output_tokens": 79, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:10.966462Z"}
+    ✓ Got 1 domains
+
+  📡 niche and specialized publications...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 26, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:11.005089Z"}
+    ✓ Got 1 domains
+
+  📡 niche and specialized publications...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 90, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:11.187003Z"}
+    ✓ Got 2 domains
+
+  📡 niche and specialized publications...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 102, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:11.231240Z"}
+    ✓ Got 2 domains
+
+  📡 technical and academic feeds...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 402, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:11.573179Z"}
+    ✓ Got 45 domains
+
+  📡 independent blogs and newsletters...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 68, "output_tokens": 75, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:11.753144Z"}
+    ✓ Got 4 domains
+
+  📡 niche and specialized publications...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 62, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:12.014749Z"}
+    ✓ Got 2 domains
+
+  📡 international and regional sources...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 64, "output_tokens": 82, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:12.078523Z"}
+    ✓ Got 2 domains
+
+  🔗 Getting RSS feed URLs for 7 domains...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 66, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:12.120715Z"}
+    ✓ Got 1 domains
+
+  📡 technical and academic feeds...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 54, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:12.156733Z"}
+    ✓ Got 0 domains
+
+  📡 niche and specialized publications...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 85, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:12.295128Z"}
+    ✓ Got 6 domains
+
+  📡 technical and academic feeds...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 87, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:12.300457Z"}
+    ✓ Got 1 domains
+
+  📡 international and regional sources...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 147, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:12.328608Z"}
+    ✓ Got 18 domains
+
+  📡 international and regional sources...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 100, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:12.534378Z"}
+    ✓ Got 3 domains
+
+  📡 international and regional sources...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 93, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:12.796054Z"}
+    ✓ Got 7 domains
+
+  📡 technical and academic feeds...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 66, "output_tokens": 154, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:12.815275Z"}
+    ✓ Got 12 domains
+
+  📡 international and regional sources...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 39, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:13.035676Z"}
+    ✓ Got 1 domains
+
+  📡 international and regional sources...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 66, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:13.144708Z"}
+    ✓ Got 0 domains
+
+  📡 niche and specialized publications...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 64, "output_tokens": 74, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:13.406428Z"}
+    ✓ Got 1 domains
+
+  🔗 Getting RSS feed URLs for 10 domains...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 97, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:13.783719Z"}
+    ✓ Got 7 domains
+
+  📡 niche and specialized publications...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 64, "output_tokens": 80, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:13.909313Z"}
+    ✓ Got 2 domains
+
+  🔗 Getting RSS feed URLs for 20 domains...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 64, "output_tokens": 114, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:14.014555Z"}
+    ✓ Got 3 domains
+
+  🔗 Getting RSS feed URLs for 32 domains...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 64, "output_tokens": 61, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:14.061031Z"}
+    ✓ Got 2 domains
+
+  🔗 Getting RSS feed URLs for 32 domains...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 73, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:14.128793Z"}
+    ✓ Got 1 domains
+
+  📡 niche and specialized publications...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 440, "output_tokens": 85, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:14.689160Z"}
+🤖 Generated 0 feed URLs to validate
+❌ No feeds discovered for design
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 108, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:14.780772Z"}
+    ✓ Got 3 domains
+
+  📡 international and regional sources...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 189, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:15.078519Z"}
+    ✓ Got 20 domains
+
+  🔗 Getting RSS feed URLs for 36 domains...
+{"task": "quality_eval", "tier": 1, "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}", "event": "llm_tier_failed", "level": "warning", "timestamp": "2026-04-21T06:03:15.776542Z"}
+      ✗ Error getting URLs for batch: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}
+🤖 Generated 0 feed URLs to validate
+❌ No feeds discovered for gaming
+{"task": "quality_eval", "tier": 1, "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}", "event": "llm_tier_failed", "level": "warning", "timestamp": "2026-04-21T06:03:15.777604Z"}
+      ✗ Error getting URLs for batch: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}
+🤖 Generated 0 feed URLs to validate
+❌ No feeds discovered for culture
+{"task": "quality_eval", "tier": 1, "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}", "event": "llm_tier_failed", "level": "warning", "timestamp": "2026-04-21T06:03:15.790781Z"}
+      ✗ Error getting URLs for batch: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}
+🤖 Generated 0 feed URLs to validate
+❌ No feeds discovered for travel
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 53, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:16.701879Z"}
+    ✓ Got 2 domains
+
+  📡 international and regional sources...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 187, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:16.778124Z"}
+    ✓ Got 16 domains
+
+  📡 international and regional sources...
+{"task": "quality_eval", "tier": 1, "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}", "event": "llm_tier_failed", "level": "warning", "timestamp": "2026-04-21T06:03:16.973830Z"}
+      ✗ Error getting URLs for batch: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}
+🤖 Generated 0 feed URLs to validate
+❌ No feeds discovered for humor
+{"task": "quality_eval", "tier": 1, "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}", "event": "llm_tier_failed", "level": "warning", "timestamp": "2026-04-21T06:03:16.980195Z"}
+    ✗ Error: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}
+
+  🔗 Getting RSS feed URLs for 55 domains...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 845, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:17.163562Z"}
+    ✓ Got 142 domains
+
+  📡 international and regional sources...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 64, "output_tokens": 41, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:17.456945Z"}
+    ✓ Got 1 domains
+
+  🔗 Getting RSS feed URLs for 85 domains...
+{"task": "quality_eval", "tier": 1, "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}", "event": "llm_tier_failed", "level": "warning", "timestamp": "2026-04-21T06:03:19.395473Z"}
+      ✗ Error getting URLs for batch: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}
+{"task": "quality_eval", "tier": 1, "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}", "event": "llm_tier_failed", "level": "warning", "timestamp": "2026-04-21T06:03:19.428651Z"}
+      ✗ Error getting URLs for batch: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 64, "output_tokens": 157, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:19.790113Z"}
+    ✓ Got 3 domains
+
+  🔗 Getting RSS feed URLs for 58 domains...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 64, "output_tokens": 105, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:20.557478Z"}
+    ✓ Got 3 domains
+
+  🔗 Getting RSS feed URLs for 150 domains...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 428, "output_tokens": 15, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:21.051833Z"}
+🤖 Generated 0 feed URLs to validate
+❌ No feeds discovered for nature
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 67, "output_tokens": 1618, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:21.724971Z"}
+    ✓ Got 250 domains
+
+  📡 independent blogs and newsletters...
+{"task": "quality_eval", "tier": 1, "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}", "event": "llm_tier_failed", "level": "warning", "timestamp": "2026-04-21T06:03:21.784575Z"}
+      ✗ Error getting URLs for batch: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}
+🤖 Generated 0 feed URLs to validate
+❌ No feeds discovered for food
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 482, "output_tokens": 147, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:22.961552Z"}
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 66, "output_tokens": 63, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:23.278810Z"}
+    ✓ Got 2 domains
+
+  📡 international and regional sources...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 352, "output_tokens": 29, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:23.324682Z"}
+🤖 Generated 0 feed URLs to validate
+❌ No feeds discovered for technology
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 64, "output_tokens": 112, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:23.816173Z"}
+    ✓ Got 8 domains
+
+  🔗 Getting RSS feed URLs for 22 domains...
+{"task": "quality_eval", "tier": 1, "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}", "event": "llm_tier_failed", "level": "warning", "timestamp": "2026-04-21T06:03:24.202788Z"}
+    ✗ Error: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}
+
+  📡 technical and academic feeds...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 516, "output_tokens": 138, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:24.299397Z"}
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 43, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:25.001100Z"}
+    ✓ Got 1 domains
+
+  🔗 Getting RSS feed URLs for 19 domains...
+{"task": "quality_eval", "tier": 1, "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}", "event": "llm_tier_failed", "level": "warning", "timestamp": "2026-04-21T06:03:25.386143Z"}
+      ✗ Error getting URLs for batch: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}
+🤖 Generated 0 feed URLs to validate
+❌ No feeds discovered for health
+{"task": "quality_eval", "tier": 1, "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}", "event": "llm_tier_failed", "level": "warning", "timestamp": "2026-04-21T06:03:25.394261Z"}
+      ✗ Error getting URLs for batch: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}
+🤖 Generated 0 feed URLs to validate
+❌ No feeds discovered for science
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 302, "output_tokens": 44, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:26.026485Z"}
+{"task": "quality_eval", "tier": 1, "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}", "event": "llm_tier_failed", "level": "warning", "timestamp": "2026-04-21T06:03:26.577068Z"}
+      ✗ Error getting URLs for batch: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}
+🤖 Generated 0 feed URLs to validate
+❌ No feeds discovered for philosophy
+{"task": "quality_eval", "tier": 1, "error": "Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}", "event": "llm_tier_failed", "level": "warning", "timestamp": "2026-04-21T06:03:26.601615Z"}
+    ✗ Error: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.', 'details': 'Rate limit exceeded. Quota request exceeds the requests limit. Requested requests: 0.'}}
+
+  📡 niche and specialized publications...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 487, "output_tokens": 99, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:27.731910Z"}
+🤖 Generated 0 feed URLs to validate
+❌ No feeds discovered for history
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 65, "output_tokens": 54, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:28.685349Z"}
+    ✓ Got 1 domains
+
+  📡 international and regional sources...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 64, "output_tokens": 55, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:29.814637Z"}
+    ✓ Got 2 domains
+
+  🔗 Getting RSS feed URLs for 253 domains...
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 377, "output_tokens": 99, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:31.425597Z"}
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 413, "output_tokens": 138, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:33.225808Z"}
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 399, "output_tokens": 144, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:35.229867Z"}
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 393, "output_tokens": 19, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:35.858505Z"}
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 395, "output_tokens": 151, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:37.867291Z"}
+{"task": "quality_eval", "provider": "azure_openai", "model": "grok-4.20-beta-0309-non-reasoning", "input_tokens": 190, "output_tokens": 122, "event": "llm_complete", "level": "info", "timestamp": "2026-04-21T06:03:39.655992Z"}
+🤖 Generated 0 feed URLs to validate
+❌ No feeds discovered for general
+
+======================================================================
+✨ BOOTSTRAP COMPLETE
+======================================================================
+Total feeds across all categories: 0
+Average per category: 0
+
+Next steps:
+1. Run full discovery with scoring: python demo_discovery.py all
+2. Review seed files: python review_seeds.py

@@ -1,0 +1,8 @@
+# ads.txt for stumble-upon
+# Add authorized digital sellers in this format:
+# <ad system domain>, <publisher id>, <relationship>, <cert authority id>
+# Example (Google AdSense):
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+# Replace the placeholder below with your real publisher ID and remove this comment.
+
+google.com, pub-1256215805046144, DIRECT, f08c47fec0942fa0

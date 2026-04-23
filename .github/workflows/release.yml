@@ -1,0 +1,278 @@
+name: Release
+
+on:
+  # Trigger on version tags pushed to main
+  push:
+    tags:
+      - 'v*'
+  # Manual trigger with optional version override
+  workflow_dispatch:
+    inputs:
+      version_override:
+        description: 'Override root version (leave empty to read from package.json)'
+        required: false
+        type: string
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  packages: write
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_PREFIX: ghcr.io/MountainManTechnology/serendip.bot
+
+jobs:
+  # Gate: wait for CI to pass first
+  ci:
+    name: CI Gate
+    uses: ./.github/workflows/ci.yml
+
+  # ── Build each image natively on its target platform ─────────────────────
+  # Uses ubuntu-24.04-arm for arm64 to avoid QEMU emulation crashes (signal 4)
+  # that occur when Node.js / npm run under QEMU on x86_64 runners.
+  # Each job pushes a platform-specific tag (e.g. :1.2.3-amd64 / :1.2.3-arm64).
+  # The merge job below combines them into the final multi-arch manifest.
+  build:
+    name: Build images (${{ matrix.platform }})
+    needs: ci
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: linux/amd64
+            runner: ubuntu-latest
+            suffix: amd64
+          - platform: linux/arm64
+            runner: ubuntu-24.04-arm
+            suffix: arm64
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Read versions from manifests ────────────────────────────────────
+      - name: Read versions
+        id: versions
+        run: |
+          if [[ -n "${{ inputs.version_override }}" ]]; then
+            ROOT_VERSION="${{ inputs.version_override }}"
+          else
+            ROOT_VERSION=$(node -p "require('./package.json').version")
+          fi
+          API_VERSION=$(node -p "require('./apps/api/package.json').version")
+          WEB_VERSION=$(node -p "require('./apps/web/package.json').version")
+          AGENT_VERSION=$(python3 -c "
+          import re, pathlib
+          t = pathlib.Path('services/agent/pyproject.toml').read_text()
+          print(re.search(r'version\s*=\s*\"(.+?)\"', t).group(1))
+          ")
+
+          echo "root=${ROOT_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "api=${API_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "web=${WEB_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "agent=${AGENT_VERSION}" >> "$GITHUB_OUTPUT"
+
+      # ── Build and push API image ────────────────────────────────────────
+      - name: Build & push API
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: apps/api/Dockerfile
+          platforms: ${{ matrix.platform }}
+          push: true
+          build-args: VERSION=${{ steps.versions.outputs.api }}
+          tags: ${{ env.IMAGE_PREFIX }}/api:${{ steps.versions.outputs.root }}-${{ matrix.suffix }}
+          cache-from: type=gha,scope=api-${{ matrix.suffix }}
+          cache-to: type=gha,mode=max,scope=api-${{ matrix.suffix }}
+
+      # ── Build and push Web image ────────────────────────────────────────
+      - name: Build & push Web
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: apps/web/Dockerfile
+          platforms: ${{ matrix.platform }}
+          push: true
+          build-args: |
+            VERSION=${{ steps.versions.outputs.web }}
+            NEXT_PUBLIC_API_URL=${{ vars.NEXT_PUBLIC_API_URL || 'http://localhost:3000' }}
+            NEXT_PUBLIC_SITE_URL=${{ vars.NEXT_PUBLIC_SITE_URL || 'http://localhost:3001' }}
+            NEXT_PUBLIC_UMAMI_ENABLED=${{ vars.NEXT_PUBLIC_UMAMI_ENABLED || 'false' }}
+            NEXT_PUBLIC_UMAMI_SRC=${{ vars.NEXT_PUBLIC_UMAMI_SRC || '' }}
+            NEXT_PUBLIC_UMAMI_RECORDER_SRC=${{ vars.NEXT_PUBLIC_UMAMI_RECORDER_SRC }}
+            NEXT_PUBLIC_UMAMI_WEBSITE_ID=${{ vars.NEXT_PUBLIC_UMAMI_WEBSITE_ID }}
+            NEXT_PUBLIC_ADSENSE_CLIENT_ID=${{ vars.NEXT_PUBLIC_ADSENSE_CLIENT_ID }}
+            NEXT_PUBLIC_DISABLE_ADS=${{ vars.NEXT_PUBLIC_DISABLE_ADS || 'true' }}
+            SENTRY_AUTH_TOKEN=${{ secrets.SENTRY_AUTH_TOKEN }}
+          tags: ${{ env.IMAGE_PREFIX }}/web:${{ steps.versions.outputs.root }}-${{ matrix.suffix }}
+          cache-from: type=gha,scope=web-${{ matrix.suffix }}
+          cache-to: type=gha,mode=max,scope=web-${{ matrix.suffix }}
+
+      # ── Build and push Agent API image ──────────────────────────────────
+      - name: Build & push Agent API
+        uses: docker/build-push-action@v6
+        with:
+          context: ./services/agent
+          file: services/agent/Dockerfile.api
+          platforms: ${{ matrix.platform }}
+          push: true
+          build-args: VERSION=${{ steps.versions.outputs.agent }}
+          tags: ${{ env.IMAGE_PREFIX }}/agent-api:${{ steps.versions.outputs.root }}-${{ matrix.suffix }}
+          cache-from: type=gha,scope=agent-api-${{ matrix.suffix }}
+          cache-to: type=gha,mode=max,scope=agent-api-${{ matrix.suffix }}
+
+      # ── Build and push Agent Worker image ───────────────────────────────
+      - name: Build & push Agent Worker
+        uses: docker/build-push-action@v6
+        with:
+          context: ./services/agent
+          file: services/agent/Dockerfile.worker
+          platforms: ${{ matrix.platform }}
+          push: true
+          build-args: VERSION=${{ steps.versions.outputs.agent }}
+          tags: ${{ env.IMAGE_PREFIX }}/agent-worker:${{ steps.versions.outputs.root }}-${{ matrix.suffix }}
+          cache-from: type=gha,scope=agent-worker-${{ matrix.suffix }}
+          cache-to: type=gha,mode=max,scope=agent-worker-${{ matrix.suffix }}
+
+      # ── Build and push Agent Beat image ─────────────────────────────────
+      - name: Build & push Agent Beat
+        uses: docker/build-push-action@v6
+        with:
+          context: ./services/agent
+          file: services/agent/Dockerfile.beat
+          platforms: ${{ matrix.platform }}
+          push: true
+          build-args: VERSION=${{ steps.versions.outputs.agent }}
+          tags: ${{ env.IMAGE_PREFIX }}/agent-beat:${{ steps.versions.outputs.root }}-${{ matrix.suffix }}
+          cache-from: type=gha,scope=agent-beat-${{ matrix.suffix }}
+          cache-to: type=gha,mode=max,scope=agent-beat-${{ matrix.suffix }}
+
+  # ── Merge platform images into multi-arch manifests ──────────────────────
+  merge:
+    name: Merge multi-arch manifests & Release
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Read versions from manifests ────────────────────────────────────
+      - name: Read versions
+        id: versions
+        run: |
+          if [[ -n "${{ inputs.version_override }}" ]]; then
+            ROOT_VERSION="${{ inputs.version_override }}"
+          else
+            ROOT_VERSION=$(node -p "require('./package.json').version")
+          fi
+          API_VERSION=$(node -p "require('./apps/api/package.json').version")
+          WEB_VERSION=$(node -p "require('./apps/web/package.json').version")
+          AGENT_VERSION=$(python3 -c "
+          import re, pathlib
+          t = pathlib.Path('services/agent/pyproject.toml').read_text()
+          print(re.search(r'version\s*=\s*\"(.+?)\"', t).group(1))
+          ")
+
+          echo "root=${ROOT_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "api=${API_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "web=${WEB_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "agent=${AGENT_VERSION}" >> "$GITHUB_OUTPUT"
+
+          echo "## Version Summary" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Package | Version |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|---------|---------|" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Root | ${ROOT_VERSION} |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| API | ${API_VERSION} |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Web | ${WEB_VERSION} |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Agent | ${AGENT_VERSION} |" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create multi-arch manifest — API
+        run: |
+          docker buildx imagetools create \
+            --tag ${{ env.IMAGE_PREFIX }}/api:latest \
+            --tag ${{ env.IMAGE_PREFIX }}/api:${{ steps.versions.outputs.api }} \
+            --tag ${{ env.IMAGE_PREFIX }}/api:${{ steps.versions.outputs.root }} \
+            ${{ env.IMAGE_PREFIX }}/api:${{ steps.versions.outputs.root }}-amd64 \
+            ${{ env.IMAGE_PREFIX }}/api:${{ steps.versions.outputs.root }}-arm64
+
+      - name: Create multi-arch manifest — Web
+        run: |
+          docker buildx imagetools create \
+            --tag ${{ env.IMAGE_PREFIX }}/web:latest \
+            --tag ${{ env.IMAGE_PREFIX }}/web:${{ steps.versions.outputs.web }} \
+            --tag ${{ env.IMAGE_PREFIX }}/web:${{ steps.versions.outputs.root }} \
+            ${{ env.IMAGE_PREFIX }}/web:${{ steps.versions.outputs.root }}-amd64 \
+            ${{ env.IMAGE_PREFIX }}/web:${{ steps.versions.outputs.root }}-arm64
+
+      - name: Create multi-arch manifest — Agent API
+        run: |
+          docker buildx imagetools create \
+            --tag ${{ env.IMAGE_PREFIX }}/agent-api:latest \
+            --tag ${{ env.IMAGE_PREFIX }}/agent-api:${{ steps.versions.outputs.agent }} \
+            --tag ${{ env.IMAGE_PREFIX }}/agent-api:${{ steps.versions.outputs.root }} \
+            ${{ env.IMAGE_PREFIX }}/agent-api:${{ steps.versions.outputs.root }}-amd64 \
+            ${{ env.IMAGE_PREFIX }}/agent-api:${{ steps.versions.outputs.root }}-arm64
+
+      - name: Create multi-arch manifest — Agent Worker
+        run: |
+          docker buildx imagetools create \
+            --tag ${{ env.IMAGE_PREFIX }}/agent-worker:latest \
+            --tag ${{ env.IMAGE_PREFIX }}/agent-worker:${{ steps.versions.outputs.agent }} \
+            --tag ${{ env.IMAGE_PREFIX }}/agent-worker:${{ steps.versions.outputs.root }} \
+            ${{ env.IMAGE_PREFIX }}/agent-worker:${{ steps.versions.outputs.root }}-amd64 \
+            ${{ env.IMAGE_PREFIX }}/agent-worker:${{ steps.versions.outputs.root }}-arm64
+
+      - name: Create multi-arch manifest — Agent Beat
+        run: |
+          docker buildx imagetools create \
+            --tag ${{ env.IMAGE_PREFIX }}/agent-beat:latest \
+            --tag ${{ env.IMAGE_PREFIX }}/agent-beat:${{ steps.versions.outputs.agent }} \
+            --tag ${{ env.IMAGE_PREFIX }}/agent-beat:${{ steps.versions.outputs.root }} \
+            ${{ env.IMAGE_PREFIX }}/agent-beat:${{ steps.versions.outputs.root }}-amd64 \
+            ${{ env.IMAGE_PREFIX }}/agent-beat:${{ steps.versions.outputs.root }}-arm64
+
+      # ── Create GitHub Release ────────────────────────────────────────────
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          body: |
+            ## Docker Images
+
+            ```
+            docker pull ${{ env.IMAGE_PREFIX }}/api:${{ steps.versions.outputs.root }}
+            docker pull ${{ env.IMAGE_PREFIX }}/web:${{ steps.versions.outputs.root }}
+            docker pull ${{ env.IMAGE_PREFIX }}/agent-api:${{ steps.versions.outputs.root }}
+            docker pull ${{ env.IMAGE_PREFIX }}/agent-worker:${{ steps.versions.outputs.root }}
+            docker pull ${{ env.IMAGE_PREFIX }}/agent-beat:${{ steps.versions.outputs.root }}
+            ```
+
+            ## Package Versions
+            | Package | Version |
+            |---------|---------|
+            | API | ${{ steps.versions.outputs.api }} |
+            | Web | ${{ steps.versions.outputs.web }} |
+            | Agent | ${{ steps.versions.outputs.agent }} |

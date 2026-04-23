@@ -1,0 +1,2322 @@
+sources: {}
+science:
+  rss:
+  - url: https://www.nature.com/nature.rss
+    url_hash: d592eddffea98806b157f45d5fa98ebddf5076602236b672b60d1fcbeefe16d0
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836880'
+  - url: https://www.sciencemag.org/rss/news_current.xml
+    url_hash: 08fba17d524a624d5024cab36751e9b7cedc79d67c0e22c7895e32f72ccdbf73
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836889'
+  - url: https://www.popsci.com/feed/
+    url_hash: 741b88dd6ee3ad6b4cb70bfbfb96dc5c6c17c0eed69afaa9c4366c9adc7274fc
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836891'
+  - url: https://www.livescience.com/feeds/all
+    url_hash: 596782fafaff40d6c8a08470c11808400a18abfe89d1503c68f4725a10aa7ec3
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836893'
+  - url: https://www.space.com/feeds/all
+    url_hash: c2edd5eb4423abe382cba6f22ae12facdd16af369efc72723ae933dfd41d97c8
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836894'
+  - url: https://www.sciencedaily.com/rss/
+    url_hash: 21de149a79808f5e3aef946db10a6ab34c90fa0667a66f8ab43af998c96ac42a
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836895'
+  - url: https://www.sciencealert.com/feed
+    url_hash: c7d4ea914fa235e42116a1e94e909455effde00f8461bf7e0661585b09ddb090
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836896'
+  - url: https://www.wired.com/feed/rss
+    url_hash: c01c14fc345f6361c73474db2e09619599cce0e4940c9db99db83f4697d02dd4
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836898'
+  - url: https://www.technologyreview.com/feed/
+    url_hash: abb25a1c4ec6f9d7f8b3ac1172095807ae3fb996c2a0a59ddb784d3f6ab992e6
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836899'
+  - url: https://nautil.us/feed/
+    url_hash: d8b2934d09ed18483f1b3caf91d3dd3b2cdb4d8f46bf214a9924a5b94c878c23
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836900'
+  - url: https://www.quantamagazine.org/feed/
+    url_hash: 1ba0bcbd71599e12f5a43cce353caf9944631ff702d4bd442ee67a5336bbc585
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836901'
+  - url: https://www.sciencenews.org/feed
+    url_hash: f8262b7a9b3fa8070905dea094f23d76237bba4f96f5fc5a51b866c481902749
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836902'
+  - url: https://www.businessinsider.com/rss
+    url_hash: 18748cf1f4b004467b52f9162273e96da19fbc61f59973c172ac7e544f9a17b0
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836903'
+  - url: https://www.huffpost.com/section/front-page/feed
+    url_hash: 52ca20192ffb6b776ab1e06bb5d61ae4de4070862ce44e3fc6596be0e7d49367
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836904'
+  - url: https://www.theatlantic.com/feed/all/
+    url_hash: 72771e85b1416686c7047c5d452eddd6ae52a5961d92eba29ddc5dd0dcfb2775
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836906'
+  - url: https://www.salon.com/feed/
+    url_hash: 3e820fe63b42fd9b7648262d72b4e44ff9ff12c4a19a4dfa6f077ad6784eb501
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836907'
+  - url: https://feeds.npr.org/1001/rss.xml
+    url_hash: 04a135552494b3dbf3541c5fbc37af837d67ecc5219340e6b092dfd6820bec7c
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836908'
+  - url: https://feeds.npr.org/1001/rss.xml
+    url_hash: 04a135552494b3dbf3541c5fbc37af837d67ecc5219340e6b092dfd6820bec7c
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836909'
+  - url: https://feeds.npr.org/1001/rss.xml
+    url_hash: 04a135552494b3dbf3541c5fbc37af837d67ecc5219340e6b092dfd6820bec7c
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836910'
+  - url: https://www.who.int/rss-feeds/news-english.xml
+    url_hash: b000d5569fe594aa022e7c27a2af36e51fcf505351ac6a4b2622971980a378ec
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836911'
+  - url: https://www.nasa.gov/rss/dyn/breaking_news.rss
+    url_hash: d25c6c3a6b63b163f419a1f6236d627aabd0dbbd271fcd77462b2c1b83b7968e
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836912'
+  - url: https://www.noaa.gov/rss.xml
+    url_hash: 315486e23c96c9ab373169a601759ce62412d9cfcd9773909569000c3b8bd831
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836913'
+  - url: https://gizmodo.com/feed
+    url_hash: 69c762d3a5abec45842f48e8050b6eda94d0444bdd3f7b2cd121daef972d9b20
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836914'
+  - url: https://gizmodo.com/feed
+    url_hash: 69c762d3a5abec45842f48e8050b6eda94d0444bdd3f7b2cd121daef972d9b20
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836915'
+  - url: https://io9.gizmodo.com/feed
+    url_hash: cc98c5a143cafe890754340a113be23e4068f000d9a89822738497b4b0e13333
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836916'
+  - url: https://arstechnica.com/rss
+    url_hash: f82b67d9f951f9200cb2da440faaf17c6021aa0ca4ddcfdb68974207c94f63dd
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836917'
+  - url: https://arstechnica.com/rss
+    url_hash: f82b67d9f951f9200cb2da440faaf17c6021aa0ca4ddcfdb68974207c94f63dd
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836919'
+  - url: https://www.engadget.com/rss.xml
+    url_hash: 2ccba97d94b1107757b71d747858933b9d248e7274b1daea78354468696519d0
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836920'
+  - url: https://techcrunch.com/feed/
+    url_hash: f84187f7c52ef9b346198263cd46c96b18aca5195c5b403c3e9a155ab3a4d314
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836921'
+  - url: https://news.mit.edu/rss
+    url_hash: 6bdf5c49590f3d9031908960728ede7c9bd96a45c68b16e664b7afba316aea86
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836922'
+  - url: https://news.harvard.edu/gazette/feed
+    url_hash: cc03d5355f758c6b84f2ece679643bac411f9e7e94a2d34609edfe2fac9b1588
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836923'
+  - url: https://news.umich.edu/feed
+    url_hash: ae81d17812b2a0c7aa04f1653a1b03fea49ce46e1c0bb97fb04a7f6587979eeb
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836924'
+  - url: https://news.utexas.edu/feed
+    url_hash: fb717cd44120ce72bf61768d25de2506408bdfda485cd9b8265dacedf6eb55fb
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836925'
+  - url: https://www.nature.com/nature.rss
+    url_hash: d592eddffea98806b157f45d5fa98ebddf5076602236b672b60d1fcbeefe16d0
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836926'
+  - url: https://www.science.org/rss/news_current.xml
+    url_hash: e1793a9532f608f62934e448f2485b89aba73c86af13a19f694cde62cfd23094
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836927'
+  - url: https://www.sciencenews.org/feed
+    url_hash: f8262b7a9b3fa8070905dea094f23d76237bba4f96f5fc5a51b866c481902749
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836928'
+  - url: https://www.quantamagazine.org/feed/
+    url_hash: 1ba0bcbd71599e12f5a43cce353caf9944631ff702d4bd442ee67a5336bbc585
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836929'
+  - url: https://nautil.us/feed/
+    url_hash: d8b2934d09ed18483f1b3caf91d3dd3b2cdb4d8f46bf214a9924a5b94c878c23
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836930'
+  - url: https://undark.org/feed/
+    url_hash: d182a714f3eb1ad9a054e2e507f54731c6c1aaced6e02cb2cdebbd4d7a7fce32
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836932'
+  - url: https://www.anthropocenemagazine.org/feed/
+    url_hash: cee814b882c0a899c37fa69455be21818d4df3a0a517c3a56a93f988097572b0
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836933'
+  - url: https://ensia.com/feed/
+    url_hash: b4817bd29209d7ac74813851af6a7fa9e051912a3e397962066306c714ea59ea
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836934'
+  - url: https://yaleclimateconnections.org/feed/
+    url_hash: 4e9b9a74df98d9b69a288c03e55574598bc7255a5c7476296cb852a2c2bfbe9b
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836935'
+  - url: https://www.carbonbrief.org/feed
+    url_hash: 5945e50d6a0f38ed83a6beeb75f4fb1a07faad0f13cfa8ddacd12d91c1813f45
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836936'
+  - url: https://www.realclimate.org/index.php/feed/
+    url_hash: d1aaac43f380e461df6e3cf96813e1b59dbf65e0338f8cd18b248e43900ff338
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836937'
+  - url: https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
+    url_hash: a6d026e59175e6b8dfdc84c6ff0bb7076655a75b4c0bd0c4ceb6eff0b9cad0a7
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836938'
+  - url: https://www.theguardian.com/science/rss
+    url_hash: b37bf30d955d1edaf3611131664cf224111fc3423a62af29270af4cb40dea07c
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836939'
+  - url: https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
+    url_hash: db9681969d50fd348aa56fcb581fc4795af5158e1c23d483cb4f5a0e7aca483c
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836940'
+  - url: https://feeds.feedburner.com/DiscoverMagazine
+    url_hash: e10e20a89a8270ba28f93f2f6cf4d67e24d4b2a8242267f373877e1d6a00bfa4
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836941'
+  - url: https://www.popsci.com/rss
+    url_hash: 87099c74839533d1ed41607964eb50d300b9284f96916301fb08a878bbc2b75e
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836943'
+  - url: https://www.quantamagazine.org/feed
+    url_hash: 4382d5e8491c1616b0aeb85b98be00e75a3b19f61f7ac0c1490ccedef1f7a137
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836944'
+  - url: https://www.sciencenews.org/feed
+    url_hash: f8262b7a9b3fa8070905dea094f23d76237bba4f96f5fc5a51b866c481902749
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836945'
+  - url: https://www.technologyreview.com/feed
+    url_hash: 795a5369f7cef7f208f82869bf1ddbc78f09177c400e8f52e8558c625c405fbd
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836946'
+  - url: https://plos.org/rss
+    url_hash: c48cdec1031f2ed343aa802caf48b46c6d03f62302b9cb15528a1f7e88dd2ee5
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836947'
+  - url: https://nybooks.com/rss
+    url_hash: 248fd0577da56be4fa96f7e10ccc3c1ffe33cfd9b25e3bede7393714d8e16675
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836948'
+  - url: https://broadinstitute.org/?feed=rss2
+    url_hash: a321a21baedf541b12279551cabfc0dfd94238239c8761b1b4d764ea03b5533e
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836949'
+  - url: https://nybooks.com/feed
+    url_hash: 20785861659d9af80a0c1a915c563817c1b22522b2d3d542831f5cf85a028813
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836950'
+  - url: https://popsci.com/?feed=rss2
+    url_hash: 84123c4411f424740d696fc157e1cbc29a1ad5d75850d9427ce761beca59df45
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836951'
+  - url: https://boingboing.net/atom.xml
+    url_hash: 8b059b763619f2137d0121084006c14aa58cbdc25d5fb1e9053acedffacfb4bc
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836952'
+  - url: https://wired.com/feed
+    url_hash: ad01f6b5051a11ef0216a6af4d9d12ba0b069dbc78fdd76280a93580e3bf26f6
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836953'
+  - url: https://popsci.com/feed
+    url_hash: 25975f59cb631138402bdfaf7c9f37394f96c5f4184cec2e2c61fb09371c3b52
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836955'
+  - url: https://spectrum.ieee.org/rss
+    url_hash: 21b59384eeeabb94e0d8e6f4b6a2c0be13da9c8b32a15967b95c40118486e3c2
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836956'
+  - url: https://space.com/feed.xml
+    url_hash: dbd3a135adba1d896d12ea2b7471945c98d38cd01b9b771e20e7e93e75ab54eb
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836957'
+  - url: https://statnews.com/rss
+    url_hash: 01bc668e836e3eeb619afd8526eb6d211abd02eeeabd1c3cfa87ce49ca818ae2
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836958'
+  - url: https://sciencenews.org/?feed=rss2
+    url_hash: ac5c8c45ad5897c5a97562b2f750c8fa655d47d69a54d7544e96bcd75965ab83
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836959'
+  - url: https://quantamagazine.org/feeds/rss
+    url_hash: 1e1ad778c4b4af8098ce18962a263fa240c63c26720bea04d3e826f62a73c994
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836960'
+  - url: https://usgs.gov/feed
+    url_hash: 55cffa9150310390b2e6aeb7209f94355cd9a8993022d5964c3c453838c3d499
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836961'
+  - url: https://scottaaronson.blog/feed
+    url_hash: fb1e07676bafe32db0184debac73b14b70b77b55ab05fd168879ecd6a4862b3f
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836962'
+  - url: https://nature.com/?feed=rss2
+    url_hash: 45b2885bccf1ca1643d0e45b0376555dd8f6201fd9819eeb0b6212fcc5774222
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836963'
+  - url: https://quillette.com/rss
+    url_hash: a82d4c5d5f734038d64b2fefab986a0345327af5839dca26999e97de8268036f
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836964'
+  - url: https://gizmodo.com/?feed=rss2
+    url_hash: 953d3e58556e48c74084c6e0c1c265327685f59a52a3d5734932856d1a714e35
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836965'
+  - url: https://broadinstitute.org/rss
+    url_hash: 96cc59c78b987f51d8387ea827b97c9921da9aa99b3165ced3e2aba3c15ee73e
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836966'
+  - url: https://sciencefriday.com/feed
+    url_hash: f72ec041ba6b7abc19335fcb22e2c1c0c323203290b35704a7809aab0946feca
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836967'
+  - url: https://astralcodexten.substack.com/feed
+    url_hash: d3d57c1fafd61d6b5787b9c8a431837e66657a9db59437d4c2f6ff5b7a988710
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836968'
+  - url: https://sciencedaily.com/rss
+    url_hash: 81255e6d4ebf5d8f7163b21bbea293bedc29ee51ea16d2f6f9615ea3df12379e
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836969'
+  - url: https://astralcodexten.substack.com/feed.xml
+    url_hash: 0f7312f0baf475c4092c9be864f195babb1ed5f8a3dce37d51fc88d1ad94cea5
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836971'
+  - url: https://nasa.gov/?feed=rss2
+    url_hash: 9dfac57c10551434459ffe57be556be6e7818b7e585b3e2583d3d6a985c3a85a
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836972'
+  - url: https://scottaaronson.blog/feeds.xml
+    url_hash: 46032a446116a47eecf47afaa91849ce91bbc7bd59ce8f2d0fdb9c389b61a2a9
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836973'
+  - url: https://nautil.us/feed
+    url_hash: 2a5815f29f4ada4a12430e28f27c43083142717aa84007cf132c35a4dd679bd6
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836974'
+  - url: https://nautil.us/rss
+    url_hash: 3abf586312158ae1bcc9ccdb5c153cfab49994786cec9d6273bf1dc866444e87
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836975'
+  - url: https://sciencealert.com/feed
+    url_hash: b778769d6555fef6c75b427afbb613ab5786798c7825a74a891d06cda8b0f848
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836976'
+  - url: https://sciencealert.com/?feed=rss2
+    url_hash: f2461169261a368741e73a3a4d86a7aed54e55bcf025d796a3169454185c1202
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836977'
+  - url: https://statnews.com/?feed=rss2
+    url_hash: 1b3f9644548abd7022b23bde349ea98a29e0257632d0e767f4adfe2934d992ff
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836978'
+  - url: https://pnas.org/feed
+    url_hash: 2da558ede4d4d4bd48da58834b1a536338e849943937bbdbfff4cfd23cd46120
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836979'
+  - url: https://broadinstitute.org/feed.xml
+    url_hash: f2992a697360b201457b176d4eca75e4c537d605f95ae787bea54afcbed59ce4
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836980'
+  - url: https://sciencenews.org/feed
+    url_hash: cf9afdcfa70301ca1fcf35e4a13ebfbfd315c24d500cd8638e4c0c7674c13679
+    category_hint: science
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.836981'
+  platform: []
+  scraped: []
+  other: []
+technology:
+  rss:
+  - url: https://boingboing.net/feed
+    url_hash: 6fa1a818e9ef1c7c8856f4b435af1f50cdf0507b1c479c9519013d12eb0255da
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842143'
+  - url: https://gizmodo.com/feed
+    url_hash: 69c762d3a5abec45842f48e8050b6eda94d0444bdd3f7b2cd121daef972d9b20
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842149'
+  - url: https://lifehacker.com/feed
+    url_hash: a66937baa4365e297f3db885610b7e83c0d765e0394d0c83dacc9d82ab0675e4
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842150'
+  - url: https://www.zdnet.com/topic/security/rss.xml
+    url_hash: e639493f716a14fe2fb41c2451e763a0ed5677881ea820dd0291c8f3e1e4ab83
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842151'
+  - url: https://www.linux.com/feed
+    url_hash: 63c88ded77a145c5b5da0f72df52c6654af1693caa5da733fd547a3387fcdd27
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842152'
+  - url: https://www.allaboutcircuits.com/rss/
+    url_hash: 3766aa4b9692da53b2d040cd28e340a39c8889546e68350533b33078636048ba
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842153'
+  - url: https://community.element14.com/rss
+    url_hash: 75570b9182db50f0ce719098a255949ded07deaf84f582b745dc2fb8112ce8a4
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842155'
+  - url: https://www.eetimes.com/rss
+    url_hash: ecaeafa06dcff91d6f1be6cc7921a3ba2b6cc22762a68892db4074e4c003e884
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842156'
+  - url: https://thenewstack.io/feed/
+    url_hash: eb3fbedbc60f9ed1a29b4e6f4d749146c886f439c08a467de2aacd1a5c6bfb7b
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842157'
+  - url: https://www.schneier.com/feed/
+    url_hash: 785b58e8749bd508f81ad97f4a5ec6ad7b5cd84a59535bc2829026bff25a2611
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842158'
+  - url: https://www.makeuseof.com/feed/
+    url_hash: 9e6ac84d2b50a5e9af4070515b8bf63b924167df26584118fc21003ba9ed157c
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842159'
+  - url: https://semianalysis.com/feed/
+    url_hash: 60a43afeef8b0200b894493dc41ccdee3f74ed82cb866cde4ba35982ca6cd6ec
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842160'
+  - url: https://www.theregister.com/headlines.atom
+    url_hash: d0abe968c6ff2432edccb77ce131801174b27f8556bb8afba8d8542d5a635d04
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842161'
+  - url: https://azure.microsoft.com/en-us/blog/feed/
+    url_hash: 0be246f02cb943666fd46b7668e817e15ce8e15ce4fc5bfafe9695b4b0755010
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842162'
+  - url: https://restofworld.org/feed/
+    url_hash: 8e7c1efb603a744a983222ec0e71a1bb7df166c473fd8109857a2c578fe690e7
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842163'
+  - url: https://www.linux.com/feed/
+    url_hash: 2c3d82ba114f3c2e5fae257dbc63ffc7225d77b7a10602f93edd2794cf4cd1ef
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842164'
+  - url: https://slashdot.org/slashdot.rss
+    url_hash: 1349a6d0cdf3f896e6b28bcf7a12ee7f7a0105a1e1e88f5adb29bf2547e06b07
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842165'
+  - url: https://www.wired.com/feed/rss
+    url_hash: c01c14fc345f6361c73474db2e09619599cce0e4940c9db99db83f4697d02dd4
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842166'
+  - url: https://9to5google.com/feed/
+    url_hash: 341e580163beff2c53518c0686561e3d13158b537e3f9bbb6e2fcf2770323e4c
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842167'
+  - url: https://www.xda-developers.com/feed/
+    url_hash: efcb8c086349b5a20815ba60c0039556fc57032a6731c517f490502ec7fa39f6
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842168'
+  - url: https://fuseki.com/feed/
+    url_hash: 0f2e040bc65d647ac9ca3202a3a2e72613600d9c02c8411bf4a8aa55b99473bc
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842169'
+  - url: https://betanews.com/feed/
+    url_hash: 725b27a27917e110738c84f92617d27aa8d821a136c3f001a831f8cee2a738dd
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842170'
+  - url: https://www.tomshardware.com/feeds/all
+    url_hash: 4d6744e352b20b9704c082d78128bba28013a5e236577cac78b73526b88ac316
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842171'
+  - url: https://www.techrepublic.com/rssfeeds/topic/open-source/
+    url_hash: 6600fafe4302363c982c66568e077d57bfff9171dca98f1bdd7b3987eb320bf1
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842172'
+  - url: https://www.benedelman.org/feed/
+    url_hash: 3ff20838d2c9359b5840e600439e08bc800fbd75eeeb32c30e130ddf48776f5d
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842173'
+  - url: https://www.cioinsight.com/feed/
+    url_hash: af8e07547efde869b77c77862fd0fa051d3d0005cdb30262aacb7bffd6b4d336
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842174'
+  - url: https://mashable.com/feeds/rss/all
+    url_hash: d8e00d7b49c0c1fcbb63403622d077eb5fea04ba817a5a80d00ab2821583f47c
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842175'
+  - url: https://www.androidpolice.com/feed/
+    url_hash: 15401daa7210c8ded81f4434e6d88b239fa795663677a2729f4fbcdef38a8389
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842176'
+  - url: https://www.engadget.com/rss.xml
+    url_hash: 2ccba97d94b1107757b71d747858933b9d248e7274b1daea78354468696519d0
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842177'
+  - url: https://feeds.bbci.co.uk/news/technology/rss.xml
+    url_hash: 8fb86334c28d493c031a836192a2f2942721e7f205e91c8f6dc6d4454ca1f26f
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842178'
+  - url: https://hackernoon.com/feed
+    url_hash: 4bfc14877f67187ea8b179fe224664f27df7cd0488b1cbb7164dff949576d8ee
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842179'
+  - url: https://www.bleepingcomputer.com/feed/
+    url_hash: 9676afaed1a7332b082670c4006757c86e8dac08b0c84843e08786790b2e490a
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842180'
+  - url: https://blog.adafruit.com/feed/
+    url_hash: ef1836251e241fac3552e1a02bd616751a1e540f59e718319b2476f8ce4fe425
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842181'
+  - url: https://opensource.com/feed
+    url_hash: 4ddaa705d578a063803e393184630776a02b55b795b8a51fd5d982645367ad86
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842183'
+  - url: https://blog.codinghorror.com/feed/
+    url_hash: aa64a661b2f9cb302d4aa7c73d25969528e4ec5f78c3cab16ba12cd6e3cb1dfd
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842184'
+  - url: https://www.businessinsider.com/rss
+    url_hash: 18748cf1f4b004467b52f9162273e96da19fbc61f59973c172ac7e544f9a17b0
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842185'
+  - url: https://www.digitaltrends.com/feed/
+    url_hash: 9267d9058a847bcb7d53de0e9ca1aa5946c6ca89c1f0ae2689ddf77cac3f0de9
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842186'
+  - url: https://www.cultofmac.com/feed
+    url_hash: 8bb011434ffcef00c314c38abb7796c7ed3222078d6a1fe3fac42b9573fff4ad
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842187'
+  - url: https://www.omgubuntu.co.uk/feed
+    url_hash: 1fd457774e83e98d764eedadd0ba4fecaa09453af01bd6aad3eb7bbcb9e6b654
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842188'
+  - url: https://lwn.net/headlines/rss
+    url_hash: fcd2576f521b6d4051321a9a25b8332568f9ee3c037a508682ed06536ca9d7b2
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842189'
+  - url: https://www.ghacks.net/feed/
+    url_hash: 5c34e7bc28cc1ef143e76bff3c5b2a95945678d704ad075bbfcd9eba5469ddd7
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842191'
+  - url: https://www.infoworld.com/feed
+    url_hash: b96daaacac77e4605ed8c0ca858f8e5b031c23485263ad4623714474523f1b5e
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842192'
+  - url: https://www.zdnet.com/news/rss.xml
+    url_hash: cbf4e2ebc46c02805b0c461b53b227d8fe564453cce5e34c8a1c115c6466fe02
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842193'
+  - url: https://threatpost.com/feed/
+    url_hash: eea9cb533162ca39c956829387ee2be5710e4946209c4e4e8dbb6093ab949454
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842194'
+  - url: https://sdtimes.com/feed/
+    url_hash: 1072c10b2b91e946e7bfeebb665e0a7906924b961ca1da0547408c39f3015a00
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842195'
+  - url: https://itsfoss.com/feed/
+    url_hash: 35f42430bc7e1afc38c1a06edb4fb7ccb3ef81f47a720a8255d0395cb62561f9
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842196'
+  - url: https://www.neowin.net/news/rss/
+    url_hash: dc1f3afbe9a7bfe73068b4247a10cf5f649a8043f1d895f8e107cac6310e46de
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842197'
+  - url: https://highscalability.com/feed/
+    url_hash: 5bef01d167db22c6e642f41e5449e03762340d14c4a2071e1c404f75d81a97aa
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842199'
+  - url: https://feeds.howtogeek.com/howtogeek
+    url_hash: bdf5274b65c06eef478238ecd9eb8002c3e1cd4dc3ecfcbcf7d8c8d5ed8a962c
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842200'
+  - url: https://arstechnica.com/rss
+    url_hash: f82b67d9f951f9200cb2da440faaf17c6021aa0ca4ddcfdb68974207c94f63dd
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842201'
+  - url: https://stratechery.com/feed/
+    url_hash: dde61415188146bf11ad5390d49d8040aaffb40f11051741e8f6ca10e8eb3474
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842202'
+  - url: https://www.infoq.com/feed/
+    url_hash: 6230f1f38e7b69db5c282c1cf92a6557e87657c3c7f0f76f42057179734b58f5
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842203'
+  - url: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+    url_hash: 9857cc183f75260fe3c588551c290ea9463a37c28b1c7d80949fc653c6f1aeaa
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842204'
+  - url: https://techcrunch.com/feed/
+    url_hash: f84187f7c52ef9b346198263cd46c96b18aca5195c5b403c3e9a155ab3a4d314
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842205'
+  - url: https://www.economist.com/technology-quarterly/rss.xml
+    url_hash: a540c5097393c7deea673cb9709a8cc78445f22a0160585822515871edafee69
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842206'
+  - url: https://semiengineering.com/feed/
+    url_hash: 234e4a275ab1c03e5b2e2d5bd542c0f5fd5d9a36df9c515f3ab2364f587df5a0
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842207'
+  - url: https://hackaday.com/blog/feed/
+    url_hash: f0b14a3a449f446fa9a44600929e337d8396b37dd8e4a9fd745973b694feb639
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842209'
+  - url: https://www.techdirt.com/feed/
+    url_hash: 0df6c05672faf74696a89a4b7a2d4327fdcf7b37ab24af783a9de832f908b40c
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842210'
+  - url: https://9to5mac.com/feed/
+    url_hash: 0da7a01841198f6ae17eb5ab6107f5989b7561eb96d9009d1e10d152bb72db25
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842211'
+  - url: https://news.mit.edu/rss
+    url_hash: 6bdf5c49590f3d9031908960728ede7c9bd96a45c68b16e664b7afba316aea86
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842212'
+  - url: https://windowslatest.com/feed/
+    url_hash: e64bb9f5a0566cf69ac9fd281eb0b0e403054a159fa5b3657ef716e2b9d717ae
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842213'
+  - url: https://spectrum.ieee.org/rss
+    url_hash: 21b59384eeeabb94e0d8e6f4b6a2c0be13da9c8b32a15967b95c40118486e3c2
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842214'
+  - url: https://tech.eu/feed/
+    url_hash: e12c974622d6a653a873f8a464c709640449f8f59cb876bd511658eef429269c
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842215'
+  - url: https://venturebeat.com/feed/
+    url_hash: 1a71342d965cd9f7fc4a06e807a5c67bbf88ec384aa43a86d534db7fcb0cb175
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842216'
+  - url: https://www.computerworld.com/feed
+    url_hash: ab85c28cd25de95956270d9b8f3625a4156792536f77a1e180e97888c4aff6e1
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842217'
+  - url: https://www.realworldtech.com/rss/
+    url_hash: 4e1d1206bbea1aaf6fafb4b08e45dbd49b8508103d054e5f98944c88e189b0a1
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842219'
+  - url: https://www.androidcentral.com/rss.xml
+    url_hash: dfd2b666a26ce211bac6bb7d45bd2e915e5e36dd6007ba5efad8d3736239d9c6
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842220'
+  - url: https://phandroid.com/feed/
+    url_hash: 8fec6bdf03f11e1660f9df71be5844f7cba68676494a2a885b2c38c04ac55bf4
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842221'
+  - url: https://feeds.howtogeek.com/HowToGeek
+    url_hash: ec5b2e90cfc520d05bb36b79c2f3f253450d2f195dfe5a6d56277f6f9f50f845
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842222'
+  - url: https://www.cio.com/feed/
+    url_hash: 23ef135fec87ab332f3336909f8e06be6815433723b3e9093ee6bbea7a419f35
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842223'
+  - url: https://www.hothardware.com/rss
+    url_hash: 815abc8ca7fcd9fb2ceac452e53762775c2544fdf7899ef7fe0f18c311ed438f
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842224'
+  - url: https://www.networkworld.com/feed
+    url_hash: 73e2793196fb6bd323a3d8f95a7740d0efa2ff45b4b1f15587020b659d763939
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842225'
+  - url: https://www.eetimes.com/feed/
+    url_hash: df3041c7a4b657f3c66a1684128db80bdd345cf3be5b56d399b13ceac7ca3219
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842226'
+  - url: https://daringfireball.net/feeds/main
+    url_hash: 6eaf402c6927f9fbeccb7eec3476a8d03a1bcbd1f5e8a8b3e23234c3cf55bc1b
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842227'
+  - url: https://www.siliconrepublic.com/feed
+    url_hash: 8e54424e73bb8178d0642df68a97c71792e6324031f7754a3e8a94b932b66d11
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842229'
+  - url: https://www.computerweekly.com/rss
+    url_hash: fdc533b6b7d0a595b79d816b34e6e61ac2c50fc5d51b021a694ac52deb893ae6
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842230'
+  - url: https://feeds.a.dj.com/rss/RSSWSJD.xml
+    url_hash: da667582640e631fa4045e9fe1b9df1985cc13b717e3acd3eb03afc9b0601dc7
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842231'
+  - url: https://www.nature.com/nature.rss
+    url_hash: d592eddffea98806b157f45d5fa98ebddf5076602236b672b60d1fcbeefe16d0
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842232'
+  - url: https://www.forbes.com/technology/feed/
+    url_hash: badb23b759ead228473f15ba7c71b06c0eb66b2f2df8dc20702f7b7f250d9005
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842233'
+  - url: https://chipsandcheese.com/feed/
+    url_hash: dcf6789803e4f5c4237c35521e8ea45024f84ddd1bdf116461a08440279bee7b
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842234'
+  - url: https://martinfowler.com/feed.atom
+    url_hash: fd8649157d549877e25b60df5c104c53e2d792ccc7d8c27fff3e0e92e7de97ff
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842235'
+  - url: https://www.eejournal.com/feed/
+    url_hash: b5c030bdb479f45e0d6f5bc23a178bb482637cd6bcd4d1c027d5525ecd9f9bd6
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842236'
+  - url: https://feeds.macrumors.com/MacRumors-Front-Page
+    url_hash: 8a1a1f2866798ff75474b4ad90d350939e19fc2934d84c61339e39fb30385719
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842238'
+  - url: https://www.whathifi.com/rss
+    url_hash: e300d479abd85b06b28ee552d3835c93bdf185f47f8dfd3fb282e848aae473be
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842239'
+  - url: https://www.eweek.com/feed
+    url_hash: 533191875cef5137c7ecef14b878e0e06d193a9b892fa6565a5105f39e7c2270
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842240'
+  - url: https://onmsft.com/feed/
+    url_hash: 63fe8af4985108f651442f190d477d4842f6efcc4a47db8e0416ca7b2286d033
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842241'
+  - url: https://www.cio.com/feed
+    url_hash: c9dc5bd1c08959f75ed30c5eef0627ebb5a6732e13dbc59c37cc1ccdca6f2d56
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842242'
+  - url: https://embedded.com/feed
+    url_hash: 7641cfd561cb014781bc7f4b9a0432aefc4cc6658b6244f70d97f714fb5265f1
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842243'
+  - url: https://fossbytes.com/feed/
+    url_hash: 3fabbe335c64d085776bcb7f501a774da409cbb6d535c7a741027151bc8a2b7c
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842244'
+  - url: https://www.cnx-software.com/feed/
+    url_hash: 1b1ab2262c962ec3f553d80945bf5a435256ecdc896c7264215955a0cbff7a70
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842245'
+  - url: https://www.techradar.com/rss
+    url_hash: d923f675aecd1d30a059e5264ef2d8b8aff0aa8f51189cd6ecb1c2f4e552e96b
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842246'
+  - url: https://distrowatch.com/news/dw.xml
+    url_hash: 3a2e0e7726a93294c7590d08999a3592f8b168aa77a4fabba83ea4688e4a8433
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842247'
+  - url: https://krebsonsecurity.com/feed/
+    url_hash: 4359bb4a3387d403201c8827ff80888a712d6402b25982c2a4b2ac010af54f2d
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842249'
+  - url: https://www.theguardian.com/technology/rss
+    url_hash: 3d3e83c46ebe71ab54af951d14363e23c98a4b478033128b22ef294ec3d2382c
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842250'
+  - url: https://www.joelonsoftware.com/feed/
+    url_hash: 1ce6dc7390343ecd48dab47317dba84a9d205217e1f0bbc79b1060fa8c9d2ed3
+    category_hint: technology
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.842251'
+  platform: []
+  scraped: []
+  other: []
+design:
+  rss:
+  - url: https://www.designboom.com/feed/
+    url_hash: 567da99918653b7bb4e2694b529031f560a17cd94a7f74db607d678f1e88f453
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843410'
+  - url: https://www.dezeen.com/feed/
+    url_hash: 8f8dc0373ba321497bc6347f427a194ab2c3bf7cf68565938935fc3c5e30a81e
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843413'
+  - url: https://www.archdaily.com/feed/
+    url_hash: d324ec8706c0cb1f8f12d8ba603d3b486eda5a65941a0f237ee37a801c0bc7fd
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843414'
+  - url: https://www.core77.com/feed
+    url_hash: 6afba146f1715e480d26a86d73c293c62e019a7ef5cc460bbeb81f07efb86915
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843416'
+  - url: https://www.adweek.com/feed/
+    url_hash: c678279a9ded20eccc544293042b91f66f8d4eaf2adf70004000594c3d74cdd2
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843417'
+  - url: https://www.creativebloq.com/feed
+    url_hash: d59f95bc2707359f00da903f87ff2c9f7eee18c88c5feb98416da5e7ec4f22fe
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843418'
+  - url: https://www.printmag.com/feed/
+    url_hash: 7148c799287d32739c27b8300927778fa69b961aa6f8094be27bf08edbba3542
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843419'
+  - url: https://design-milk.com/feed/
+    url_hash: fd84d171f7a11a5f3e077a8959a5cdb0ac44f38adf9b22d9e3f37ce0aef09b26
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843420'
+  - url: https://www.frameweb.com/rss.xml
+    url_hash: fd4246d79ed69028accf7cab37fd49489f1185706e00718434184070e6f9b6c8
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843421'
+  - url: https://www.archdaily.com/feed
+    url_hash: 571c301ddcbf9b0fe9d4dc54065e7c3397646748c7cd08f9cec29a7b73b0a2da
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843423'
+  - url: https://architizer.com/blog/feed/
+    url_hash: 9772af0802b68a087d46156fab2fe80c489164669276a7945001493a83e6e83e
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843424'
+  - url: https://www.dezeen.com/feed/
+    url_hash: 8f8dc0373ba321497bc6347f427a194ab2c3bf7cf68565938935fc3c5e30a81e
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843425'
+  - url: https://interiorzine.com/feed/
+    url_hash: 65dce75756aa4d27a6b290390bda47ed010b3169b7cf6c6288668958b2f44288
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843426'
+  - url: https://www.contemporist.com/feed/
+    url_hash: fc4916583623191d652ba2d14a959feb9397d26de2fd47d9c8b2e58424f2969e
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843427'
+  - url: https://design-milk.com/feed/
+    url_hash: fd84d171f7a11a5f3e077a8959a5cdb0ac44f38adf9b22d9e3f37ce0aef09b26
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843428'
+  - url: https://logodesignlove.com/feed/
+    url_hash: 834cbc1268e23e0e6f3663d8b549bf9289fbf15dfef37ec3152ffde5d45c44ef
+    category_hint: design
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.843429'
+  platform: []
+  scraped: []
+  other: []
+food:
+  rss:
+  - url: https://www.theguardian.com/food/rss
+    url_hash: 43d4d182d457874d09b5949075c880bac422d0d9b6779a71e886bd7acfc018c2
+    category_hint: food
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.844321'
+  - url: https://smittenkitchen.com/feed/
+    url_hash: c86f03a709d64ca770e3477f242fb5e4fc1d9813b2350f57a8e79b67783e5388
+    category_hint: food
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.844323'
+  - url: https://minimalistbaker.com/feed/
+    url_hash: 8c4a52b1cd122a900fd1557ef4dd48b7c19eb9f7b66b9415ecc2a9aa8cbc8a1b
+    category_hint: food
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.844325'
+  - url: https://cookieandkate.com/feed/
+    url_hash: 3f8c33fbb6c581f96e9e7925ad4f38f51cc5bec01d68cf20478ba9c97e449ecc
+    category_hint: food
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.844326'
+  - url: https://www.howsweeteats.com/feed/
+    url_hash: 1efccd52df511ad67e3ce90e572faec1ff35b6e2057466e9bbd400bff3ac33ff
+    category_hint: food
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.844327'
+  - url: https://natashaskitchen.com/feed/
+    url_hash: 5c7acc42f4c4d88a4458774bf6bd8075868bf9c1e84db4f77f1acec76c3112b2
+    category_hint: food
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.844328'
+  - url: https://damndelicious.net/feed/
+    url_hash: 7410610b2160da789b5ab7430c2cd299dc5f8b707efb7d7d893b355a3b6a9ec8
+    category_hint: food
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.844329'
+  - url: https://www.gimmesomeoven.com/feed/
+    url_hash: 3d8472c2c5a869b3d4ff253236a3ffa8cb276c86a2e3047bd0024e1a69be16e6
+    category_hint: food
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.844330'
+  - url: https://www.recipetineats.com/feed/
+    url_hash: 25239e11d6fade57f03123be6580cefe9bd7864cf52c49b6bf836e957164880f
+    category_hint: food
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.844331'
+  - url: https://cafedelites.com/feed/
+    url_hash: 57eb6c3916904e2aee366aecdebfc5cbc869e6dbecf2ea21c5a76be7d8e8c8ea
+    category_hint: food
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.844332'
+  - url: https://pinchofyum.com/feed/
+    url_hash: 99b173f4cbbae801d32b63323e0cf14caa5d2506e312328c0c9f54caede2107d
+    category_hint: food
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.844333'
+  platform: []
+  scraped: []
+  other: []
+nature:
+  rss:
+  - url: https://www.rfi.fr/es/rss
+    url_hash: 58cb4fa009c47eba4d9f3233a443945ba35ae2dc32357163b91c7d9f47e53dd7
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845361'
+  - url: https://www.france24.com/fr/rss
+    url_hash: d40d3f88a0a2df9ef683320ce57fe5b725eb01146544771f1b2d45ac42c223ad
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845363'
+  - url: https://www.20minutos.es/rss
+    url_hash: 1ba472ccaa809b496abebbde249910b86bfaafbf374d1318a00f2b980cb8353a
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845364'
+  - url: https://ep00.epimg.net/rss/elpais/portada.xml
+    url_hash: 592bf380f995e5a463e859a5f7a4195c3fec4964f2d63047ff6705e71001afb0
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845366'
+  - url: https://www.eldiario.es/rss
+    url_hash: 42c476fde1e75106fd7e2be4a54364fdec725d8c7b8bef2d0f94ae101888d382
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845367'
+  - url: https://okdiario.com/feed
+    url_hash: 47b541dff0406ad59238faec9820064d2f823d4224751be1fe0140ad70be46c2
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845368'
+  - url: https://www.elconfidencial.com/rss
+    url_hash: db3ff348e8927029923f911dfff0392ce84b0cc573c0ccd842dafff205cb0159
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845369'
+  - url: https://www.ara.cat/rss
+    url_hash: d7d69ca94c2497ef156be8d2f277226af692a892fc62d63609575d466c6ee977
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845370'
+  - url: https://www.diariodeibiza.es/rss
+    url_hash: 98d116898ccb06a905f513495d3362b5f4fd5c525e4ffdbb54070e57308d9a2f
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845371'
+  - url: https://www.diariodemallorca.es/rss
+    url_hash: 3c124f6a668b21e93661468a0a08b5fc9dd39f8519fdc3645ac4062173b5ab15
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845372'
+  - url: https://www.diariocordoba.com/rss
+    url_hash: f0aba5d05c4d50fb6579392623466a07f7f70abda6d50ff093e4034dd5122d9a
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845373'
+  - url: https://www.foxnews.com/rss
+    url_hash: 4127617d00f22f61dd2a84d499e494dcb241c0e022d6cd3becec588743bfe688
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845374'
+  - url: https://www.cbsnews.com/rss
+    url_hash: d580198bc7b511edf0c174029264005df3340c6caaf709cb0ba57e78582ca9dd
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845375'
+  - url: https://www.nbcnews.com/rss
+    url_hash: 5b884a7a53b6596b0c20e246c2a4134f251adb4e257792cd1f3fa019df87161c
+    category_hint: nature
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.845376'
+  platform: []
+  scraped: []
+  other: []
+culture:
+  rss:
+  - url: https://theartdesk.com/feeds/atom
+    url_hash: 36674dbec4606680f348d53344202a3522427a5c047f6050dbe13513e8f93f84
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847623'
+  - url: https://theartdesk.com/rss
+    url_hash: e32966251f02b1f9db78045e40e598ab11fad3a96f72a1a2c3e9f0a2c328b947
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847625'
+  - url: https://artforum.com/rss
+    url_hash: 0cd70cf600de0f87825ae997b26ab42d343c3f8bed2172fef0ec05f6093a90d5
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847626'
+  - url: https://theartdesk.com/rss.xml
+    url_hash: c9af2a03c23e60223e7b58788456a83e109fea935b17d137f6a80132d792b7ae
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847627'
+  - url: https://artforum.com/feed/
+    url_hash: 4e899e6278f3488e6418396c42fdaf35d1ca987a2b667e0dd6036be4d53f8b55
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847628'
+  - url: https://theartdesk.com/atom.xml
+    url_hash: 9e5b4f5cc31b60df4003a479737eef66a089fdd700502412d92443c7a2770ec7
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847629'
+  - url: https://artforum.com/feed
+    url_hash: 09fbc965a692a533f2f9967b6a8be4b0ebb7da3844327dd64c007881c06178b7
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847630'
+  - url: https://artforum.com/latest/feed
+    url_hash: c827adc67c96b1c493a7498582e511bb268f69e0980fbe039f7f06f10023f9b8
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847631'
+  - url: https://deadline.com/feed/
+    url_hash: a6faba43a17ae08ce8c2ca2957c887ccea657b1de1e235934cfca149122905f6
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847632'
+  - url: https://hyperallergic.com/feed/
+    url_hash: 242377d1e05feb42181eb662adf094cc65260db210c3dedaccd2d4606006b043
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847633'
+  - url: https://artforum.com/?feed=rss
+    url_hash: 4fb639411dc2a28cfff35f6e474c8deb1b0551e6be59e7827a2dbb059c20ab81
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847634'
+  - url: https://artforum.com/articles/feed
+    url_hash: 8abe5477adcc6510e8b4961aaf74c4164f05a2fbc2ed198e9363e0171b291da0
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847635'
+  - url: https://variety.com/rss
+    url_hash: 4e20ba247b24ca4188dad90363dc6f3915166ddb6f04dcc5be9fc68055aa79a2
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847636'
+  - url: https://hyperallergic.com/feed
+    url_hash: b8ec64c0bdb3d3a50f09d6108ddb4d2caa88b9ad5193889448d72afcc54488be
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847637'
+  - url: https://variety.com/feed/
+    url_hash: 58b40d3cf0481a8ff2c4158e59ab0ee434ac000744ba6a3d9f20af56afab5e6d
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847638'
+  - url: https://variety.com/?feed=rss2
+    url_hash: c97328ca108ccca063f45730c64e1b60c20312454edcbf34084c605a427d0d6c
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847639'
+  - url: https://deadline.com/rss
+    url_hash: a3002e92ea5d3b13fe238de975bc790a104749acff66c3ece69cd1a3753fded9
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847640'
+  - url: https://artforum.com/feeds/atom
+    url_hash: ff1c3eb8c5d9404782f3721b88db1d0e1f21690966a27ec0a70174a070457671
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847641'
+  - url: https://deadline.com/?feed=atom
+    url_hash: d51a2fc78f6574ba667214d9ae98f8b64409c7b2df3fe801151e4f2905408aec
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847643'
+  - url: https://deadline.com/?feed=rss2
+    url_hash: 8a03ec167d789bf32a3cd28cb7e2b1a2c2e46f52ec99b89fc9537c3502c3896e
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847644'
+  - url: https://theartdesk.com/news/rss
+    url_hash: fbd96f54935e78e5255312059d9a1b84f1e14c4f4fd7d872961ba447746a19cc
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847645'
+  - url: https://theguardian.com/rss
+    url_hash: ba4e1642cab471ba5946815c62a4eda7e8d8cfd05dc166968d6406b800b909c1
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847646'
+  - url: https://theartdesk.com/?feed=rss2
+    url_hash: 9e422edc94b56910da4d4f5946a09fd826aba2adbf59b08199eecdb179acff3b
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847647'
+  - url: https://deadline.com/feed
+    url_hash: 334c82464da6e4a1a8db6faf07306a459010e0dfe435a36f63dd54b61c093433
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847648'
+  - url: https://theartdesk.com/feeds/rss
+    url_hash: ff2c95a70f20c757fc9ec759bc036350984538dff026fa4dc70bf277d56c885f
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847649'
+  - url: https://theguardian.com/news/rss
+    url_hash: c5e533056aba3d3100f44a5529040a82dd17c6e9a2806f99797d3d45dfb1f8a6
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847650'
+  - url: https://variety.com/feed
+    url_hash: ead8efaf36eb4bcff7aa654e65d5860be72fe2aefb7bc66f54c6267733fe0be3
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847652'
+  - url: https://artforum.com/posts/feed
+    url_hash: 0fc40f829b60ac9a26acc294a6734a2e59cdc26545efc0d1f918b56a55c86ce6
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847653'
+  - url: https://hyperallergic.com/rss
+    url_hash: 066b7bce837061548da6509bca333ce4c81123cb581b0b7e15ece4f93616c185
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847654'
+  - url: https://theartdesk.com/blog/atom.xml
+    url_hash: 7bf90409742036fc0517f38aa0d3821b0be0405cebfb26939cbfc76f1a630dfe
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847655'
+  - url: https://artforum.com/?feed=rss2
+    url_hash: 123ca893f123cec0195ed59b50f366f8547c06a5d18c4e369de66f3cb66c1df2
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847656'
+  - url: https://theartdesk.com/blog/rss
+    url_hash: 4ded6f8ef438a5aceb137fbaf9886811a8370c436c451c7bd806d035c9f242a7
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847657'
+  - url: https://artforum.com/feeds/rss
+    url_hash: 792febf0fa2637a1dc9804f4b1aa371e3b79d46d92c05bea2ed8a1e60c57375e
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847658'
+  - url: https://artforum.com/?feed=atom
+    url_hash: afca1b77868e0fc42785163f771767edf3e1759d8994755d1127b1cf1f50653a
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847659'
+  - url: https://hyperallergic.com/latest/feed
+    url_hash: f20ff0a30579d96b3c4ed9208208ef70828aeba75e519ce96e1c232678c28489
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847660'
+  - url: https://artforum.com/blog/rss
+    url_hash: 2f8cc0a709a61ad4ddd1ed50c27a2d82d521b66d4a9fe02f00441a1e49f56d5a
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847661'
+  - url: https://deadline.com/?feed=rss
+    url_hash: e46c8717670b71576dea122ed57a2705741466e0a5cd2bb4d3521819d83c766d
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847662'
+  - url: https://theartdesk.com/?feed=atom
+    url_hash: bbef9dde45b8ba954da122cb1c0859a1e6133f5060d77217e7e0f5bf7e2717e9
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847664'
+  - url: https://artforum.com/blog/feed
+    url_hash: 75aa236d2ae622242d1ce4f8014b462cfd957bce8dd68e62ad0c9834e0b1a592
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847665'
+  - url: https://variety.com/?feed=rss
+    url_hash: 82dcaf1513160072c9da674af6add50436694656a0185b346fa61fa7c0b61bc8
+    category_hint: culture
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.847666'
+  platform: []
+  scraped: []
+  other: []
+health:
+  rss:
+  - url: https://statnews.com/feed/
+    url_hash: 151c089bbb1be2f90f7f3d3c99c9d9d402600f75dcfbf6c2f64ca661cd57cd06
+    category_hint: health
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.848906'
+  - url: https://statnews.com/?feed=rss
+    url_hash: a37512dfea5769e3bfe1fbafc2fa3280e5e673d541fc6b68b10b5fc0e81b759e
+    category_hint: health
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.848911'
+  - url: https://statnews.com/feed
+    url_hash: 0c1ef2518b18db4a6fc5a2cd8186132878d1b8dfcc9026e6453d50b65dfd4fdf
+    category_hint: health
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.848912'
+  - url: https://statnews.com/?feed=atom
+    url_hash: 57125f9276514387b8295de1351a4efc35a86d0a76fc83bed6cc5c4a8e85e308
+    category_hint: health
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.848914'
+  - url: https://statnews.com/?feed=rss2
+    url_hash: 1b3f9644548abd7022b23bde349ea98a29e0257632d0e767f4adfe2934d992ff
+    category_hint: health
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.848915'
+  - url: https://statnews.com/latest/feed
+    url_hash: adb6ffd82906190fee31f35a5e4c13acbfac804b41657e21e02d5bb33d5a6cbc
+    category_hint: health
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.848916'
+  - url: https://menshealth.com/feed
+    url_hash: 355914a031925be40616dbad245a98e1d6beffb40e8a3b71e5e9dbf0606d8469
+    category_hint: health
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.848917'
+  - url: https://menshealth.com/feed/
+    url_hash: 7a1449a8e6e39cf6601adc699a45e62abf5c5642c8637e4451e4e276c03fef8e
+    category_hint: health
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.848918'
+  - url: https://psychologytoday.com/news/feed
+    url_hash: 018366226e4f307182e255529e7cc02d4a1997af4bbbe61a255c880932b941bc
+    category_hint: health
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.848920'
+  - url: https://statnews.com/rss
+    url_hash: 01bc668e836e3eeb619afd8526eb6d211abd02eeeabd1c3cfa87ce49ca818ae2
+    category_hint: health
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.848921'
+  - url: https://menshealth.com/rss
+    url_hash: b5caec959a24a6d96f018e75fadaca03c9f7d4e311fda073934f84dbe974ce9e
+    category_hint: health
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.848922'
+  - url: https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/section/health/rss.xml
+    url_hash: 644ca9a62545173cdfbce63e276dcd53a95e4cd5fcabd83b093aaaa4e5a16cb2
+    category_hint: health
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.848923'
+  - url: https://www.statnews.com/feed/
+    url_hash: 91f7377833861e829e7bf3cb12ab6c238275339988b60d665afceea1d29b54cd
+    category_hint: health
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.848924'
+  - url: https://www.menshealth.com/rss
+    url_hash: 03126280fb60e8a0beb07c383f79245f98dd43f81a2f436afdf3b05d36508b66
+    category_hint: health
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.848925'
+  - url: https://www.eatthis.com/feed
+    url_hash: bf0571844913bf67a50d7ed8206c866ee7a5bcbf76afcc0f134690f4662b9896
+    category_hint: health
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.848926'
+  - url: https://www.self.com/feed/rss
+    url_hash: 92536218330109ea7b0c6a468811c5afcdf3fef3e2962dc03b22e14538a53399
+    category_hint: health
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.848928'
+  - url: https://nutritionfacts.org/feed
+    url_hash: 2db795788193f2016f1ec57ae2dc71ead170ebf0de0b715e7a7954f7ef716d39
+    category_hint: health
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.848929'
+  - url: https://www.bmj.com/rss
+    url_hash: 740e1228e09c1300df8bc1d0cbe6d46dd130ef70df9c3a16e3fba245ba0c8e25
+    category_hint: health
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.848930'
+  platform: []
+  scraped: []
+  other: []
+humor:
+  rss:
+  - url: https://clickhole.com/feed/
+    url_hash: a69d7c0ab6d4b2dffbaea08bf96172dab3aee7ecf756b6f50e41a1cc0c363fa1
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850483'
+  - url: https://theonion.com/?feed=rss
+    url_hash: 434c4a1f5d395db07b30d7b7427d86f504aa2cb968bd17e2d1fbe61ac7e844db
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850485'
+  - url: https://reductress.com/news/feed
+    url_hash: a0f7f3f83871700655289fa7fbaf8d04cee07cad730a34ee0fc91b91400c3305
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850487'
+  - url: https://theonion.com/category/feed
+    url_hash: 67f68461c836d47a5b9a6ef789570465d3acbc94af7718d27ae65fd2bd229f8d
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850488'
+  - url: https://theonion.com/news/feed
+    url_hash: a16807a18939b41f72db9acdf323100661b0730eed46d2077ec9bf831c472dab
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850489'
+  - url: https://reductress.com/category/feed
+    url_hash: 91af46714f9b2eabc0205b8728a74ee5b596406434701a4f817132a0895c3b59
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850490'
+  - url: https://theonion.com/feed
+    url_hash: 8e4b22ab2a0e6f22cbf791945500858cea681444bd91a7b3ec87e8e3b2aef889
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850491'
+  - url: https://reductress.com/feed/
+    url_hash: 12c6c0c232f9734ba52d5f75d3dd9777927080bd150ca9d585a8fac9b50fbb2a
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850493'
+  - url: https://reductress.com/latest/feed
+    url_hash: d4216d9b2e6523f889ab69d8575bcf18c7456025b33f012cbc851e6f2b071192
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850494'
+  - url: https://reductress.com/feed
+    url_hash: 61b00002b48ea0348ed946ffaca19df6032ca7302f3426a29c7de51582752485
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850495'
+  - url: https://clickhole.com/?feed=rss2
+    url_hash: d71ac6887afba97975bc0f34938446c888d7eea5996f0dd7b4bebe6d88a69af7
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850496'
+  - url: https://reductress.com/blog/feed
+    url_hash: 9083fe271e95f750df9cafe61eccde09b557f2b3ed91e9459c77210d9955776a
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850497'
+  - url: https://clickhole.com/feed
+    url_hash: 56d4c366bde4f6bb00ad0cff0b409431abf7422b4dd4642d0573965ce935ba83
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850498'
+  - url: https://theonion.com/rss
+    url_hash: 4ca3e109d9ab2f2cd98a4c97f67a0e8a390413f46ccbc2e9517ffcbedae9f143
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850499'
+  - url: https://reductress.com/articles/feed
+    url_hash: 5195249d39ad6a7d46e1910642357e68f52f9d1d2b813b99e8752fa785ae70c5
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850501'
+  - url: https://reductress.com/posts/feed
+    url_hash: 3bbfbb8a5c1fb74bba306f8deebe247849b28ce5d2743efbc240987ddb309a39
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850502'
+  - url: https://clickhole.com/?feed=rss
+    url_hash: a57dd890a8d3ebfee90ee0cc4cbb9f21abd5364e4f5ccac0a62765f24f86d6eb
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850503'
+  - url: https://theonion.com/feed/
+    url_hash: 3ebc77bda16c06c7e712196d938c5a6cbf677da0a9a0d55aa652c10116fd20a9
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850504'
+  - url: https://clickhole.com/rss
+    url_hash: 3bceed23c19b8c261dbb1d08cb5119f98e6eba2a81f0a71cd2c3fcaeabed4354
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850505'
+  - url: https://theonion.com/?feed=atom
+    url_hash: 656b1834671f734694c3dc1a7705ef5efbd9b134672aba79c29eb848fbb67041
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850506'
+  - url: https://clickhole.com/?feed=atom
+    url_hash: 2ef3e377294a1462cd26b42bbd3952cc04b7453f3e634ee994e6aa07a7b39125
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850508'
+  - url: https://theonion.com/latest/feed
+    url_hash: a1be1fe5e9419b50ef358554ce388e9a6f1db86015df92815fc47c00860e3e11
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850509'
+  - url: https://theonion.com/news/rss
+    url_hash: 7719d6176c79c970c2a1ce7385dc21df5090a9cb0620d7a06df64f69753d7629
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850510'
+  - url: https://theonion.com/?feed=rss2
+    url_hash: 87d12081f9ad096bb59cfb303b278248df967aa2ebf61b1b83a68e6ab524cfc9
+    category_hint: humor
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.850511'
+  platform: []
+  scraped: []
+  other: []
+travel:
+  rss:
+  - url: https://wanderlust.com/?feed=atom
+    url_hash: 4804a90102f4197954f6dca91d72dca5ed4f62a8f963e500cd38d9551b5b687b
+    category_hint: travel
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.851081'
+  - url: https://wanderlust.com/?feed=rss
+    url_hash: 13b7212dbdb620743f9a7db8efbe3ee2f17a22624262c8549798b352292db422
+    category_hint: travel
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.851082'
+  - url: https://wanderlust.com/?feed=rss2
+    url_hash: dea007acedb9abbc83173abe50d58a441b64e2faea7ce575069edb688176d55e
+    category_hint: travel
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.851084'
+  - url: https://wanderlust.com/rss
+    url_hash: 0b9c55083d4d7583907230bd49153874d424a3aced03454032fa444e184e0f01
+    category_hint: travel
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.851085'
+  - url: https://wanderlust.com/feed
+    url_hash: 7013642b1c10259ce6fd00e2fb644b3c2a5331cb78bbc3b2fceca11702082a49
+    category_hint: travel
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.851086'
+  - url: https://wanderlust.com/feed/
+    url_hash: 0c8bd2cdc6619e6f19d62ce45fcc080d73a8155519d33d450bd60cbdc21fb9e8
+    category_hint: travel
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.851087'
+  platform: []
+  scraped: []
+  other: []
+gaming:
+  rss:
+  - url: https://destructoid.com/?feed=atom
+    url_hash: f151f3336201098c7509627ddb256336d54a88eb03456599b1b792a6aba47b44
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852621'
+  - url: https://vg247.com/feed
+    url_hash: 6ca564927e779d0a4ee33ae9ab3f5601e98303cec37f5a94f06207454bc74da7
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852623'
+  - url: https://kotaku.com/category/feed
+    url_hash: f4e838ba96472cb3e9066d195ff06ef627c9d141634627df0f5411a35fff63c5
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852624'
+  - url: https://rockpapershotgun.com/feed
+    url_hash: 47497334f250dcddb55eaf62aab564897d38f2887a9b0b80a644b70b4c72e9b7
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852625'
+  - url: https://destructoid.com/feed
+    url_hash: cb7c146988da166b0ef8e6a40bb52c205f909044d3a6563798c040a7779e6583
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852627'
+  - url: https://kotaku.com/?feed=rss2
+    url_hash: 5e0fa46510844f7a29b9ba4507342d5535df81ff9353d791c8ab8d0edc068f1a
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852628'
+  - url: https://polygon.com/feed
+    url_hash: eeab6dc17bd8c9990d9cb80e31e4e2e0c52c2a4087a974c7ff444f35957f53cd
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852629'
+  - url: https://vg247.com/feed/
+    url_hash: 2ed2d6dfdab0081551cfc77e56825d2146b8a83f5fe2a66b12f6bc8f8ecb9554
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852630'
+  - url: https://vg247.com/feeds/
+    url_hash: d51ee9ca6d6fd90c128c167e75331dec12da3e94e3eb8b726c967453a22fd526
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852631'
+  - url: https://kotaku.com/index.xml
+    url_hash: 3644003c0832b902d27b747c038caafb63a2da3084b8be6c8c262e08ba358a4a
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852632'
+  - url: https://kotaku.com/rss
+    url_hash: a0840ab3b453998de7a790c1b5cb106faa62c5518a16b62421feb2f9874a852d
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852633'
+  - url: https://kotaku.com/?feed=rss
+    url_hash: ba7637839da7989e85c09c527f9b5b538a39e0a22c88363c1d2bc14a88b129d3
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852635'
+  - url: https://destructoid.com/feed/
+    url_hash: 6069583b49865366a7976d0be67bcb1d9b96c94604b359aa0acfe4b26aa98425
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852636'
+  - url: https://kotaku.com/?feed=atom
+    url_hash: b38f6a443d5b5d2b4d6a72925c6d0a8297fcb2daf3ed4dfd3d16c82cac33297c
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852637'
+  - url: https://destructoid.com/?feed=rss
+    url_hash: 4cfc9375e5639f8fd014c4c1e678b57695c117adc5e17352f628700ca93ff127
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852638'
+  - url: https://rockpapershotgun.com/feeds
+    url_hash: 458d8015cc4599ccefecae3bacb2850924b4d53735c69a8445734eb062131dbb
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852639'
+  - url: https://kotaku.com/feed
+    url_hash: 54d38d113a7fe5c7484c400704bc0609dfd835757b2c3a1daf13807c381f8463
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852640'
+  - url: https://rockpapershotgun.com/feed/
+    url_hash: ada787c7112d0f8a81e46ed0ffe840e67ecb9bbca038a0e300f039ca795dd301
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852641'
+  - url: https://destructoid.com/rss
+    url_hash: 9aad27651be9385905b9edc8a2492e64677dad009f6b740b067a7199ea09b9a0
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852642'
+  - url: https://rockpapershotgun.com/feeds/
+    url_hash: 5f486be58d04dd4dfb2a9885755d137be9aa1407bf8426b785f7cd226a5acf47
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852643'
+  - url: https://kotaku.com/latest/feed
+    url_hash: 1ee09e08fbef68806623bfc37f475c7ba3a2e8883656e4aeb16e629b1d236f91
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852645'
+  - url: https://destructoid.com/?feed=rss2
+    url_hash: 97740420a37daf2045506964cf430984b34a6960dea283cd4e5e47a18701a240
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852646'
+  - url: https://vg247.com/feeds
+    url_hash: c62ee6e44b1250d0e6c4e7de5f5ad74a8b915928789d79c45789d19b6df0433f
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852647'
+  - url: https://kotaku.com/feed/
+    url_hash: a5ead749d72e1fba5bc53ac51f6548d34a07cd2637b4694f11408643a9d89416
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852648'
+  - url: https://polygon.com/feed/
+    url_hash: afaf9982b0be85e90499b1569b8d66bc63cb9e48f7b1cc3aee160592869e5e38
+    category_hint: gaming
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.852649'
+  platform: []
+  scraped: []
+  other: []
+history:
+  rss:
+  - url: https://historyweb.com/?feed=atom
+    url_hash: 1c5553666d00988bb4bc85f81de12da1989612127df0c5ea2844b0620cf9d1d2
+    category_hint: history
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.853257'
+  - url: https://cabinetmagazine.org/rss
+    url_hash: 580fe085902b39f97808da5df2b816bfe9779072cc6bf097ddf44611a9131f4b
+    category_hint: history
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.853259'
+  - url: https://publicdomainreview.org/rss.xml
+    url_hash: cc71e9184e1147d5c431c2ec617115759432bcc7c7e526537e225d8bd1d594b6
+    category_hint: history
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.853260'
+  - url: https://publicdomainreview.org/feed
+    url_hash: 9ac7e29b98a01378f4acb637f225428f999845f339798f935ee6754c3e530c72
+    category_hint: history
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.853261'
+  - url: https://historyweb.com/?feed=rss
+    url_hash: 729dc5ea9027edd251fb37901367dc12b8edc85d13a2d9a2c42b85b6e8041f97
+    category_hint: history
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.853262'
+  - url: https://publicdomainreview.org/feed/
+    url_hash: a5b8cdd728cdb8e4f2c67f445a5b3bbf88b302549f996b7767acd519cadb5f4b
+    category_hint: history
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.853263'
+  - url: https://historyweb.com/?feed=rss2
+    url_hash: e436ae66433510d354edb46f4765b549a0fadbbcfffabecc3c82fa04a539b117
+    category_hint: history
+    source_type: rss
+    status: found_via_probe
+    added_at: '2026-04-21T00:21:17.853264'
+  platform: []
+  scraped: []
+  other: []
+philosophy:
+  rss:
+  - url: https://plato.stanford.edu/rss/sep.xml
+    url_hash: fc65fc68f967db963d6895e22fe65cb12b82ea80e6aada90efc2c53ea06781fa
+    category_hint: philosophy
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.854014'
+  - url: https://iep.utm.edu/feed/
+    url_hash: 5c2f7dec31831bb78e6cff54b0ec27b76e17721b7249a7598101ccd4cb0cae76
+    category_hint: philosophy
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.854016'
+  - url: https://philosophynow.org/rss
+    url_hash: 1cd1276258ee31520c75d2e0e7be64a676d35efb2099fa7337dd0401120e42e0
+    category_hint: philosophy
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.854018'
+  - url: https://aeon.co/feed
+    url_hash: 15b4058d801136ad058f4f0d1cb63fd0f3302336ed7a5b77dcff02b7a3a3a880
+    category_hint: philosophy
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.854019'
+  - url: https://www.newphilosopher.com/feed/
+    url_hash: 92bccfc95f91262ce28d88f1908d836684ea4ce8ce9c0a39499d3391e48afc41
+    category_hint: philosophy
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.854020'
+  - url: https://philosophybites.com/feed/
+    url_hash: 1f71b1142faae4f6f33eba07c2853ebbf2a7df00e46766aa4ff5a16a8cef5003
+    category_hint: philosophy
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.854021'
+  - url: https://dailynous.com/feed/
+    url_hash: 164a5fbb1a6924431ca141994023718c407b55251e721dca1a491e2103a35d39
+    category_hint: philosophy
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.854023'
+  - url: https://philosophy.stackexchange.com/feeds
+    url_hash: bc8373a45561700f1eee6469aad6afb4e079249c04b5647a89636f5a14749256
+    category_hint: philosophy
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.854024'
+  platform: []
+  scraped: []
+  other: []
+general:
+  rss:
+  - url: https://nypost.com/feed/
+    url_hash: b8e0e30485c3542c3fd910d32cfb23c3a09ed3a7e2d5457c1ef45d118b0c423e
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855666'
+  - url: https://www.seattletimes.com/feed/
+    url_hash: 561624e7930d9cccf30db480133c6f9b8582c6fe47ec0ba92554e3ecdbeddd92
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855671'
+  - url: https://fortune.com/feed/
+    url_hash: da6c1c8c48dbe94bf82509988026bc6d1b3fb43cedd4b2662673ecfb6800b28e
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855672'
+  - url: https://www.wired.com/feed/rss
+    url_hash: c01c14fc345f6361c73474db2e09619599cce0e4940c9db99db83f4697d02dd4
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855674'
+  - url: https://techcrunch.com/feed/
+    url_hash: f84187f7c52ef9b346198263cd46c96b18aca5195c5b403c3e9a155ab3a4d314
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855675'
+  - url: https://www.theverge.com/rss/index.xml
+    url_hash: 8c3d9d5d77bb3a8307bb80e9c74bc27f4aac9347d5d99b92c5079c6cf9e588e7
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855676'
+  - url: https://mashable.com/feed/
+    url_hash: 929e33c9de286f9510fc08f6cefc353ca129ba235290a2b1abe6230cd4528c18
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855677'
+  - url: https://www.engadget.com/rss.xml
+    url_hash: 2ccba97d94b1107757b71d747858933b9d248e7274b1daea78354468696519d0
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855678'
+  - url: https://www.motherjones.com/feed
+    url_hash: 6d24f48813133c5a4130fde2c2dd4f9eb2f04a4aaeba2583430bf4d957ad4a26
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855680'
+  - url: https://www.propublica.org/feed
+    url_hash: 641a93e0fc9f271584c5a7d7e5a5953e6e321d0d2ea5ac17b0b5f9137de99ddd
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855681'
+  - url: https://www.pbs.org/newshour/feeds/rss/headlines
+    url_hash: 852a96f0d0b1b9102178be00c53589eee579c30d5c03c0fdb00f653e207bde8c
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855682'
+  - url: https://www.france24.com/en/rss
+    url_hash: eeb3c2ea2613a03f9d0aa79e614d0c1aa56b0f9a84bd07dea3419d331d5ba702
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855683'
+  - url: https://rss.dw.com/rdf/rss-en-all
+    url_hash: 14dda539770f94e325d6e6242ab2c1649dca35d33cff68518ca43c9270e7fe38
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855684'
+  - url: https://www.rt.com/rss
+    url_hash: 4145633b5207336713fe944f40f8ad34c3ae5f1d58995762192dd03d1f6090cc
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855685'
+  - url: https://www.scmp.com/rss/4/feed
+    url_hash: 086cf7ee8196a5b52f17cf6e0d1a6a0d8e0b30aef2cf150632763c1c180983a2
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855686'
+  - url: https://www.japantimes.co.jp/feed
+    url_hash: 8b0282a2707eba9210b0cf4c7ff9f30ce71ebf71a3534568ac8bc8f8d061d628
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855688'
+  - url: https://www.smh.com.au/rss/feed.xml
+    url_hash: 240012d458e538f9584531adf4b884a1c0068420919be9eaa48249d9e94efaa9
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855689'
+  - url: https://www.theage.com.au/rss/feed.xml
+    url_hash: abccb225fcff6c5e75156e8ac99d9f357a43d65deb4cc3e3f8de6f1a6803d8f0
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855690'
+  - url: https://www.theglobeandmail.com/arc/outboundfeeds/rss/?outputType=xml
+    url_hash: b4c53bcb7c5f2f66532ac38e2e2470afba23bd4d091f4ea4bfb23f8f1b5382b4
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855691'
+  - url: https://globalnews.ca/feed
+    url_hash: bf1790801b8f2d2a4447a5e0ebf493d21ae79384570b2dc9511e24de512462dc
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855692'
+  - url: https://www.nature.com/nature.rss
+    url_hash: d592eddffea98806b157f45d5fa98ebddf5076602236b672b60d1fcbeefe16d0
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855693'
+  - url: https://www.sciencemag.org/rss/news_current.xml
+    url_hash: 08fba17d524a624d5024cab36751e9b7cedc79d67c0e22c7895e32f72ccdbf73
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855694'
+  - url: https://news.mit.edu/rss
+    url_hash: 6bdf5c49590f3d9031908960728ede7c9bd96a45c68b16e664b7afba316aea86
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855695'
+  - url: https://news.harvard.edu/gazette/feed
+    url_hash: cc03d5355f758c6b84f2ece679643bac411f9e7e94a2d34609edfe2fac9b1588
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855697'
+  - url: https://www.caltech.edu/about/news/rss
+    url_hash: bbd6568c532c8e0c98b208771635278777eea0719416dbc8ae670bef5e98b8be
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855698'
+  - url: https://www.cam.ac.uk/rss
+    url_hash: fd6aab28cfc7d02f1cebcf99268d796063330b3464fd882a8865d2e2d7f68f95
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855699'
+  - url: https://home.cern/rss.xml
+    url_hash: cfb6eba5fabd28f725402b5b29123128e784ef7f15d721076a36bb44110798c0
+    category_hint: general
+    source_type: rss
+    status: valid
+    added_at: '2026-04-21T00:21:17.855700'
+  platform: []
+  scraped: []
+  other: []

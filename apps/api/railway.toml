@@ -1,0 +1,14 @@
+# Railway deployment configuration
+# See: https://docs.railway.app/reference/config-as-code
+
+# API service — Hono/tRPC on Bun
+[build]
+builder = "dockerfile"
+dockerfilePath = "apps/api/Dockerfile"
+
+[deploy]
+startCommand = "bun run src/index.ts"
+healthcheckPath = "/health"
+healthcheckTimeout = 30
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3

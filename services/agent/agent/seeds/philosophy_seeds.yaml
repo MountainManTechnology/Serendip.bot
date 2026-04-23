@@ -1,0 +1,19 @@
+category: philosophy
+count: 8
+feeds:
+- url: https://plato.stanford.edu/rss/sep.xml
+  status: valid
+- url: https://iep.utm.edu/feed/
+  status: valid
+- url: https://philosophynow.org/rss
+  status: valid
+- url: https://aeon.co/feed
+  status: valid
+- url: https://www.newphilosopher.com/feed/
+  status: valid
+- url: https://philosophybites.com/feed/
+  status: valid
+- url: https://dailynous.com/feed/
+  status: valid
+- url: https://philosophy.stackexchange.com/feeds
+  status: valid

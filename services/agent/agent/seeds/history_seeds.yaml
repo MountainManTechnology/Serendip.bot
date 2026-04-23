@@ -1,0 +1,17 @@
+category: history
+count: 7
+feeds:
+- url: https://historyweb.com/?feed=atom
+  status: found_via_probe
+- url: https://cabinetmagazine.org/rss
+  status: found_via_probe
+- url: https://publicdomainreview.org/rss.xml
+  status: found_via_probe
+- url: https://publicdomainreview.org/feed
+  status: found_via_probe
+- url: https://historyweb.com/?feed=rss
+  status: found_via_probe
+- url: https://publicdomainreview.org/feed/
+  status: found_via_probe
+- url: https://historyweb.com/?feed=rss2
+  status: found_via_probe

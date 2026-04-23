@@ -1,0 +1,29 @@
+{
+  "rootVersion": "2026.04.22.1",
+  "packages": {
+    "apps/api": {
+      "hash": "b948a713114f5c963ba081ea922591fff29aebe92d955ca4f14e5fb4b2a4a178",
+      "version": "0.1.3"
+    },
+    "apps/web": {
+      "hash": "352b7dd0349e6e6875d84d9c5e999da8d7c9294c0cafcad51ec38def84d97434",
+      "version": "0.1.8"
+    },
+    "packages/config": {
+      "hash": "68bfceb76878fa12ca4df20a553c443b186c5b619a2b644d4f0f04d2c1551f04",
+      "version": "0.1.0"
+    },
+    "packages/db": {
+      "hash": "05c4eec49e61e0d2770b1f143f9d95a20e4a2fccb94853ef56e0545da28a27b5",
+      "version": "0.2.0"
+    },
+    "packages/types": {
+      "hash": "789876cd6cd9488d120db8dd0a6e8e43b1ee3676d9fb61c2594a6464880b84a6",
+      "version": "0.1.0"
+    },
+    "services/agent": {
+      "hash": "96c84fb3599afa9f85e4e910cb8c2ec4b0d73e46b22d59eb98175784301d0ef4",
+      "version": "0.4.0"
+    }
+  }
+}

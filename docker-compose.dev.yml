@@ -1,0 +1,342 @@
+version: "3.8"
+
+name: serendip-bot-dev
+
+services:
+  # ---------- Primary DB and cache from stumble-upon ----------
+  postgres:
+    image: pgvector/pgvector:pg16
+    ports:
+      - '127.0.0.1:5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-stumble_ai}
+      POSTGRES_USER: ${POSTGRES_USER:-stumble}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-localdev}
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U stumble -d stumble_ai']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - '127.0.0.1:6379:6379'
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - redisdata:/data
+
+  # ---------- Main Node services (api + web) ----------
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+      args:
+        VERSION: ${VERSION:-dev}
+    ports:
+      - '4000:4000'
+    environment:
+      NODE_ENV: ${API_NODE_ENV:-development}
+      PORT: ${PORT:-4000}
+      DATABASE_URL: ${DATABASE_URL_DOCKER:-postgresql://${POSTGRES_USER:-stumble}:${DB_PASSWORD:-localdev}@postgres:5432/${POSTGRES_DB:-stumble_ai}}
+      REDIS_URL: ${REDIS_URL_DOCKER:-redis://redis:6379}
+      LOG_LEVEL: ${LOG_LEVEL:-debug}
+      ARTICLE_PUBLISH_API_KEY: ${ARTICLE_PUBLISH_API_KEY:-}
+      AZURE_STORAGE_CONNECTION_STRING: ${AZURE_STORAGE_CONNECTION_STRING:-}
+      AZURE_STORAGE_CONTAINER: ${AZURE_STORAGE_CONTAINER:-article-images}
+      AGENT_URL: ${AGENT_URL_DOCKER:-http://agent-api:8001}
+      INTERNAL_API_TOKEN: ${INTERNAL_API_TOKEN:?Set INTERNAL_API_TOKEN in .env}
+      ADMIN_SECRET_KEY: ${ADMIN_SECRET_KEY:?Set ADMIN_SECRET_KEY in .env}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args:
+        VERSION: ${VERSION:-dev}
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:4000}
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+        NEXT_PUBLIC_UMAMI_ENABLED: ${NEXT_PUBLIC_UMAMI_ENABLED:-false}
+        NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
+        NEXT_PUBLIC_UMAMI_RECORDER_SRC: ${NEXT_PUBLIC_UMAMI_RECORDER_SRC:-}
+        NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${NEXT_PUBLIC_UMAMI_WEBSITE_ID:-}
+        NEXT_PUBLIC_ADSENSE_CLIENT_ID: ${NEXT_PUBLIC_ADSENSE_CLIENT_ID:-}
+        NEXT_PUBLIC_DISABLE_ADS: ${NEXT_PUBLIC_DISABLE_ADS:-false}
+    ports:
+      - '3000:3000'
+    environment:
+      NODE_ENV: ${WEB_NODE_ENV:-development}
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:4000}
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+      NEXT_PUBLIC_UMAMI_ENABLED: ${NEXT_PUBLIC_UMAMI_ENABLED:-false}
+      NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
+      NEXT_PUBLIC_UMAMI_RECORDER_SRC: ${NEXT_PUBLIC_UMAMI_RECORDER_SRC:-}
+      NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${NEXT_PUBLIC_UMAMI_WEBSITE_ID:-}
+      NEXT_PUBLIC_ADSENSE_CLIENT_ID: ${NEXT_PUBLIC_ADSENSE_CLIENT_ID:-}
+      NEXT_PUBLIC_DISABLE_ADS: ${NEXT_PUBLIC_DISABLE_ADS:-false}
+      NEXT_PUBLIC_SENTRY_DSN: ${NEXT_PUBLIC_SENTRY_DSN:-}
+      API_INTERNAL_URL: ${API_INTERNAL_URL_DOCKER:-http://api:4000}
+      ADMIN_SECRET_KEY: ${ADMIN_SECRET_KEY:?Set ADMIN_SECRET_KEY in .env}
+    depends_on:
+      - api
+
+  # ---------- Agent services (from stumble-upon/services/agent) ----------
+  agent-api:
+    build:
+      context: ./services/agent
+      dockerfile: Dockerfile.api
+      args:
+        VERSION: ${VERSION:-dev}
+    expose:
+      - '8001'
+    environment:
+      DATABASE_URL: ${DATABASE_URL_DOCKER:-postgresql://${POSTGRES_USER:-stumble}:${DB_PASSWORD:-localdev}@postgres:5432/${POSTGRES_DB:-stumble_ai}}
+      REDIS_URL: ${REDIS_URL_DOCKER:-redis://redis:6379}
+      CELERY_BROKER_URL: ${CELERY_BROKER_URL_DOCKER:-redis://redis:6379/1}
+      CELERY_RESULT_BACKEND: ${CELERY_RESULT_BACKEND_DOCKER:-redis://redis:6379/2}
+      INTERNAL_API_TOKEN: ${INTERNAL_API_TOKEN:?Set INTERNAL_API_TOKEN in .env}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      AZURE_AI_FOUNDRY_ENDPOINT: ${AZURE_AI_FOUNDRY_ENDPOINT:-}
+      AZURE_AI_FOUNDRY_API_KEY: ${AZURE_AI_FOUNDRY_API_KEY:-}
+      AZURE_AI_FOUNDRY_DEPLOYMENT: ${AZURE_AI_FOUNDRY_DEPLOYMENT:-}
+      AZURE_AI_FOUNDRY_EMBED_DEPLOYMENT: ${AZURE_AI_FOUNDRY_EMBED_DEPLOYMENT:-}
+      AZURE_AI_FOUNDRY_EMBED_ENDPOINT: ${AZURE_AI_FOUNDRY_EMBED_ENDPOINT:-}
+      AZURE_COMPUTER_VISION_ENDPOINT: ${AZURE_COMPUTER_VISION_ENDPOINT:-}
+      AZURE_COMPUTER_VISION_KEY: ${AZURE_COMPUTER_VISION_KEY:-}
+    depends_on:
+      redis: { condition: service_healthy }
+      postgres: { condition: service_healthy }
+    healthcheck:
+      test:
+        [
+          'CMD',
+          'python',
+          '-c',
+          "import urllib.request; urllib.request.urlopen('http://localhost:8001/healthz')",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  agent-worker-finalize:
+    build:
+      context: ./services/agent
+      dockerfile: Dockerfile.worker
+      args:
+        VERSION: ${VERSION:-dev}
+    environment:
+      DATABASE_URL: ${DATABASE_URL_DOCKER:-postgresql://${POSTGRES_USER:-stumble}:${DB_PASSWORD:-localdev}@postgres:5432/${POSTGRES_DB:-stumble_ai}}
+      REDIS_URL: ${REDIS_URL_DOCKER:-redis://redis:6379}
+      CELERY_BROKER_URL: ${CELERY_BROKER_URL_DOCKER:-redis://redis:6379/1}
+      CELERY_RESULT_BACKEND: ${CELERY_RESULT_BACKEND_DOCKER:-redis://redis:6379/2}
+      APP_REGION: ${APP_REGION:-local}
+      QUEUES: finalize
+      CONCURRENCY: ${FINALIZE_CONCURRENCY:-2}
+      POOL: prefork
+      EVAL_CONCURRENCY: ${EVAL_CONCURRENCY:-12}
+      LOG_LEVEL: ${AGENT_LOG_LEVEL:-INFO}
+      IMAGE_MIRROR_DIR: ${IMAGE_MIRROR_DIR:-/data/image_mirror}
+    depends_on:
+      redis: { condition: service_healthy }
+      postgres: { condition: service_healthy }
+    restart: unless-stopped
+    volumes:
+      - image_mirror:/data/image_mirror
+
+  agent-worker:
+    build:
+      context: ./services/agent
+      dockerfile: Dockerfile.worker
+      args:
+        VERSION: ${VERSION:-dev}
+    environment:
+      DATABASE_URL: ${DATABASE_URL_DOCKER:-postgresql://${POSTGRES_USER:-stumble}:${DB_PASSWORD:-localdev}@postgres:5432/${POSTGRES_DB:-stumble_ai}}
+      REDIS_URL: ${REDIS_URL_DOCKER:-redis://redis:6379}
+      CELERY_BROKER_URL: ${CELERY_BROKER_URL_DOCKER:-redis://redis:6379/1}
+      CELERY_RESULT_BACKEND: ${CELERY_RESULT_BACKEND_DOCKER:-redis://redis:6379/2}
+      APP_REGION: ${APP_REGION:-local}
+      QUEUES: finalize
+      CONCURRENCY: ${CONCURRENCY:-4}
+      POOL: prefork
+      EVAL_CONCURRENCY: ${EVAL_CONCURRENCY:-12}
+      LOG_LEVEL: ${AGENT_LOG_LEVEL:-INFO}
+      IMAGE_MIRROR_DIR: ${IMAGE_MIRROR_DIR:-/data/image_mirror}
+    depends_on:
+      redis: { condition: service_healthy }
+      postgres: { condition: service_healthy }
+    restart: unless-stopped
+    volumes:
+      - image_mirror:/data/image_mirror
+
+  agent-worker-gevent:
+    build:
+      context: ./services/agent
+      dockerfile: Dockerfile.worker
+      args:
+        VERSION: ${VERSION:-dev}
+    environment:
+      DATABASE_URL: ${DATABASE_URL_DOCKER:-postgresql://${POSTGRES_USER:-stumble}:${DB_PASSWORD:-localdev}@postgres:5432/${POSTGRES_DB:-stumble_ai}}
+      REDIS_URL: ${REDIS_URL_DOCKER:-redis://redis:6379}
+      CELERY_BROKER_URL: ${CELERY_BROKER_URL_DOCKER:-redis://redis:6379/1}
+      CELERY_RESULT_BACKEND: ${CELERY_RESULT_BACKEND_DOCKER:-redis://redis:6379/2}
+      APP_REGION: ${APP_REGION:-local}
+      QUEUES: discovery
+      CONCURRENCY: ${GEVENT_CONCURRENCY:-20}
+      POOL: gevent
+      EVAL_CONCURRENCY: ${EVAL_CONCURRENCY:-12}
+      LOG_LEVEL: ${AGENT_LOG_LEVEL:-INFO}
+    depends_on:
+      redis: { condition: service_healthy }
+      postgres: { condition: service_healthy }
+    restart: unless-stopped
+
+  agent-beat:
+    build:
+      context: ./services/agent
+      dockerfile: Dockerfile.beat
+      args:
+        VERSION: ${VERSION:-dev}
+    environment:
+      REDIS_URL: ${REDIS_URL_DOCKER:-redis://redis:6379}
+      CELERY_BROKER_URL: ${CELERY_BROKER_URL_DOCKER:-redis://redis:6379/1}
+      CELERY_RESULT_BACKEND: ${CELERY_RESULT_BACKEND_DOCKER:-redis://redis:6379/2}
+    depends_on:
+      redis: { condition: service_healthy }
+    restart: unless-stopped
+
+  flower:
+    image: mher/flower:2.0
+    profiles:
+      - tools
+    command:
+      - 'celery'
+      - '--broker=${CELERY_BROKER_URL_DOCKER:-redis://redis:6379/1}'
+      - 'flower'
+      - '--port=5555'
+      - '--basic_auth=${FLOWER_USER:-admin}:${FLOWER_PASSWORD:-please-change-me}'
+    ports:
+      - '127.0.0.1:5555:5555'
+    depends_on:
+      redis: { condition: service_healthy }
+
+  adminer:
+    image: adminer:latest
+    ports:
+      - '127.0.0.1:8080:8080'
+    depends_on:
+      - postgres
+    profiles:
+      - tools
+
+  # ---------- Link-engine (discovery) services, adjusted build contexts and redis ----------
+  discovery-redis:
+    image: redis:7-alpine
+    container_name: serendip-discovery-redis
+    ports:
+      - '127.0.0.1:6380:6380'
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD:-}
+    command: >
+      redis-server
+      --appendonly yes
+      --requirepass ${REDIS_PASSWORD:-}
+    volumes:
+      - discovery-redis-data:/data
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  discovery-api:
+    build:
+      context: ./services/link-engine
+      dockerfile: Dockerfile.discovery
+    container_name: serendip-discovery-api
+    ports:
+      - '8002:8002'
+    environment:
+      REDIS_URL: redis://discovery-redis:6380/0
+      STUMBLE_DATABASE_URL: ${STUMBLE_DATABASE_URL}
+      LINK_ENGINE_LLM_API_KEY: ${LINK_ENGINE_LLM_API_KEY}
+      LINK_ENGINE_LLM_BASE_URL: ${LINK_ENGINE_LLM_BASE_URL}
+      LINK_ENGINE_DISCOVERY_MODEL: ${LINK_ENGINE_DISCOVERY_MODEL:-gpt-4-mini}
+      LINK_ENGINE_GRADING_MODEL: ${LINK_ENGINE_GRADING_MODEL:-gpt-4-mini}
+      LINK_ENGINE_REPORT_MODEL: ${LINK_ENGINE_REPORT_MODEL:-gpt-4-mini}
+      LINK_ENGINE_DISCOVERY_REASONING: ${LINK_ENGINE_DISCOVERY_REASONING:-none}
+      LINK_ENGINE_GRADING_REASONING: ${LINK_ENGINE_GRADING_REASONING:-none}
+      LINK_ENGINE_REPORT_REASONING: ${LINK_ENGINE_REPORT_REASONING:-none}
+      DISCOVERY_API_TOKEN: ${DISCOVERY_API_TOKEN:-}
+      PORT: 8002
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    depends_on:
+      discovery-redis:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:8002/health']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    restart: unless-stopped
+
+  discovery-worker:
+    build:
+      context: ./services/link-engine
+      dockerfile: Dockerfile.celery
+    environment:
+      REDIS_URL: redis://discovery-redis:6380/0
+      STUMBLE_DATABASE_URL: ${STUMBLE_DATABASE_URL}
+      LINK_ENGINE_LLM_API_KEY: ${LINK_ENGINE_LLM_API_KEY}
+      LINK_ENGINE_LLM_BASE_URL: ${LINK_ENGINE_LLM_BASE_URL}
+      LINK_ENGINE_DISCOVERY_MODEL: ${LINK_ENGINE_DISCOVERY_MODEL:-gpt-4-mini}
+      LINK_ENGINE_GRADING_MODEL: ${LINK_ENGINE_GRADING_MODEL:-gpt-4-mini}
+      LINK_ENGINE_REPORT_MODEL: ${LINK_ENGINE_REPORT_MODEL:-gpt-4-mini}
+      CELERY_MODE: worker
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    depends_on:
+      discovery-redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+  discovery-beat:
+    build:
+      context: ./services/link-engine
+      dockerfile: Dockerfile.celery
+    container_name: serendip-discovery-beat
+    environment:
+      REDIS_URL: redis://discovery-redis:6380/0
+      STUMBLE_DATABASE_URL: ${STUMBLE_DATABASE_URL}
+      LINK_ENGINE_LLM_API_KEY: ${LINK_ENGINE_LLM_API_KEY}
+      LINK_ENGINE_LLM_BASE_URL: ${LINK_ENGINE_LLM_BASE_URL}
+      LINK_ENGINE_DISCOVERY_MODEL: ${LINK_ENGINE_DISCOVERY_MODEL:-gpt-4-mini}
+      CELERY_MODE: beat
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    depends_on:
+      discovery-redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  redisdata:
+  image_mirror:
+  discovery-redis-data:
+

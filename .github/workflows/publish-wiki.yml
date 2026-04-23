@@ -1,0 +1,30 @@
+name: Publish Wiki
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - docs/wiki/**
+      - .github/workflows/publish-wiki.yml
+
+concurrency:
+  group: publish-wiki
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  publish-wiki:
+    runs-on: ubuntu-latest
+    # NOTE: Before this workflow can succeed, you must manually create the first
+    # wiki page in the GitHub repo's wiki tab. This is a one-time requirement
+    # that initializes the .wiki.git backend. Go to:
+    #   https://github.com/MountainManTechnology/Serendip.bot/wiki → "Create the first page"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: Andrew-Chen-Wang/github-wiki-action@v4
+        with:
+          path: docs/wiki
+          preprocess: true

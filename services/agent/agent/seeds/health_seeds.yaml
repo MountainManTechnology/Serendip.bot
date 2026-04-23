@@ -1,0 +1,39 @@
+category: health
+count: 18
+feeds:
+- url: https://statnews.com/feed/
+  status: found_via_probe
+- url: https://statnews.com/?feed=rss
+  status: found_via_probe
+- url: https://statnews.com/feed
+  status: found_via_probe
+- url: https://statnews.com/?feed=atom
+  status: found_via_probe
+- url: https://statnews.com/?feed=rss2
+  status: found_via_probe
+- url: https://statnews.com/latest/feed
+  status: found_via_probe
+- url: https://menshealth.com/feed
+  status: found_via_probe
+- url: https://menshealth.com/feed/
+  status: found_via_probe
+- url: https://psychologytoday.com/news/feed
+  status: found_via_probe
+- url: https://statnews.com/rss
+  status: found_via_probe
+- url: https://menshealth.com/rss
+  status: found_via_probe
+- url: https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/section/health/rss.xml
+  status: valid
+- url: https://www.statnews.com/feed/
+  status: valid
+- url: https://www.menshealth.com/rss
+  status: valid
+- url: https://www.eatthis.com/feed
+  status: valid
+- url: https://www.self.com/feed/rss
+  status: valid
+- url: https://nutritionfacts.org/feed
+  status: valid
+- url: https://www.bmj.com/rss
+  status: valid

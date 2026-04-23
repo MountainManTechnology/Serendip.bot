@@ -1,0 +1,42 @@
+{
+  "name": "@serendip-bot/web",
+  "version": "0.1.8",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sentry/nextjs": "^10.49.0",
+    "@serendip-bot/api": "*",
+    "@serendip-bot/db": "*",
+    "@serendip-bot/types": "*",
+    "@tanstack/react-query": "^5.40.0",
+    "@trpc/client": "^11.0.0",
+    "@trpc/react-query": "^11.0.0",
+    "dompurify": "^3.1.5",
+    "ioredis": "^5.4.1",
+    "next": "^15.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "superjson": "^2.2.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@serendip-bot/config": "*",
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/dompurify": "^3.0.5",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.3.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^8.0.0"
+  }
+}

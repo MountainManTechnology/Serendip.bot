@@ -1,0 +1,37 @@
+# FastAPI shim image — the only HTTP surface of the agent service.
+# Build context: ./services/agent
+
+FROM python:3.12-slim AS builder
+WORKDIR /build
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc libxml2-dev libxslt-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY pyproject.toml ./
+RUN pip install --user --no-cache-dir .
+
+FROM python:3.12-slim
+
+ARG VERSION=dev
+LABEL org.opencontainers.image.source="https://github.com/MountainManTechnology/Serendip.bot"
+LABEL org.opencontainers.image.version="${VERSION}"
+
+RUN useradd --create-home --uid 1000 api
+USER api
+WORKDIR /app
+
+COPY --from=builder /root/.local /home/api/.local
+COPY --chown=api:api . .
+
+ENV PATH=/home/api/.local/bin:$PATH \
+    PYTHONUNBUFFERED=1
+
+EXPOSE 8001
+
+CMD ["uvicorn", "agent.api:app", \
+     "--host", "0.0.0.0", \
+     "--port", "8001", \
+     "--workers", "2", \
+     "--access-log", \
+     "--proxy-headers"]
