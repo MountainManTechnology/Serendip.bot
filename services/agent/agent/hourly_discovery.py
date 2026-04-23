@@ -24,7 +24,7 @@ from typing import Any
 
 import httpx
 import psycopg
-import yaml
+import yaml  # type: ignore[import-untyped]
 from psycopg.rows import dict_row
 
 from agent.config import settings

@@ -72,7 +72,7 @@ class ContentScraper:
                     continue
 
                 href = link.get("href")
-                if not href:
+                if not href or not isinstance(href, str):
                     continue
 
                 # Resolve relative URLs
@@ -117,7 +117,8 @@ class ContentScraper:
         # Try common meta tags
         description = ""
         for meta in soup.find_all("meta", {"name": ["description", "og:description"]}):
-            description = meta.get("content", "")
+            raw_desc = meta.get("content", "")
+            description = raw_desc if isinstance(raw_desc, str) else ""
             if description:
                 break
 
@@ -165,12 +166,15 @@ async def discover_site_content(domain: str) -> dict[str, Any]:
         soup = BeautifulSoup(html, "html.parser")
 
         # Find blog/article section links
-        content_paths = []
+        content_paths: list[str] = []
         for link in soup.find_all("a", href=True):
-            href = link.get("href", "").lower()
+            raw_href = link.get("href", "")
+            if not isinstance(raw_href, str):
+                continue
+            href_lower = raw_href.lower()
             for pattern in ["/blog", "/articles", "/news", "/posts", "/insights", "/stories"]:
-                if pattern in href:
-                    content_paths.append(link.get("href"))
+                if pattern in href_lower:
+                    content_paths.append(raw_href)
                     break
 
         content_paths = list(set(content_paths))[:5]

@@ -17,6 +17,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - **Performance & stability** — fixes return interactive discovery latency to expected levels and prevent Celery runtime failures under `gevent`.
 
+- **mypy strict compliance** — resolved all type errors across `services/agent/`: made `_run_async()` generic (`Coroutine[Any, Any, _T] -> _T`) eliminating `no-any-return` errors throughout `tasks.py`; added `isinstance(href, str)` guards for BeautifulSoup `AttributeValueList` in `seeds/content_scraper.py`; switched OpenAI embeddings call in `providers/router.py` from `AsyncOpenAI` to sync `OpenAI` to fix coroutine-in-thread bug; wrapped both `EmbeddingsClient.embed` overloads in `providers/azure_ai.py` with lambdas; fixed `aioredis.Redis` type-arg in `telemetry_tasks.py`; added `# type: ignore[import-untyped]` to `yaml` imports in `seeds/review_seeds.py`, `seeds/fast_probe_feeds.py`, and `hourly_discovery.py`.
+
+- **Stale test removal** — deleted `tests/test_image_mirroring_integration.py`, `tests/test_ingestion_image_gates.py`, and `tests/test_image_ocr_smoke.py` which tested image pipeline code removed in the article-first evaluation simplification; all 21 remaining tests pass.
+
 ## [2026.04.22.1] — 2026-04-22
 
 ### Changed

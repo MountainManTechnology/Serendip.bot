@@ -207,7 +207,7 @@ async def _drain() -> dict[str, int]:
     }
 
 
-async def _push_to_dlq(r: aioredis.Redis[Any], items: list[str]) -> None:
+async def _push_to_dlq(r: aioredis.Redis, items: list[str]) -> None:  # type: ignore[type-arg]
     if not items:
         return
     try:

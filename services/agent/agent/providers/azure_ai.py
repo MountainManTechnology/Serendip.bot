@@ -213,11 +213,12 @@ class AzureAIFoundryProvider:
                 credential=AzureKeyCredential(api_key),
             )
             response = await asyncio.to_thread(
-                client.embed,
-                input=[text[:8000]],
-                model=deploy,
+                lambda: client.embed(  # type: ignore[arg-type, return-value]
+                    input=[text[:8000]],
+                    model=deploy,
+                )
             )
-            data = response.data[0].embedding
+            data = response.data[0].embedding  # type: ignore[union-attr]
 
         embedding: list[float] = data if isinstance(data, list) else []
         # Pad/truncate to 1536 to match DB vector(1536) column
@@ -252,11 +253,12 @@ class AzureAIFoundryProvider:
             b64 = base64.b64encode(image_bytes).decode()
 
             response = await asyncio.to_thread(
-                client.embed,
-                input=[{"mime_type": mime_type, "content": b64}],
-                model=deploy,
+                lambda: client.embed(  # type: ignore[arg-type, return-value]
+                    input=[{"mime_type": mime_type, "content": b64}],  # type: ignore[list-item]
+                    model=deploy,
+                )
             )
-            data = response.data[0].embedding
+            data = response.data[0].embedding  # type: ignore[union-attr]
             embedding: list[float] = data if isinstance(data, list) else []
             if len(embedding) < _EMBED_DIMENSIONS:
                 embedding = embedding + [0.0] * (_EMBED_DIMENSIONS - len(embedding))

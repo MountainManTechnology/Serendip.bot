@@ -15,8 +15,9 @@ import asyncio
 import json
 import time
 import uuid
+from collections.abc import Coroutine
 from datetime import UTC, datetime
-from typing import Any
+from typing import Any, TypeVar
 
 from celery.exceptions import SoftTimeLimitExceeded
 
@@ -26,8 +27,10 @@ from agent.logging import log
 
 RESULT_TTL = 600  # 10 minutes — matches the existing worker.py contract
 
+_T = TypeVar("_T")
 
-def _run_async(coro: Any) -> Any:
+
+def _run_async(coro: Coroutine[Any, Any, _T]) -> _T:
     """Run an async coroutine from a gevent worker using a real OS thread.
 
     gevent monkey-patches ``threading.Thread`` into a greenlet, so both plain
@@ -42,7 +45,7 @@ def _run_async(coro: Any) -> Any:
     """
     import gevent
 
-    return gevent.get_hub().threadpool.spawn(asyncio.run, coro).get()
+    return gevent.get_hub().threadpool.spawn(asyncio.run, coro).get()  # type: ignore[return-value, no-any-return]
 
 
 class _JsonEncoder(json.JSONEncoder):

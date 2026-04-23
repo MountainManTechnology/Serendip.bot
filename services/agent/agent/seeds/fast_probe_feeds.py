@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 
 import httpx
-import yaml
+import yaml  # type: ignore[import-untyped]
 
 SEED_DIR = Path(__file__).parent
 

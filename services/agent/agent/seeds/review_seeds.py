@@ -4,7 +4,7 @@
 from pathlib import Path
 from typing import Any
 
-import yaml
+import yaml  # type: ignore[import-untyped]
 
 SEEDS_DIR = Path(__file__).parent
 

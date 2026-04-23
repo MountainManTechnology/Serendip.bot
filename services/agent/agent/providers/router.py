@@ -254,14 +254,13 @@ class LLMRouter:
                 try:
                     import asyncio as _asyncio
 
-                    from openai import AsyncOpenAI
+                    from openai import OpenAI
 
-                    _oai = AsyncOpenAI(api_key=settings.openai_api_key)
+                    _oai = OpenAI(api_key=settings.openai_api_key)
                     _resp_oai = await _asyncio.to_thread(
-                        lambda: _oai.embeddings.create(  # type: ignore[no-any-return]
-                            input=[text[:8000]],
-                            model="text-embedding-3-large",
-                        )
+                        _oai.embeddings.create,
+                        input=[text[:8000]],
+                        model="text-embedding-3-large",
                     )
                     result = list(_resp_oai.data[0].embedding)
                     # Pad/truncate to 1536 for DB vector column
