@@ -87,7 +87,7 @@ jobs:
 
       - name: Install Python deps
         working-directory: services/agent
-        run: uv pip install --system ".[dev]"
+        run: uv pip install --system ".[dev,image]"
 
       - name: ruff check
         working-directory: services/agent
@@ -112,7 +112,7 @@ jobs:
 
       - name: Install Python deps
         working-directory: services/agent
-        run: uv pip install --system ".[dev]"
+        run: uv pip install --system ".[dev,image]"
 
       - name: mypy
         working-directory: services/agent
@@ -133,7 +133,7 @@ jobs:
 
       - name: Install Python deps
         working-directory: services/agent
-        run: uv pip install --system ".[dev]"
+        run: uv pip install --system ".[dev,image]"
 
       - name: pytest
         working-directory: services/agent

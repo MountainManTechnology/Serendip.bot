@@ -12,11 +12,13 @@ for per-URL fan-out across workers.
 from __future__ import annotations
 
 import asyncio
+import concurrent.futures
 import json
-import uuid
-from datetime import UTC, datetime
 import time
-from typing import Any
+import uuid
+from collections.abc import Coroutine
+from datetime import UTC, datetime
+from typing import Any, TypeVar
 
 from celery.exceptions import SoftTimeLimitExceeded
 
@@ -24,7 +26,22 @@ from agent.celery_app import app
 from agent.config import settings
 from agent.logging import log
 
+_T = TypeVar("_T")
+
 RESULT_TTL = 600  # 10 minutes — matches the existing worker.py contract
+
+
+def _run_async(coro: Coroutine[Any, Any, _T]) -> _T:
+    """Run an async coroutine from a gevent worker.
+
+    gevent monkey-patches the event loop so ``asyncio.run()`` raises
+    ``RuntimeError('asyncio.run() cannot be called from a running event loop')``.
+    Spawning a plain OS thread gives a fresh, loop-free context where
+    ``asyncio.run()`` works normally.  The calling greenlet blocks until done.
+    """
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
+        future = pool.submit(asyncio.run, coro)
+        return future.result()
 
 
 class _JsonEncoder(json.JSONEncoder):
@@ -85,10 +102,10 @@ def discover(
     """
     job_id = self.request.id
     try:
-        return asyncio.run(_discover(job_id, session_id, mood, topics or []))
+        return _run_async(_discover(job_id, session_id, mood, topics or []))
     except SoftTimeLimitExceeded:
         log.error("task_soft_timeout", job_id=job_id, session_id=session_id)
-        asyncio.run(_set_status(job_id, "failed", error="timeout"))
+        _run_async(_set_status(job_id, "failed", error="timeout"))
         return {"job_id": job_id, "status": "failed", "error": "timeout"}
 
 
@@ -153,7 +170,7 @@ def refresh_seeds() -> dict[str, str]:
     """Hourly: refresh seed URLs from YAML files + RSS feeds."""
     from agent.seeds import refresh
 
-    asyncio.run(refresh())
+    _run_async(refresh())
     return {"status": "ok"}
 
 
@@ -166,7 +183,7 @@ def hourly_discovery_task() -> dict[str, Any]:
     """
     from agent.hourly_discovery import hourly_discovery
 
-    result = asyncio.run(hourly_discovery())
+    result = _run_async(hourly_discovery())
     log.info("hourly_discovery_task_complete", total_inserted=result.get("total_inserted"))
     return result
 
@@ -197,7 +214,7 @@ def purge_stale_cache() -> dict[str, int]:
         finally:
             await r.close()
 
-    purged = asyncio.run(_purge())
+    purged = _run_async(_purge())
     log.info("cache_purged", keys_fixed=purged)
     return {"keys_fixed": purged}
 
@@ -228,7 +245,7 @@ def backfill_mood_affinities() -> dict[str, int]:
                     break
         return updated
 
-    count = asyncio.run(_run())
+    count = _run_async(_run())
     log.info("backfill_mood_affinities_complete", updated=count)
     return {"updated": count}
 
@@ -245,7 +262,7 @@ def seed_moods_task() -> dict[str, int]:
         async with conn:
             return await seed_moods(conn)
 
-    count = asyncio.run(_run())
+    count = _run_async(_run())
     log.info("seed_moods_complete", count=count)
     return {"count": count}
 
@@ -268,7 +285,7 @@ def ingest_batch(batch_size: int = 5) -> dict[str, int]:
     from agent.ingestion import run_ingest_batch
 
     start = time.perf_counter()
-    result = asyncio.run(run_ingest_batch(batch_size))
+    result = _run_async(run_ingest_batch(batch_size))
     duration_ms = int((time.perf_counter() - start) * 1000)
 
     log.info("ingest_batch_done", **result)
@@ -276,12 +293,10 @@ def ingest_batch(batch_size: int = 5) -> dict[str, int]:
     # Fire-and-forget: push a duration-bearing agent_task event so telemetry
     # tables have per-batch timings (best-effort, swallow errors).
     try:
-        import asyncio as _asyncio
-
         import redis.asyncio as _aioredis
 
-        from agent.telemetry import get_worker_id, now_iso, push_event
         from agent.config import settings as _settings
+        from agent.telemetry import get_worker_id, now_iso, push_event
 
         async def _push() -> None:
             r = _aioredis.from_url(_settings.redis_url, decode_responses=True)  # type: ignore[no-untyped-call]
@@ -305,7 +320,7 @@ def ingest_batch(batch_size: int = 5) -> dict[str, int]:
                 await r.close()
 
         try:
-            _asyncio.run(_push())
+            _run_async(_push())
         except Exception:
             pass
     except Exception:
@@ -378,7 +393,7 @@ def rescore_stale(batch_size: int = 20) -> dict[str, int]:
 
         return {"rescored": rescored, "failed": failed}
 
-    result = asyncio.run(_run())
+    result = _run_async(_run())
     log.info("rescore_stale_done", **result)
     return result
 
@@ -397,11 +412,11 @@ def decay_popularity() -> dict[str, int]:
                     "UPDATE site_cache SET popularity = GREATEST(0, popularity - 1)"
                     " WHERE popularity > 0"
                 )
-                count = cur.rowcount
+                count = int(cur.rowcount)
             await conn.commit()
         return count
 
-    count = asyncio.run(_run())
+    count = _run_async(_run())
     log.info("decay_popularity_done", updated=count)
     return {"updated": count}
 
@@ -421,7 +436,7 @@ def prewarm_blurbs(site_ids: list[str] | None = None, batch_size: int = 50) -> d
     unwarmed pairs and generates blurbs for them up to batch_size.
     Runs on the finalize queue to avoid blocking discovery.
     """
-    return asyncio.run(_prewarm_blurbs(site_ids, batch_size))
+    return _run_async(_prewarm_blurbs(site_ids, batch_size))
 
 
 async def _prewarm_blurbs(site_ids: list[str] | None, batch_size: int) -> dict[str, int]:
@@ -460,9 +475,7 @@ async def _prewarm_blurbs(site_ids: list[str] | None, batch_size: int) -> dict[s
                     )
                     return (site_dict["id"], mood_id, blurb, model)
                 except Exception as exc:
-                    log.warning(
-                        "prewarm_blurb_failed", url=site_dict.get("url"), error=str(exc)
-                    )
+                    log.warning("prewarm_blurb_failed", url=site_dict.get("url"), error=str(exc))
                     return None
 
         tasks = [asyncio.create_task(_guarded(row, row["mood_id"])) for row in pairs]
@@ -496,8 +509,6 @@ def retune_moods() -> None:
     Ensures mood embeddings stay current if the embedding model changes.
     Also triggers a full backfill so all site_cache rows get updated affinities.
     """
-    import asyncio
-
     from agent import mood_seeder
     from agent.db import backfill_mood_affinities_batch, get_connection
 
@@ -518,4 +529,4 @@ def retune_moods() -> None:
 
         log.info("retune_moods_complete", total_affinities_updated=total)
 
-    asyncio.run(_run())
+    _run_async(_run())

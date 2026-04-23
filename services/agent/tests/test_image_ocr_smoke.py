@@ -1,11 +1,10 @@
-import os
 import json
+import os
 from typing import Any
 
 import pytest
 
 import agent.ingestion as ingestion
-
 
 if not (os.getenv("AZURE_COMPUTER_VISION_ENDPOINT") and os.getenv("AZURE_COMPUTER_VISION_KEY")):
     pytest.skip("Azure Computer Vision not configured", allow_module_level=True)
@@ -85,6 +84,6 @@ async def test_azure_ocr_pipeline(monkeypatch):
         for q, params in cur.exec_calls:
             if q and "extracted_images" in q and params:
                 payload = _payload_text(params[0])
-                if "\"ocr_text\"" in payload:
+                if '"ocr_text"' in payload:
                     found = True
     assert found, "Expected persisted extracted_images to include 'ocr_text' after OCR"

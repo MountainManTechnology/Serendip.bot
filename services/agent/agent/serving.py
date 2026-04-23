@@ -273,7 +273,7 @@ async def generate_blurbs_with_cache(
                     asyncio.gather(*blurb_tasks, return_exceptions=True),
                     timeout=4.0,
                 )
-            except asyncio.TimeoutError:
+            except TimeoutError:
                 log.warning("blurb_batch_timeout", count=len(to_generate))
                 results = []
 

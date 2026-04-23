@@ -30,6 +30,7 @@ from agent.config import settings
 
 def _run_async(coro: Any) -> Any:
     """Run a coroutine in a real OS thread so gevent's hub loop doesn't block it."""
+
     def _run() -> Any:
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
@@ -40,6 +41,7 @@ def _run_async(coro: Any) -> Any:
             asyncio.set_event_loop(None)
 
     return gevent.get_hub().threadpool.apply(_run)
+
 
 BROKER_URL = os.getenv("CELERY_BROKER_URL") or (
     settings.celery_broker_url or f"{settings.redis_url}/1"
@@ -90,9 +92,11 @@ app.conf.task_routes = {
     "agent.telemetry_tasks.worker_heartbeat": {"queue": "finalize"},
 }
 # Route for image follow-up processing
-app.conf.task_routes.update({
-    "agent.tasks.process_image_site": {"queue": "finalize"},
-})
+app.conf.task_routes.update(
+    {
+        "agent.tasks.process_image_site": {"queue": "finalize"},
+    }
+)
 
 # ── Retry / ack policy ─────────────────────────────────────────────────────
 app.conf.update(

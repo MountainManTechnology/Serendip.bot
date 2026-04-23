@@ -18,7 +18,7 @@ from __future__ import annotations
 import asyncio
 import hashlib
 import json
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
@@ -43,7 +43,9 @@ AUTO_ACCEPT_THRESHOLD = 0.65
 EDGE_CASE_MIN = 0.60
 EDGE_CASE_MAX = 0.65
 
-USER_AGENT = "SerendipBot-HourlyDiscovery/1.0 (+https://github.com/MountainManTechnology/Serendip.bot)"
+USER_AGENT = (
+    "SerendipBot-HourlyDiscovery/1.0 (+https://github.com/MountainManTechnology/Serendip.bot)"
+)
 HTTP_TIMEOUT = 15.0
 
 SEEDS_DIR = Path(__file__).parent / "seeds"
@@ -53,9 +55,11 @@ SEEDS_DIR = Path(__file__).parent / "seeds"
 # Data structures
 # ═════════════════════════════════════════════════════════════════════════════
 
+
 @dataclass
 class FeedCandidate:
     """A feed URL to evaluate."""
+
     url: str
     category: str
     source: str = "seed"  # or 'discovery'
@@ -64,6 +68,7 @@ class FeedCandidate:
 @dataclass
 class ScoredFeed:
     """A feed with evaluation results."""
+
     url: str
     category: str
     score: float
@@ -76,13 +81,12 @@ class ScoredFeed:
 # Database helpers
 # ═════════════════════════════════════════════════════════════════════════════
 
+
 async def get_connection() -> psycopg.AsyncConnection[Any]:
     """Get async database connection."""
     if not settings.database_url:
         raise RuntimeError("DATABASE_URL is not configured")
-    return await psycopg.AsyncConnection.connect(
-        settings.database_url, row_factory=dict_row
-    )
+    return await psycopg.AsyncConnection.connect(settings.database_url, row_factory=dict_row)
 
 
 async def get_registered_feeds(conn: psycopg.AsyncConnection[Any], category: str) -> set[str]:
@@ -100,7 +104,8 @@ async def count_registered_feeds(conn: psycopg.AsyncConnection[Any], category: s
     """Count registered feeds in a category."""
     async with conn.cursor() as cur:
         await cur.execute(
-            "SELECT COUNT(*) as count FROM rss_feeds WHERE category_hint = %s AND status = 'active'",
+            "SELECT COUNT(*) as count FROM rss_feeds"
+            " WHERE category_hint = %s AND status = 'active'",
             (category,),
         )
         result = await cur.fetchone()
@@ -123,7 +128,7 @@ async def insert_rss_feed(
             """,
             (url_hash, url, category),
         )
-        inserted = cur.rowcount > 0
+        inserted: bool = bool(cur.rowcount > 0)
     await conn.commit()
     return inserted
 
@@ -158,13 +163,15 @@ async def log_discovery_result(
 # ═════════════════════════════════════════════════════════════════════════════
 
 # Aggregator/PR domains to reject (per CRITERIA.md)
-_AGGREGATOR_DOMAINS = frozenset({
-    "feedburner.com",
-    "rss.app",
-    "flipboard.com",
-    "google.com",
-    "feedly.com",
-})
+_AGGREGATOR_DOMAINS = frozenset(
+    {
+        "feedburner.com",
+        "rss.app",
+        "flipboard.com",
+        "google.com",
+        "feedly.com",
+    }
+)
 
 _PR_PATTERNS = [
     r"\bpress release\b",
@@ -179,9 +186,8 @@ _PR_PATTERNS = [
 
 def _is_aggregator_domain(url: str) -> bool:
     """Check if URL is from a known aggregator domain."""
-    import re
     from urllib.parse import urlparse
-    
+
     host = (urlparse(url).hostname or "").lower()
     if host.startswith("www."):
         host = host[4:]
@@ -190,7 +196,7 @@ def _is_aggregator_domain(url: str) -> bool:
 
 async def validate_feed(url: str) -> dict[str, Any] | None:
     """Try to fetch and parse feed. Returns dict if valid, None if broken.
-    
+
     Checks per CRITERIA.md:
     - Not aggregator/blocked domain
     - Returns valid RSS/Atom
@@ -200,7 +206,7 @@ async def validate_feed(url: str) -> dict[str, Any] | None:
     if _is_aggregator_domain(url):
         log.debug("validate_feed_aggregator", url=url)
         return None
-    
+
     try:
         async with httpx.AsyncClient(
             timeout=HTTP_TIMEOUT,
@@ -208,16 +214,16 @@ async def validate_feed(url: str) -> dict[str, Any] | None:
             headers={"User-Agent": USER_AGENT},
         ) as client:
             resp = await client.get(url)
-            
+
             # Reject dead/blocked feeds per CRITERIA.md
             if resp.status_code in (404, 410, 451):
                 log.debug("validate_feed_blocked", url=url, status=resp.status_code)
                 return None
-            
+
             if resp.status_code >= 500:
                 log.debug("validate_feed_server_error", url=url, status=resp.status_code)
                 return None
-            
+
             resp.raise_for_status()
 
             # Quick check: is it XML-like?
@@ -238,7 +244,6 @@ async def validate_feed(url: str) -> dict[str, Any] | None:
 
 async def parallel_validate(candidates: list[FeedCandidate]) -> list[FeedCandidate]:
     """Validate multiple feeds in parallel."""
-    validated = []
     semaphore = asyncio.Semaphore(VALIDATION_BATCH_SIZE)
 
     async def validate_with_sem(candidate: FeedCandidate) -> FeedCandidate | None:
@@ -257,12 +262,13 @@ async def parallel_validate(candidates: list[FeedCandidate]) -> list[FeedCandida
 # Scoring
 # ═════════════════════════════════════════════════════════════════════════════
 
+
 async def score_feeds_with_grok(
     feeds: list[FeedCandidate],
     batch_size: int = GROK_SCORE_BATCH_SIZE,
 ) -> list[ScoredFeed]:
     """Score feeds using Grok (fast, bulk screening).
-    
+
     Uses the SerendipBot curator rubric:
     - Editorial intent (original writing, not PR/marketing) — 0.25
     - Voice (distinctive authorial perspective or curation) — 0.20
@@ -270,7 +276,7 @@ async def score_feeds_with_grok(
     - Surprise (unexpected/non-obvious topics for serendipity) — 0.15
     - Mood fit (resonates with discovery/wonder/explore moods) — 0.15
     - Cadence (≥4 items/30d, ≥1 item/14d, <200/30d) — 0.10
-    
+
     Cutoff: ≥0.65 = auto-accept.
     """
     scored = []
@@ -279,9 +285,7 @@ async def score_feeds_with_grok(
         batch = feeds[i : i + batch_size]
 
         # Build prompt
-        feed_list = "\n".join(
-            f"- {f.url} (category: {f.category})" for f in batch
-        )
+        feed_list = "\n".join(f"- {f.url} (category: {f.category})" for f in batch)
 
         prompt = f"""Evaluate these RSS/Atom feeds for SerendipBot's discovery platform.
 
@@ -331,7 +335,7 @@ Return ONLY valid JSON (no markdown, no explanation):
                 lines = content.split("\n")
                 # Skip opening ``` line and last closing ``` line
                 content = "\n".join(lines[1:-1])
-            
+
             # Parse JSON
             try:
                 data = json.loads(content)
@@ -381,7 +385,7 @@ async def score_edge_cases_with_gpt(
     feeds: list[ScoredFeed],
 ) -> list[ScoredFeed]:
     """Re-score borderline feeds (0.60-0.65) using GPT-5.1.
-    
+
     Uses deep editorial judgment on the SerendipBot rubric:
     - Is the editorial voice genuine and original?
     - Does it avoid corporate/PR tone?
@@ -399,8 +403,7 @@ async def score_edge_cases_with_gpt(
         batch = edge_cases[i : i + 5]
 
         feed_list = "\n".join(
-            f"- {f.url}\n  (grok score: {f.score:.2f}, reason: {f.reason})"
-            for f in batch
+            f"- {f.url}\n  (grok score: {f.score:.2f}, reason: {f.reason})" for f in batch
         )
 
         prompt = f"""These feeds scored 0.60–0.65 on fast screening (Grok).
@@ -470,16 +473,17 @@ Return ONLY valid JSON:
 # Main discovery flow
 # ═════════════════════════════════════════════════════════════════════════════
 
+
 async def discover_feeds_for_category(category: str) -> dict[str, Any]:
     """Run discovery for a single category.
-    
+
     Evaluation pipeline per CRITERIA.md:
-    
+
     HEURISTIC CHECKS (automated):
     ✓ Not aggregator domain (feedburner, rss.app, flipboard)
     ✓ HTTP 2xx (not 404/410/451)
     ✓ Valid RSS/Atom (parses without error)
-    
+
     LLM SCORING (Grok + GPT):
     ✓ Editorial intent (original vs. PR/marketing)
     ✓ Voice (distinctive perspective)
@@ -487,14 +491,14 @@ async def discover_feeds_for_category(category: str) -> dict[str, Any]:
     ✓ Surprise (unexpected topics)
     ✓ Mood fit (wonder/learn/explore/create/inspire)
     ✓ Cadence (≥4/30d, ≥1/14d, <200/30d)
-    
+
     NOT YET CHECKED (manual review at merge):
     - Long-form bias (>500 words per article)
     - Duplicate feeds (cross-check existing seeds)
     - Domain stability (Wayback Machine, 6+ months online)
     - English language
     - Blocklist (domain reputation)
-    
+
     Auto-accept threshold: 0.65
     """
     results = {
@@ -534,8 +538,7 @@ async def discover_feeds_for_category(category: str) -> dict[str, Any]:
 
         # Convert to FeedCandidate objects
         candidates = [
-            FeedCandidate(url=url, category=category, source="seed")
-            for url in candidates_raw
+            FeedCandidate(url=url, category=category, source="seed") for url in candidates_raw
         ]
 
         # Filter out already-registered
@@ -570,9 +573,7 @@ async def discover_feeds_for_category(category: str) -> dict[str, Any]:
         async with conn:
             for feed in scored:
                 if feed.score >= AUTO_ACCEPT_THRESHOLD:
-                    inserted = await insert_rss_feed(
-                        conn, feed.url, feed.category
-                    )
+                    inserted = await insert_rss_feed(conn, feed.url, feed.category)
                     if inserted:
                         inserted_count += 1
                         feed.inserted = True
@@ -617,9 +618,7 @@ async def hourly_discovery() -> dict[str, Any]:
             all_results[category] = {"error": str(e)}
 
     # Summary
-    total_inserted = sum(
-        r.get("inserted", 0) for r in all_results.values() if isinstance(r, dict)
-    )
+    total_inserted = sum(r.get("inserted", 0) for r in all_results.values() if isinstance(r, dict))
     log.info("hourly_discovery_complete", total_inserted=total_inserted)
 
     return {

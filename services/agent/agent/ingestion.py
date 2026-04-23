@@ -15,6 +15,7 @@ import json
 import time
 from typing import Any
 
+from agent.config import settings
 from agent.crawler import Crawler
 from agent.db import (
     backfill_mood_affinities_batch,
@@ -27,7 +28,6 @@ from agent.db import (
 from agent.logging import log
 from agent.providers.base import TaskType
 from agent.providers.router import router as default_router
-from agent.config import settings
 from agent.telemetry import get_worker_id, now_iso, push_event
 
 # ── Quality-gate constants ─────────────────────────────────────────────────────
@@ -194,7 +194,9 @@ async def run_ingest_batch(batch_size: int = 10) -> dict[str, int]:
         eval_concurrency = int(getattr(settings, "eval_concurrency", 6))
         sem = asyncio.Semaphore(eval_concurrency)
 
-        async def _eval_item(item: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any] | None, int]:
+        async def _eval_item(
+            item: dict[str, Any],
+        ) -> tuple[dict[str, Any], dict[str, Any] | None, int]:
             async with sem:
                 t0 = time.perf_counter()
                 site = await evaluate_url(item["url"])
@@ -258,7 +260,7 @@ async def run_ingest_batch(batch_size: int = 10) -> dict[str, int]:
 
                 try:
                     t_emb0 = time.perf_counter()
-                    embed_text = f"{site.get('title','')} {' '.join(site.get('categories', []))} {site.get('_raw_text','')[:500]}"
+                    embed_text = f"{site.get('title', '')} {' '.join(site.get('categories', []))} {site.get('_raw_text', '')[:500]}"  # noqa: E501
                     embedding = await default_router.embed(embed_text)
                     t_emb1 = time.perf_counter()
                     embed_ms = int((t_emb1 - t_emb0) * 1000)
@@ -319,7 +321,9 @@ async def run_ingest_batch(batch_size: int = 10) -> dict[str, int]:
                         "rejected": rejected,
                         "errored": errored,
                         "avg_eval_ms": eval_count and int(total_eval_ms / eval_count) or None,
-                        "avg_summary_ms": summary_count and int(total_summary_ms / summary_count) or None,
+                        "avg_summary_ms": summary_count
+                        and int(total_summary_ms / summary_count)
+                        or None,
                         "avg_embed_ms": embed_count and int(total_embed_ms / embed_count) or None,
                     },
                 )

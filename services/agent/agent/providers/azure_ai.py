@@ -161,7 +161,9 @@ class AzureAIFoundryProvider:
 
         # Use a dedicated embed endpoint when provided (Azure AI Services multi-service
         # resource endpoints differ from project-scoped Foundry endpoints).
-        embed_endpoint = settings.azure_ai_foundry_embed_endpoint or settings.azure_ai_foundry_endpoint
+        embed_endpoint = (
+            settings.azure_ai_foundry_embed_endpoint or settings.azure_ai_foundry_endpoint
+        )
         api_key = settings.azure_ai_foundry_api_key
 
         # Azure AI Services endpoint (*.services.ai.azure.com) uses the new /openai/v1/ path.
@@ -239,11 +241,14 @@ class AzureAIFoundryProvider:
 
         # Try Azure AI Inference EmbeddingsClient with base64 image payload
         try:
-            from azure.ai.inference import EmbeddingsClient
-            from azure.core.credentials import AzureKeyCredential
             import base64
 
-            client = EmbeddingsClient(endpoint=embed_endpoint, credential=AzureKeyCredential(api_key))
+            from azure.ai.inference import EmbeddingsClient
+            from azure.core.credentials import AzureKeyCredential
+
+            client = EmbeddingsClient(
+                endpoint=embed_endpoint, credential=AzureKeyCredential(api_key)
+            )
             b64 = base64.b64encode(image_bytes).decode()
 
             response = await asyncio.to_thread(
@@ -256,5 +261,5 @@ class AzureAIFoundryProvider:
             if len(embedding) < _EMBED_DIMENSIONS:
                 embedding = embedding + [0.0] * (_EMBED_DIMENSIONS - len(embedding))
             return embedding[:_EMBED_DIMENSIONS]
-        except Exception as exc:  # pragma: no cover - best-effort network call
+        except Exception:  # pragma: no cover - best-effort network call
             raise

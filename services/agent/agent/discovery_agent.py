@@ -324,11 +324,7 @@ class DiscoveryAgent:
                 fast_results = [
                     {
                         **site,
-                        "why_blurb": (
-                            site.get("description")
-                            or site.get("content_summary")
-                            or ""
-                        ),
+                        "why_blurb": (site.get("description") or site.get("content_summary") or ""),
                     }
                     for site in top
                 ]

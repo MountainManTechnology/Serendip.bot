@@ -253,6 +253,7 @@ class LLMRouter:
             if settings.openai_api_key:
                 try:
                     import asyncio as _asyncio
+
                     from openai import AsyncOpenAI
 
                     _oai = AsyncOpenAI(api_key=settings.openai_api_key)
@@ -314,7 +315,9 @@ class LLMRouter:
 router = LLMRouter()
 
 
-async def embed_image(image_bytes: bytes, mime_type: str, trace_id: str | None = None) -> list[float]:
+async def embed_image(
+    image_bytes: bytes, mime_type: str, trace_id: str | None = None
+) -> list[float]:
     """High-level image embedding entrypoint.
 
     Tries provider-level image embedding (Azure Foundry) then falls back to a
@@ -327,7 +330,13 @@ async def embed_image(image_bytes: bytes, mime_type: str, trace_id: str | None =
         if hasattr(provider, "embed_image"):
             result = await provider.embed_image(image_bytes, mime_type)
             # Emit a lightweight synthetic cost event
-            _resp = LLMResponse(content="", input_tokens=0, output_tokens=0, model=settings.azure_image_embed_deployment or "", provider="azure")
+            _resp = LLMResponse(
+                content="",
+                input_tokens=0,
+                output_tokens=0,
+                model=settings.azure_image_embed_deployment or "",
+                provider="azure",
+            )
             import asyncio as _asyncio
 
             _asyncio.create_task(
@@ -346,10 +355,10 @@ async def embed_image(image_bytes: bytes, mime_type: str, trace_id: str | None =
 
     # Fallback: try a local CLIP-based helper
     try:
-        from agent.image_embeddings import embed_image_local
-
         # run potentially heavy local model off the event loop
         import asyncio as _asyncio
+
+        from agent.image_embeddings import embed_image_local
 
         result = await _asyncio.to_thread(embed_image_local, image_bytes)
         # Ensure 1536-dim padding/truncation to match DB vector column
@@ -362,5 +371,3 @@ async def embed_image(image_bytes: bytes, mime_type: str, trace_id: str | None =
         log.warning("embed_image_local_failed", error=str(exc))
 
     raise NotImplementedError("No image embedding available")
-
-

@@ -212,7 +212,7 @@ async def backfill_mood_affinities_batch(
             """,
             {"batch_size": batch_size},
         )
-        count = cur.rowcount
+        count = int(cur.rowcount)
     await conn.commit()
     return count
 
@@ -244,7 +244,7 @@ async def insert_ingest_attempt(
             """,
             (h, url, source),
         )
-        inserted = cur.rowcount > 0
+        inserted: bool = bool(cur.rowcount > 0)
     await conn.commit()
     return inserted
 
@@ -312,7 +312,7 @@ async def reset_stuck_crawling(
             """,
             {"minutes": stuck_after_minutes},
         )
-        count = cur.rowcount
+        count = int(cur.rowcount)
     await conn.commit()
     return count
 
@@ -348,7 +348,7 @@ async def insert_rss_feed(
             """,
             (h, url, category_hint),
         )
-        inserted = cur.rowcount > 0
+        inserted: bool = bool(cur.rowcount > 0)
     await conn.commit()
     return inserted
 
@@ -628,7 +628,7 @@ async def purge_old_blurb_cache(conn: psycopg.AsyncConnection[Any], days: int = 
             "DELETE FROM blurb_cache WHERE generated_at < NOW() - (%(days)s || ' days')::interval",
             {"days": days},
         )
-        count = cur.rowcount
+        count = int(cur.rowcount)
     await conn.commit()
     return count
 

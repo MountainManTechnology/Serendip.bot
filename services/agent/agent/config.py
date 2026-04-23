@@ -41,12 +41,18 @@ class Settings(BaseSettings):
         default="", description="Embedding model deployment name (e.g. text-embedding-3-large)"
     )
     azure_ai_foundry_embed_endpoint: str = Field(
-        default="", description="Separate Azure endpoint for embeddings (e.g. https://resource.services.ai.azure.com). Falls back to azure_ai_foundry_endpoint if not set."
+        default="",
+        description=(
+            "Separate Azure endpoint for embeddings"
+            " (e.g. https://resource.services.ai.azure.com)."
+            " Falls back to azure_ai_foundry_endpoint if not set."
+        ),
     )
 
     # Azure Computer Vision (OCR)
     azure_computer_vision_endpoint: str = Field(
-        default="", description="Azure Computer Vision endpoint (e.g. https://<resource>.cognitiveservices.azure.com)"
+        default="",
+        description="Azure Computer Vision endpoint (e.g. https://<resource>.cognitiveservices.azure.com)",
     )
     azure_computer_vision_key: str = Field(
         default="", description="Azure Computer Vision subscription key"
@@ -60,7 +66,8 @@ class Settings(BaseSettings):
         default="", description="Optional Azure Foundry deployment name for image embeddings"
     )
     azure_image_embed_endpoint: str = Field(
-        default="", description="Optional endpoint to use for image embeddings if different from Foundry endpoint"
+        default="",
+        description="Optional endpoint to use for image embeddings if different from Foundry endpoint",  # noqa: E501
     )
 
     # LLM routing overrides (optional — override default tier selection)

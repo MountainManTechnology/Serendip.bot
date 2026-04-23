@@ -43,8 +43,8 @@ class _FakeLog:
 fake_logging.log = _FakeLog()
 sys.modules.setdefault("agent.logging", fake_logging)
 
-import agent.ingestion as ingestion
-import agent.providers.router as provider_router
+import agent.ingestion as ingestion  # noqa: E402
+import agent.providers.router as provider_router  # noqa: E402
 
 IMAGE_URL = "https://example.com/image.jpg"
 IMAGE_BYTES = b"fake-image-bytes"

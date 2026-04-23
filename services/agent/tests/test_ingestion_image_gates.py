@@ -1,5 +1,3 @@
-import pytest
-
 from agent import ingestion
 from agent.config import settings
 
