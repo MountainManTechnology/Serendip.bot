@@ -9,6 +9,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+
+## [2026.04.23.1] — 2026-04-23
+
 ### Fixed
 
 - **Celery gevent + asyncio runtime error** — `services/agent/agent/tasks.py` and `services/agent/agent/celery_app.py` updated to run async coroutines in a real OS thread via `gevent.get_hub().threadpool.spawn(asyncio.run, coro).get()` (available as `_run_async(...)`), removing direct `asyncio.run(...)` call sites so Celery workers using the `gevent` pool no longer raise "asyncio.run() cannot be called from a running event loop".

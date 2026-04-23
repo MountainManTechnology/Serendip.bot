@@ -1,6 +1,6 @@
 {
   "name": "serendip-bot",
-  "version": "2026.04.22.1",
+  "version": "2026.04.23.1",
   "private": true,
   "workspaces": [
     "apps/*",

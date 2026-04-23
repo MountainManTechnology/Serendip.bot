@@ -1,5 +1,5 @@
 {
-  "rootVersion": "2026.04.22.1",
+  "rootVersion": "2026.04.23.1",
   "packages": {
     "apps/api": {
       "hash": "b948a713114f5c963ba081ea922591fff29aebe92d955ca4f14e5fb4b2a4a178",
@@ -22,8 +22,8 @@
       "version": "0.1.0"
     },
     "services/agent": {
-      "hash": "96c84fb3599afa9f85e4e910cb8c2ec4b0d73e46b22d59eb98175784301d0ef4",
-      "version": "0.4.0"
+      "hash": "36d7e83eeb29f7dad0204244d9684d0593b4dddf83754f995666883441d2c3d7",
+      "version": "0.4.1"
     }
   }
 }
