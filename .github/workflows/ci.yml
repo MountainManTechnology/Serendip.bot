@@ -140,14 +140,17 @@ jobs:
         run: pytest
 
       - name: Azure image mirror smoke test
-        if: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING && secrets.AZURE_STORAGE_CONTAINER }}
+        if: ${{ env.AZURE_STORAGE_CONNECTION_STRING != '' && env.AZURE_STORAGE_CONTAINER != '' }}
+        env:
+          AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+          AZURE_STORAGE_CONTAINER: ${{ secrets.AZURE_STORAGE_CONTAINER }}
         working-directory: services/agent
         run: |
           echo "Running Azure image mirror smoke test"
           python -m pytest tests/test_image_mirroring_integration.py -q
 
       - name: Azure OCR smoke test
-        if: ${{ secrets.AZURE_COMPUTER_VISION_ENDPOINT && secrets.AZURE_COMPUTER_VISION_KEY }}
+        if: ${{ env.AZURE_COMPUTER_VISION_ENDPOINT != '' && env.AZURE_COMPUTER_VISION_KEY != '' }}
         working-directory: services/agent
         env:
           AZURE_COMPUTER_VISION_ENDPOINT: ${{ secrets.AZURE_COMPUTER_VISION_ENDPOINT }}
