@@ -12,13 +12,11 @@ for per-URL fan-out across workers.
 from __future__ import annotations
 
 import asyncio
-import concurrent.futures
 import json
 import time
 import uuid
-from collections.abc import Coroutine
 from datetime import UTC, datetime
-from typing import Any, TypeVar
+from typing import Any
 
 from celery.exceptions import SoftTimeLimitExceeded
 
@@ -26,22 +24,25 @@ from agent.celery_app import app
 from agent.config import settings
 from agent.logging import log
 
-_T = TypeVar("_T")
-
 RESULT_TTL = 600  # 10 minutes — matches the existing worker.py contract
 
 
-def _run_async(coro: Coroutine[Any, Any, _T]) -> _T:
-    """Run an async coroutine from a gevent worker.
+def _run_async(coro: Any) -> Any:
+    """Run an async coroutine from a gevent worker using a real OS thread.
 
-    gevent monkey-patches the event loop so ``asyncio.run()`` raises
+    gevent monkey-patches ``threading.Thread`` into a greenlet, so both plain
+    ``threading.Thread`` and ``concurrent.futures.ThreadPoolExecutor`` share the
+    gevent event loop.  ``asyncio.run()`` detects that loop and raises
     ``RuntimeError('asyncio.run() cannot be called from a running event loop')``.
-    Spawning a plain OS thread gives a fresh, loop-free context where
-    ``asyncio.run()`` works normally.  The calling greenlet blocks until done.
+
+    ``gevent.get_hub().threadpool`` is backed by libev/libuv real OS threads that
+    are invisible to gevent's event-loop detector, giving asyncio a clean,
+    loop-free execution context.  ``AsyncResult.get()`` blocks the calling
+    greenlet cooperatively (yields to the hub) until the OS thread finishes.
     """
-    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
-        future = pool.submit(asyncio.run, coro)
-        return future.result()
+    import gevent
+
+    return gevent.get_hub().threadpool.spawn(asyncio.run, coro).get()
 
 
 class _JsonEncoder(json.JSONEncoder):
@@ -113,19 +114,12 @@ async def _discover(job_id: str, session_id: str, mood: str, topics: list[str]) 
     import redis.asyncio as aioredis
 
     from agent.discovery_agent import DiscoveryAgent
-    from agent.seeds import load_seed_files
 
     await _set_status(job_id, "processing")
     log.info("task_started", job_id=job_id, session_id=session_id, mood=mood)
 
     redis = aioredis.from_url(settings.redis_url, decode_responses=True)  # type: ignore[no-untyped-call]
     try:
-        # Load seeds on first run (idempotent)
-        try:
-            await load_seed_files(redis)
-        except Exception as exc:
-            log.warning("seed_load_failed", error=str(exc))
-
         agent = DiscoveryAgent(redis=redis)
         payload = {"sessionId": session_id, "mood": mood, "topics": topics}
 

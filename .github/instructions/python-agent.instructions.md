@@ -30,9 +30,77 @@ agent/
 ## Celery
 
 - Tasks are defined in `tasks.py` — keep them thin; delegate to `discovery_agent.py` or services
-- Async task bodies use `asyncio.run(_async_fn())` — do not use `loop.run_until_complete`
+- Async task bodies **must** use `_run_async(coro)` — **never** call `asyncio.run()` directly in a task (see Gevent Worker section below)
 - Queues: `discovery` (fan-out), `finalize` (chord bodies) — do not add queues without discussion
 - Telemetry pushes (Redis) are fire-and-forget — catch all exceptions, never raise
+
+## Gevent Worker — CRITICAL: Do Not Change This Pattern
+
+### Why gevent and asyncio conflict
+
+The `discovery` queue worker runs with Celery's **gevent pool** (`--pool=gevent`). gevent
+monkey-patches the Python standard library at import time, replacing `threading.Thread`,
+`socket`, `ssl`, and other I/O primitives with greenlet-backed equivalents. This means:
+
+- `threading.Thread(target=fn).start()` starts a **greenlet**, not an OS thread.
+- `concurrent.futures.ThreadPoolExecutor` spawns greenlets, not OS threads.
+- Both share gevent's event loop.
+
+`asyncio.run()` checks for a running event loop before creating a new one. Inside a gevent
+greenlet, `asyncio` detects the gevent loop as "already running" and raises:
+
+```
+RuntimeError: asyncio.run() cannot be called from a running event loop
+```
+
+### The correct pattern — `_run_async()`
+
+`gevent.get_hub().threadpool` is backed by **real OS threads** (libev/libuv), invisible to
+gevent's loop detector. `_run_async()` in `tasks.py` routes every coroutine through this
+threadpool:
+
+```python
+def _run_async(coro: Any) -> Any:
+    import gevent
+    return gevent.get_hub().threadpool.spawn(asyncio.run, coro).get()
+```
+
+Every `async` helper called from a Celery task **must** go through `_run_async()`. Never
+bypass it.
+
+### Rules — enforced
+
+| Rule | Reason |
+|------|--------|
+| Always use `_run_async(coro)` in task bodies | `asyncio.run()` raises under gevent pool |
+| Never use `asyncio.run()` directly in tasks | Causes `RuntimeError` in gevent workers |
+| Never use `ThreadPoolExecutor` to isolate asyncio | Threads are greenlets under gevent — still shares the loop |
+| Never use `threading.Thread` to isolate asyncio | Same reason as above |
+| `_run_async` must stay in `tasks.py` / `celery_app.py` | Must be imported after gevent monkey-patch |
+| The `finalize` queue uses `prefork` pool — `asyncio.run()` is safe there | Only `discovery` uses gevent |
+
+### Worker pool configuration (docker-compose)
+
+```yaml
+agent-worker-gevent:   # discovery queue
+  environment:
+    POOL: gevent
+    QUEUES: discovery
+
+agent-worker:          # finalize queue
+  environment:
+    POOL: prefork      # or solo — asyncio.run() is safe here
+    QUEUES: finalize
+```
+
+Do **not** change the `POOL` of the gevent worker to `prefork` or `solo` without also
+removing `_run_async()` calls — and vice versa. The two must stay in sync.
+
+### Hot-path rule
+
+Do **not** call expensive one-time setup (seed loading, DB inserts, heavy ingestion) from
+`discover()` / `_discover()`. Those belong in scheduled Beat tasks (`refresh_seeds`,
+`seed_moods_task`). The discover hot path must return in < 2 s.
 
 ## LLM Providers
 
